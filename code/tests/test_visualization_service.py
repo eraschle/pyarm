@@ -50,10 +50,10 @@ class TestVisualizationService(unittest.TestCase):
         self.foundation.east = 100.0
         self.foundation.north = 200.0
         self.foundation.altitude = 300.0
-        self.foundation.foundation_type = "Typ A"
-        self.foundation.width = 1.5
-        self.foundation.height = 1.0
-        self.foundation.depth = 2.0
+        self.foundation.set_param(ProcessEnum.FOUNDATION_TYPE, "Typ A")
+        self.foundation.set_param(ProcessEnum.DEPTH, 1.5)
+        self.foundation.set_param(ProcessEnum.HEIGHT, 1.0)
+        self.foundation.set_param(ProcessEnum.HEIGHT, 2.0)
         self.foundation.set_param(ProcessEnum.MATERIAL, "Beton")
 
         # Mast
@@ -61,9 +61,9 @@ class TestVisualizationService(unittest.TestCase):
         self.mast.east = 100.0
         self.mast.north = 200.0
         self.mast.altitude = 300.0
-        self.mast.height = 15.0
-        self.mast.mast_type = "Standard"
-        self.mast.profile_type = "HEB 200"
+        self.mast.set_param(ProcessEnum.HEIGHT, 15.0)
+        self.mast.set_param(ProcessEnum.MAST_TYPE, "Standard")
+        self.mast.set_param(ProcessEnum.MAST_PROFILE_TYPE, "HEB 200")
         self.mast.set_param(ProcessEnum.MATERIAL, "Stahl")
 
         # Ausleger an Mast
@@ -71,8 +71,8 @@ class TestVisualizationService(unittest.TestCase):
         self.cantilever.east = 100.0
         self.cantilever.north = 200.0
         self.cantilever.altitude = 305.0  # 5m über dem Mastsockel
-        self.cantilever.cantilever_type = "Einfach"
-        self.cantilever.length = 3.5
+        self.cantilever.set_param(ProcessEnum.CANTILEVER_TYPE, "Einfach")
+        self.cantilever.set_param(ProcessEnum.CANTILEVER_LENGTH, 3.5)
         self.cantilever.mast_uuid = self.mast.uuid
         self.cantilever.set_param(ProcessEnum.MATERIAL, "Aluminium")
 
@@ -81,13 +81,13 @@ class TestVisualizationService(unittest.TestCase):
         self.track.east = 100.0
         self.track.north = 200.0
         self.track.altitude = 300.0
-        self.dimensions
+        self.track.x_start = 100.0
         self.track.x_end = 200.0
         self.track.y_end = 300.0
         self.track.z_end = 310.0
-        self.track.track_type = "UIC60"
-        self.track.gauge = 1.435
-        self.track.cant = 100.0  # 100mm Überhöhung
+
+        self.track.set_param(ProcessEnum.TRACK_TYPE, "UIC60")
+        self.track.set_param(ProcessEnum.TRACK_CANT, 100.0)
         self.track.set_param(ProcessEnum.MATERIAL, "Stahl")
 
         # Kurvengleis mit Clothoid
