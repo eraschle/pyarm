@@ -1,0 +1,246 @@
+{
+  "projects": {
+    "project1": {
+      "elements": {
+        "joch": [
+          {
+            "ID": "J001",
+            "Typ": "RI",
+            "Bezeichnung": "Joch 1-2",
+            "E": 2600000.0,
+            "N": 1200000.0,
+            "Z": 465.28,
+            "E2": 2600050.0,
+            "N2": 1200010.0,
+            "Z2": 465.62,
+            "Spannweite": 50.99,
+            "Material": "Stahl",
+            "Mast1ID": "M001",
+            "Mast2ID": "M002"
+          },
+          {
+            "ID": "J002",
+            "Typ": "RII",
+            "Bezeichnung": "Joch 2-3",
+            "E": 2600050.0,
+            "N": 1200010.0,
+            "Z": 465.62,
+            "E2": 2600100.0,
+            "N2": 1200020.0,
+            "Z2": 465.95,
+            "Spannweite": 53.85,
+            "Material": "Stahl",
+            "Mast1ID": "M002",
+            "Mast2ID": "M003"
+          }
+        ],
+        "mast": [
+          {
+            "ID": "M001",
+            "Typ": "DP20",
+            "Bezeichnung": "Mast 1",
+            "E": 2600000.0,
+            "N": 1200000.0,
+            "Z": 456.78,
+            "Höhe": 8.5,
+            "Azimut": 45.0,
+            "Material": "Stahl",
+            "Profiltyp": "HEB",
+            "FundamentID": "F001"
+          },
+          {
+            "ID": "M002",
+            "Typ": "DP22",
+            "Bezeichnung": "Mast 2",
+            "E": 2600050.0,
+            "N": 1200010.0,
+            "Z": 457.12,
+            "Höhe": 9.0,
+            "Azimut": 45.0,
+            "Material": "Stahl",
+            "Profiltyp": "HEB",
+            "FundamentID": "F002"
+          },
+          {
+            "ID": "M003",
+            "Typ": "DP20",
+            "Bezeichnung": "Mast 3",
+            "E": 2600100.0,
+            "N": 1200020.0,
+            "Z": 457.45,
+            "Höhe": 8.5,
+            "Azimut": 45.0,
+            "Material": "Stahl",
+            "Profiltyp": "HEB",
+            "FundamentID": "F003"
+          }
+        ],
+        "foundation": [
+          {
+            "ID": "F001",
+            "Typ": "Typ A",
+            "Bezeichnung": "Fundament Mast 1",
+            "E": 2600000.0,
+            "N": 1200000.0,
+            "Z": 456.78,
+            "Breite": 1.5,
+            "Tiefe": 2.0,
+            "Höhe": 1.0,
+            "Material": "Beton",
+            "MastID": "M001"
+          },
+          {
+            "ID": "F002",
+            "Typ": "Typ B",
+            "Bezeichnung": "Fundament Mast 2",
+            "E": 2600050.0,
+            "N": 1200010.0,
+            "Z": 457.12,
+            "Breite": 1.8,
+            "Tiefe": 2.2,
+            "Höhe": 1.2,
+            "Material": "Beton",
+            "MastID": "M002"
+          },
+          {
+            "ID": "F003",
+            "Typ": "Typ A",
+            "Bezeichnung": "Fundament Mast 3",
+            "E": 2600100.0,
+            "N": 1200020.0,
+            "Z": 457.45,
+            "Breite": 1.5,
+            "Tiefe": 2.0,
+            "Höhe": 1.0,
+            "Material": "Beton",
+            "MastID": "M003"
+          }
+        ],
+        "track": [
+          {
+            "ID": "T001",
+            "Bezeichnung": "Gleis 1",
+            "E": "2600010.0",
+            "N": "1200030.0",
+            "Z": "456.78",
+            "E2": "2600110.0",
+            "N2": "1200050.0",
+            "Z2": "457.45",
+            "Spurweite": "1.435",
+            "Gleistyp": "UIC60",
+            "Überhöhung": "50"
+          },
+          {
+            "ID": "T002",
+            "Bezeichnung": "Gleis 2",
+            "E": "2600010.0",
+            "N": "1200035.0",
+            "Z": "456.78",
+            "E2": "2600110.0",
+            "N2": "1200055.0",
+            "Z2": "457.45",
+            "Spurweite": "1.435",
+            "Gleistyp": "UIC60",
+            "Überhöhung": "50"
+          }
+        ],
+        "drainage": [
+          {
+            "ID": "D001",
+            "Typ": "Pipe",
+            "Bezeichnung": "Entwässerungsleitung 1",
+            "E": "2600015.0",
+            "N": "1200025.0",
+            "Z": "456.28",
+            "E2": "2600115.0",
+            "N2": "1200045.0",
+            "Z2": "455.78",
+            "Durchmesser": "300",
+            "Material": "PVC",
+            "Gefälle": "10"
+          },
+          {
+            "ID": "D002",
+            "Typ": "Shaft",
+            "Bezeichnung": "Entwässerungsschacht 1",
+            "E": "2600015.0",
+            "N": "1200025.0",
+            "Z": "456.28",
+            "E2": "",
+            "N2": "",
+            "Z2": "800",
+            "Durchmesser": "Beton",
+            "Material": "",
+            "Gefälle": null
+          },
+          {
+            "ID": "D003",
+            "Typ": "Shaft",
+            "Bezeichnung": "Entwässerungsschacht 2",
+            "E": "2600115.0",
+            "N": "1200045.0",
+            "Z": "455.78",
+            "E2": "",
+            "N2": "",
+            "Z2": "800",
+            "Durchmesser": "Beton",
+            "Material": "",
+            "Gefälle": null
+          }
+        ],
+        "curved_track": [
+          {
+            "ID": "CT001",
+            "Bezeichnung": "Kurvengleis 1",
+            "E": "2600110.0",
+            "N": "1200050.0",
+            "Z": "457.45",
+            "E2": "2600210.0",
+            "N2": "1200150.0",
+            "Z2": "458.12",
+            "Spurweite": "1.435",
+            "Gleistyp": "UIC60",
+            "Überhöhung": "120",
+            "Klothoidenparameter": "150.0",
+            "Startradius": "inf",
+            "Endradius": "500.0"
+          },
+          {
+            "ID": "CT002",
+            "Bezeichnung": "Kurvengleis 2",
+            "E": "2600110.0",
+            "N": "1200055.0",
+            "Z": "457.45",
+            "E2": "2600210.0",
+            "N2": "1200155.0",
+            "Z2": "458.12",
+            "Spurweite": "1.435",
+            "Gleistyp": "UIC60",
+            "Überhöhung": "120",
+            "Klothoidenparameter": "150.0",
+            "Startradius": "inf",
+            "Endradius": "500.0"
+          }
+        ]
+      },
+      "statistics": {
+        "total_elements": 15,
+        "element_counts": {
+          "joch": 2,
+          "mast": 3,
+          "foundation": 3,
+          "track": 2,
+          "drainage": 3,
+          "curved_track": 2
+        }
+      }
+    }
+  },
+  "statistics": {
+    "total_elements": 15,
+    "projects_processed": 1,
+    "project_names": [
+      "project1"
+    ]
+  }
+}

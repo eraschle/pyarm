@@ -1,0 +1,15 @@
+{
+  "client_name": "DefaultClient",
+  "paths": {
+    "dfa_reports_folder": "data/dfa",
+    "mapping_file": "data/Data Dictionaries Mapping.xlsx",
+    "blueprint_file": "data/Bauprojekt_BP_Export.dxf",
+    "dtm_file": "data/DGM.xml",
+    "pointcloud_file": "data/Punktehimmel.xlsx",
+    "projectborder_file": "data/DataRecords.geojson",
+    "output_folder": "data/out_refactored"
+  },
+  "dfa_to_rfa_mapping": {
+    "sheet_name": "Object mapping"
+  }
+}

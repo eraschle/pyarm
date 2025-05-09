@@ -1,0 +1,41 @@
+[
+  {
+    "UUID": "M001",
+    "MastType": "DP20",
+    "Name": "Mast 1",
+    "East": 2600000.0,
+    "North": 1200000.0,
+    "Height": 456.78,
+    "HeightMast": 8.5,
+    "Azimuth": 45.0,
+    "Material": "Stahl",
+    "ProfileType": "HEB",
+    "FoundationReference": "F001"
+  },
+  {
+    "UUID": "M002",
+    "MastType": "DP22",
+    "Name": "Mast 2",
+    "East": 2600050.0,
+    "North": 1200010.0,
+    "Height": 457.12,
+    "HeightMast": 9.0,
+    "Azimuth": 45.0,
+    "Material": "Stahl",
+    "ProfileType": "HEB",
+    "FoundationReference": "F002"
+  },
+  {
+    "UUID": "M003",
+    "MastType": "DP20",
+    "Name": "Mast 3",
+    "East": 2600100.0,
+    "North": 1200020.0,
+    "Height": 457.45,
+    "HeightMast": 8.5,
+    "Azimuth": 45.0,
+    "Material": "Stahl",
+    "ProfileType": "HEB",
+    "FoundationReference": "F003"
+  }
+]

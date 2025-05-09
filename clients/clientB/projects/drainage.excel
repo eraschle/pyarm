@@ -1,0 +1,4 @@
+id;typ;bezeichnung;x_wert;y_wert;z_wert;x_wert_ende;y_wert_ende;z_wert_ende;durchmesser_mm;material;gefaelle_promille
+D001;Pipe;Entwässerungsleitung 1;2600015.0;1200025.0;456.28;2600115.0;1200045.0;455.78;300;PVC;10
+D002;Shaft;Entwässerungsschacht 1;2600015.0;1200025.0;456.28;;;;800;Beton;
+D003;Shaft;Entwässerungsschacht 2;2600115.0;1200045.0;455.78;;;;800;Beton;

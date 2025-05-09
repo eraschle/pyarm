@@ -1,0 +1,41 @@
+[
+  {
+    "UUID": "F001",
+    "FoundationType": "Typ A",
+    "Name": "Fundament Mast 1",
+    "East": 2600000.0,
+    "North": 1200000.0,
+    "Height": 456.78,
+    "Width": 1.5,
+    "Depth": 2.0,
+    "HeightFoundation": 1.0,
+    "Material": "Beton",
+    "MastReference": "M001"
+  },
+  {
+    "UUID": "F002",
+    "FoundationType": "Typ B",
+    "Name": "Fundament Mast 2",
+    "East": 2600050.0,
+    "North": 1200010.0,
+    "Height": 457.12,
+    "Width": 1.8,
+    "Depth": 2.2,
+    "HeightFoundation": 1.2,
+    "Material": "Beton",
+    "MastReference": "M002"
+  },
+  {
+    "UUID": "F003",
+    "FoundationType": "Typ A",
+    "Name": "Fundament Mast 3",
+    "East": 2600100.0,
+    "North": 1200020.0,
+    "Height": 457.45,
+    "Width": 1.5,
+    "Depth": 2.0,
+    "HeightFoundation": 1.0,
+    "Material": "Beton",
+    "MastReference": "M003"
+  }
+]

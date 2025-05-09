@@ -1,0 +1,368 @@
+{
+    "id": "OBJ_FS_2",
+    "name": "Fundament (FS)",
+    "domainName": "Fahrstrom",
+    "description": "Grundsätzlich dienen Fundamente der Befestigung von Konstruktionen im Erdreich. Im Fahrleitungsbereich werden die Lasten aus leichten und empfindlichen Strukturen über massive Träger wie Masten, Anker und Drückstützen in die Fundamente und weiter in das Erdreich abgetragen. Die Fundamente bilden somit die Basis für das statische System der Fahrleitung und verhindern unbeabsichtigte Bewegungen.\r\n\r\nWenn ein Fundament durch ein Pfahlfundament verstärkt wird, stellt das Pfahlfundament ein separates Fundament dar.",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "Grundsätzlich dienen Fundamente der Befestigung von Konstruktionen im Erdreich. Im Fahrleitungsbereich werden die Lasten aus leichten und empfindlichen Strukturen über massive Träger wie Masten, Anker und Drückstützen in die Fundamente und weiter in das Erdreich abgetragen. Die Fundamente bilden somit die Basis für das statische System der Fahrleitung und verhindern unbeabsichtigte Bewegungen."
+        },
+        {
+            "type": "paragraph",
+            "content": "Wenn ein Fundament durch ein Pfahlfundament verstärkt wird, stellt das Pfahlfundament ein separates Fundament dar."
+        }
+    ],
+    "imageId": "fa1477a1-a9a3-4fc9-82b6-c6b7898e31a4",
+    "creationTimestamp": "2025-01-27T21:05:25.722Z",
+    "componentRelationships": [],
+    "assemblyRelationships": [],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "14.0.0",
+            "isIncluded": true
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [
+        {
+            "phaseRange": "21",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "31",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "32",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "33",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "41",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "51",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "52",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "53",
+            "isInScope": true
+        }
+    ],
+    "ifcAssignments": [
+        {
+            "version": "IFC2x3",
+            "ifcClass": "IfcFooting",
+            "ifcType": "",
+            "ifcPredefinedType": "PAD_FOOTING"
+        },
+        {
+            "version": "IFC4",
+            "ifcClass": "IfcFooting",
+            "ifcType": "IfcFootingType",
+            "ifcPredefinedType": "PAD_FOOTING"
+        },
+        {
+            "version": "IFC4x3_ADD2",
+            "ifcClass": "IfcFooting",
+            "ifcType": "IfcFootingType",
+            "ifcPredefinedType": "PAD_FOOTING"
+        }
+    ],
+    "ebkpConcepts": [
+        {
+            "id": "R 6.1",
+            "name": "Einzelfundament Fahrbahn"
+        }
+    ],
+    "domainModels": [
+        {
+            "id": "REN",
+            "name": "Fahrstrom"
+        },
+        {
+            "id": "SPS",
+            "name": "Tragwerk"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380661",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Kennzeichnung",
+                    "unit": "",
+                    "description": "Primäre Kennzeichnung der Anlage (AKS)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459211",
+            "name": "SBB-CFF-FFS_PO",
+            "properties": [
+                {
+                    "id": "PTY_380662",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Charge",
+                    "unit": "",
+                    "description": "Die Chargennummer liefert weitere Informationen zur Charge und wird für die durchgehende Rückverfolgbarkeit benötigt._x000D_\r\nCharge wird über den Hersteller bereitgestellt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380663",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Einbaudatum",
+                    "unit": "",
+                    "description": "Das Datum (tagesgenau), an dem das physische Objekt an seinem derzeitigen Ort eingebaut wurde.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380664",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Garant",
+                    "unit": "",
+                    "description": "Hersteller, Lieferant oder Verkäufer welcher die Garantieleistungen erbringt, bis das entsprechende Produkt frei von Mängeln ist.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380665",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Anfang",
+                    "unit": "",
+                    "description": "Anfangsdatum des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380666",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 2-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 2-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380667",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 5-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 5-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380668",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Genauigkeit der Verortung",
+                    "unit": "cm",
+                    "description": "Maximale Abweichung der geografischen Lage oder der Ausdehnung des physischen Anlagenobjekts gegenüber der Realität in Zentimeter.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459212",
+            "name": "SBB-CFF-FFS_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380669",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "SBB-Artikelnummer",
+                    "unit": "",
+                    "description": "ID zum Materialstammsatz (SBB intern) / darf Wert \"NA\" enthalten",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380679",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeName",
+                    "unit": "",
+                    "description": "Name des Objekttypen gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459288",
+            "name": "OBJ_FS_2_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380771",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Enumeration"
+                    },
+                    "name": "Typ",
+                    "unit": "",
+                    "description": "Typ des Bauteils",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380772",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Boolean"
+                    },
+                    "name": "Kabelaufstieg?",
+                    "unit": "",
+                    "description": "Ist ein Kabelaufsteig am Bauteil vorhanden?",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380773",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Höhe ab OKT",
+                    "unit": "",
+                    "description": "Höhe ab Oberkante Gelände",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Bestand",
+                    "description": ""
+                },
+                {
+                    "designation": "Abbruch",
+                    "description": ""
+                },
+                {
+                    "designation": "Neubau",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}

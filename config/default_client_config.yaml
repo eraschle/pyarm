@@ -1,0 +1,29 @@
+# Client-Konfiguration
+client_name: DefaultClient
+
+# Pfade zu verschiedenen Datendateien
+paths:
+  # Ordner für DFA-Berichte
+  dfa_reports_folder: data/dfa
+  
+  # Datei mit Mapping-Informationen
+  mapping_file: data/Data Dictionaries Mapping.xlsx
+  
+  # Bauprojekt-Blueprint im DXF-Format
+  blueprint_file: data/Bauprojekt_BP_Export.dxf
+  
+  # Digitales Terrainmodell
+  dtm_file: data/DGM.xml
+  
+  # Punktwolkendaten
+  pointcloud_file: data/Punktehimmel.xlsx
+  
+  # Projektgrenzen im GeoJSON-Format
+  projectborder_file: data/DataRecords.geojson
+  
+  # Ausgabeordner für verarbeitete Daten
+  output_folder: data/out_refactored
+
+# Mapping-Konfiguration für DFA zu RFA Konvertierung
+dfa_to_rfa_mapping:
+  sheet_name: "Object mapping"

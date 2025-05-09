@@ -1,0 +1,4 @@
+id;bezeichnung;x_wert;y_wert;z_wert;fundament_typ;breite_m;tiefe_m;hoehe_m;material
+F001;Fundament 1;2600000.0;1200000.0;456.78;Typ A;1.5;2.0;1.0;Beton
+F002;Fundament 2;2600050.0;1200010.0;457.12;Typ B;1.8;2.2;1.2;Beton
+F003;Fundament 3;2600100.0;1200020.0;457.45;Typ A;1.5;2.0;1.0;Beton

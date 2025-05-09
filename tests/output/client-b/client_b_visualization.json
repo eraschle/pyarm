@@ -1,0 +1,263 @@
+{
+  "scene": {
+    "name": "ClientB Infrastrukturszene",
+    "elements": [
+      {
+        "type": "foundation",
+        "id": "F001",
+        "name": "Fundament 1",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.5,
+            1.5,
+            1.0
+          ],
+          "position": [
+            2600000.0,
+            1200000.0,
+            456.78
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "properties": {
+          "typ": "Typ A"
+        }
+      },
+      {
+        "type": "foundation",
+        "id": "F002",
+        "name": "Fundament 2",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.8,
+            1.8,
+            1.2
+          ],
+          "position": [
+            2600050.0,
+            1200010.0,
+            457.12
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "properties": {
+          "typ": "Typ B"
+        }
+      },
+      {
+        "type": "foundation",
+        "id": "F003",
+        "name": "Fundament 3",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.5,
+            1.5,
+            1.0
+          ],
+          "position": [
+            2600100.0,
+            1200020.0,
+            457.45
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "properties": {
+          "typ": "Typ A"
+        }
+      },
+      {
+        "type": "mast",
+        "id": "M001",
+        "name": "Mast 1",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 8.5,
+          "position": [
+            2600000.0,
+            1200000.0,
+            456.78
+          ]
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "properties": {
+          "foundation_id": "F001",
+          "typ": "DP20",
+          "azimut": 45.0
+        }
+      },
+      {
+        "type": "mast",
+        "id": "M002",
+        "name": "Mast 2",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 9.0,
+          "position": [
+            2600050.0,
+            1200010.0,
+            457.12
+          ]
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "properties": {
+          "foundation_id": "F002",
+          "typ": "DP22",
+          "azimut": 45.0
+        }
+      },
+      {
+        "type": "mast",
+        "id": "M003",
+        "name": "Mast 3",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 8.5,
+          "position": [
+            2600100.0,
+            1200020.0,
+            457.45
+          ]
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "properties": {
+          "foundation_id": "F003",
+          "typ": "DP20",
+          "azimut": 45.0
+        }
+      },
+      {
+        "type": "drainage_pipe",
+        "id": "D001",
+        "name": "Entwässerungsleitung 1",
+        "geometry": {
+          "type": "pipe",
+          "start": [
+            2600015.0,
+            1200025.0,
+            456.28
+          ],
+          "end": [
+            2600115.0,
+            1200045.0,
+            455.78
+          ],
+          "diameter": 0.3
+        },
+        "material": {
+          "name": "PVC",
+          "color": [
+            0.6,
+            0.6,
+            0.6
+          ],
+          "roughness": 0.5
+        },
+        "properties": {
+          "gefaelle": 10.0
+        }
+      },
+      {
+        "type": "drainage_shaft",
+        "id": "D002",
+        "name": "Entwässerungsschacht 1",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.4,
+          "height": 2.0,
+          "position": [
+            2600015.0,
+            1200025.0,
+            456.28
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        }
+      },
+      {
+        "type": "drainage_shaft",
+        "id": "D003",
+        "name": "Entwässerungsschacht 2",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.4,
+          "height": 2.0,
+          "position": [
+            2600115.0,
+            1200045.0,
+            455.78
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        }
+      }
+    ]
+  }
+}

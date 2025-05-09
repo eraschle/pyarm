@@ -1,0 +1,437 @@
+{
+  "scene": {
+    "name": "ClientC FDK Infrastrukturszene",
+    "elements": [
+      {
+        "type": "curved_track",
+        "id": "GL001",
+        "name": "Gleis 1",
+        "geometry": {
+          "type": "curve",
+          "length": 450.0,
+          "gauge": 1.435,
+          "radius": 2500.0
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "roughness": 0.2
+        },
+        "ifc": {
+          "globalId": "0Py45GhJ103qERlKcm8tZz",
+          "elementTyp": "IfcRail",
+          "materialTyp": "Stahl",
+          "kategorie": "Infrastruktur"
+        },
+        "bauphase": {
+          "id": "BP003",
+          "name": "Mastmontage",
+          "startDatum": "2025-10-16",
+          "endDatum": "2025-11-30"
+        }
+      },
+      {
+        "type": "track",
+        "id": "GL002",
+        "name": "Gleis 2",
+        "geometry": {
+          "type": "line",
+          "length": 480.0,
+          "gauge": 1.435,
+          "radius": 0.0
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "roughness": 0.2
+        },
+        "ifc": {
+          "globalId": "2Ws95BcK204lTRmPdn7qYx",
+          "elementTyp": "IfcRail",
+          "materialTyp": "Stahl",
+          "kategorie": "Infrastruktur"
+        },
+        "bauphase": {
+          "id": "BP003",
+          "name": "Mastmontage",
+          "startDatum": "2025-10-16",
+          "endDatum": "2025-11-30"
+        }
+      },
+      {
+        "type": "curved_track",
+        "id": "GL003",
+        "name": "Gleis 3",
+        "geometry": {
+          "type": "curve",
+          "length": 350.0,
+          "gauge": 1.435,
+          "radius": 1800.0
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "roughness": 0.2
+        },
+        "ifc": {
+          "globalId": "1Jt72DmN853pSQnRez6pWv",
+          "elementTyp": "IfcRail",
+          "materialTyp": "Stahl",
+          "kategorie": "Infrastruktur"
+        },
+        "bauphase": {
+          "id": "BP004",
+          "name": "Leitungsbau",
+          "startDatum": "2025-12-01",
+          "endDatum": "2026-01-15"
+        }
+      },
+      {
+        "type": "mast",
+        "id": "MA001",
+        "name": "Mast MA001",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 8.5,
+          "position": [
+            45782.0,
+            3.2,
+            0.0
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "properties": {
+          "typ": "Fahrleitungsmast",
+          "fundamentId": "FU001"
+        },
+        "ifc": {
+          "globalId": "4Aq38Fgh705vCDtLwe9sYj",
+          "elementTyp": "IfcColumn",
+          "materialTyp": "Beton",
+          "kategorie": "Tragstruktur"
+        },
+        "bauphase": {
+          "id": "BP003",
+          "name": "Mastmontage",
+          "startDatum": "2025-10-16",
+          "endDatum": "2025-11-30"
+        }
+      },
+      {
+        "type": "mast",
+        "id": "MA002",
+        "name": "Mast MA002",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 8.5,
+          "position": [
+            45832.0,
+            3.2,
+            0.0
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "properties": {
+          "typ": "Fahrleitungsmast",
+          "fundamentId": "FU002"
+        },
+        "ifc": {
+          "globalId": "5Bt47Hji806wDEuMxf0tZk",
+          "elementTyp": "IfcColumn",
+          "materialTyp": "Beton",
+          "kategorie": "Tragstruktur"
+        },
+        "bauphase": {
+          "id": "BP003",
+          "name": "Mastmontage",
+          "startDatum": "2025-10-16",
+          "endDatum": "2025-11-30"
+        }
+      },
+      {
+        "type": "mast",
+        "id": "MA003",
+        "name": "Mast MA003",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 6.0,
+          "position": [
+            45882.0,
+            3.0,
+            0.0
+          ]
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "properties": {
+          "typ": "Signalmast",
+          "fundamentId": "FU003"
+        },
+        "ifc": {
+          "globalId": "6Cu56Ijk907xEFvNyg1uAl",
+          "elementTyp": "IfcColumn",
+          "materialTyp": "Stahl",
+          "kategorie": "Signaltechnik"
+        },
+        "bauphase": {
+          "id": "BP004",
+          "name": "Leitungsbau",
+          "startDatum": "2025-12-01",
+          "endDatum": "2026-01-15"
+        }
+      },
+      {
+        "type": "foundation",
+        "id": "FU001",
+        "name": "Fundament FU001",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.5,
+            1.5,
+            2.5
+          ],
+          "position": [
+            45782.0,
+            3.2,
+            0.0
+          ]
+        },
+        "material": {
+          "name": "Stahlbeton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "properties": {
+          "typ": "Blockfundament",
+          "volumen": 3.2,
+          "tragfähigkeit": 250.0
+        },
+        "ifc": {
+          "globalId": "7Dv65Jkl008yFGwOzh2vBm",
+          "elementTyp": "IfcFooting",
+          "materialTyp": "Stahlbeton",
+          "kategorie": "Fundament"
+        },
+        "bauphase": {
+          "id": "BP002",
+          "name": "Fundamentarbeiten",
+          "startDatum": "2025-09-01",
+          "endDatum": "2025-10-15"
+        }
+      },
+      {
+        "type": "foundation",
+        "id": "FU002",
+        "name": "Fundament FU002",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.5,
+            1.5,
+            2.5
+          ],
+          "position": [
+            45832.0,
+            3.2,
+            0.0
+          ]
+        },
+        "material": {
+          "name": "Stahlbeton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "properties": {
+          "typ": "Blockfundament",
+          "volumen": 3.2,
+          "tragfähigkeit": 250.0
+        },
+        "ifc": {
+          "globalId": "8Ew74Klm109zGHxPAi3wCn",
+          "elementTyp": "IfcFooting",
+          "materialTyp": "Stahlbeton",
+          "kategorie": "Fundament"
+        },
+        "bauphase": {
+          "id": "BP002",
+          "name": "Fundamentarbeiten",
+          "startDatum": "2025-09-01",
+          "endDatum": "2025-10-15"
+        }
+      },
+      {
+        "type": "foundation",
+        "id": "FU003",
+        "name": "Fundament FU003",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.5,
+            1.5,
+            4.0
+          ],
+          "position": [
+            45882.0,
+            3.0,
+            0.0
+          ]
+        },
+        "material": {
+          "name": "Stahlbeton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "properties": {
+          "typ": "Pfahlfundament",
+          "volumen": 2.8,
+          "tragfähigkeit": 180.0
+        },
+        "ifc": {
+          "globalId": "9Fx83Lmn110AHIyQBj4xDo",
+          "elementTyp": "IfcPile",
+          "materialTyp": "Stahlbeton",
+          "kategorie": "Fundament"
+        },
+        "bauphase": {
+          "id": "BP002",
+          "name": "Fundamentarbeiten",
+          "startDatum": "2025-09-01",
+          "endDatum": "2025-10-15"
+        }
+      },
+      {
+        "type": "drainage_pipe",
+        "id": "EN001",
+        "name": "Entwässerung EN001",
+        "geometry": {
+          "type": "pipe",
+          "start": [
+            45750.0,
+            1.8,
+            0.0
+          ],
+          "end": [
+            45870.0,
+            1.8,
+            0.0
+          ],
+          "length": 120.0,
+          "diameter": 0.3
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.6,
+            0.6,
+            0.6
+          ],
+          "roughness": 0.5
+        },
+        "ifc": {
+          "globalId": "0Gy92Mno211BIJzRCk5yEp",
+          "elementTyp": "IfcPipeSegment",
+          "materialTyp": "Beton",
+          "kategorie": "Entwässerung"
+        },
+        "bauphase": {
+          "id": "BP002",
+          "name": "Fundamentarbeiten",
+          "startDatum": "2025-09-01",
+          "endDatum": "2025-10-15"
+        }
+      },
+      {
+        "type": "drainage_shaft",
+        "id": "EN002",
+        "name": "Schacht EN002",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.5,
+          "height": 3.5,
+          "position": [
+            45870.0,
+            2.5,
+            0.0
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "ifc": {
+          "globalId": "1Hz01Nop312CJKASDl6zFq",
+          "elementTyp": "IfcFlowTerminal",
+          "materialTyp": "Beton",
+          "kategorie": "Entwässerung"
+        },
+        "bauphase": {
+          "id": "BP002",
+          "name": "Fundamentarbeiten",
+          "startDatum": "2025-09-01",
+          "endDatum": "2025-10-15"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "projektName": "Bahnhof Musterstadt",
+    "version": "1.2.0",
+    "erstellungsDatum": "2025-05-09"
+  }
+}

@@ -1,0 +1,583 @@
+{
+    "id": "OBJ_WL_22",
+    "name": "Abwasser - Normschacht",
+    "domainName": "Werkleitungen",
+    "description": "Der Abwasserschacht ist ein normiertes Bauwerk mit abnehmbarem Deckel und dient zur Ableitung von Abwasser. Schachtdeckel werden als separates Objekt erfasst.\r\nAlle Normschächte inkl. Ausrüstung werden dem Objekt Schacht zugeordnet. Spezialschächte müssen dem Objekt Spezialbauwerk zugeordnet werden.",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "Der Abwasserschacht ist ein normiertes Bauwerk mit abnehmbarem Deckel und dient zur Ableitung von Abwasser. Schachtdeckel werden als separates Objekt erfasst."
+        },
+        {
+            "type": "paragraph",
+            "content": "Alle Normschächte inkl. Ausrüstung werden dem Objekt Schacht zugeordnet. Spezialschächte müssen dem Objekt Spezialbauwerk zugeordnet werden."
+        }
+    ],
+    "imageId": "b8012437-bbdc-4c4c-95c1-e33e5d720967",
+    "creationTimestamp": "2025-01-31T10:12:16.995Z",
+    "componentRelationships": [],
+    "assemblyRelationships": [
+        {
+            "id": "OBJ_WL_139",
+            "name": "Abwasserentsorgungsbereich"
+        }
+    ],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "14.0.0",
+            "isIncluded": true
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [
+        {
+            "phaseRange": "31",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "32",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "33",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "41",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "51",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "52",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "53",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "61",
+            "isInScope": true
+        }
+    ],
+    "ifcAssignments": [
+        {
+            "version": "IFC2x3",
+            "ifcClass": "IfcDistributionChamberElement",
+            "ifcType": "IfcDistributionChamberElementType",
+            "ifcPredefinedType": "FORMEDDUCT"
+        },
+        {
+            "version": "IFC4",
+            "ifcClass": "IfcDistributionChamberElement",
+            "ifcType": "IfcDistributionChamberElementType",
+            "ifcPredefinedType": "FORMEDDUCT"
+        },
+        {
+            "version": "IFC4x3_ADD2",
+            "ifcClass": "IfcDistributionChamberElement",
+            "ifcType": "IfcDistributionChamberElementType",
+            "ifcPredefinedType": "FORMEDDUCT"
+        }
+    ],
+    "ebkpConcepts": [
+        {
+            "id": "Q 1.4",
+            "name": "Ablauf, Schacht"
+        }
+    ],
+    "domainModels": [
+        {
+            "id": "DRN",
+            "name": "Entwässerung"
+        },
+        {
+            "id": "SWG",
+            "name": "Abwasser"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380661",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Kennzeichnung",
+                    "unit": "",
+                    "description": "Primäre Kennzeichnung der Anlage (AKS)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459211",
+            "name": "SBB-CFF-FFS_PO",
+            "properties": [
+                {
+                    "id": "PTY_380662",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Charge",
+                    "unit": "",
+                    "description": "Die Chargennummer liefert weitere Informationen zur Charge und wird für die durchgehende Rückverfolgbarkeit benötigt._x000D_\r\nCharge wird über den Hersteller bereitgestellt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380663",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Einbaudatum",
+                    "unit": "",
+                    "description": "Das Datum (tagesgenau), an dem das physische Objekt an seinem derzeitigen Ort eingebaut wurde.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380664",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Garant",
+                    "unit": "",
+                    "description": "Hersteller, Lieferant oder Verkäufer welcher die Garantieleistungen erbringt, bis das entsprechende Produkt frei von Mängeln ist.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380665",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Anfang",
+                    "unit": "",
+                    "description": "Anfangsdatum des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380666",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 2-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 2-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380667",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 5-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 5-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380668",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Genauigkeit der Verortung",
+                    "unit": "cm",
+                    "description": "Maximale Abweichung der geografischen Lage oder der Ausdehnung des physischen Anlagenobjekts gegenüber der Realität in Zentimeter.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459212",
+            "name": "SBB-CFF-FFS_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380669",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "SBB-Artikelnummer",
+                    "unit": "",
+                    "description": "ID zum Materialstammsatz (SBB intern) / darf Wert \"NA\" enthalten",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380679",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeName",
+                    "unit": "",
+                    "description": "Name des Objekttypen gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459933",
+            "name": "OBJ_WL_22_LO",
+            "properties": [
+                {
+                    "id": "PTY_382066",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Trockenwetterfallrohr DN",
+                    "unit": "",
+                    "description": "Durchmesser des Trockenwetterfallrohres",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382070",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459826",
+                        "name": "IB_ABW_ZUGANG_VL"
+                    },
+                    "name": "Zugänglichkeit",
+                    "unit": "",
+                    "description": "Information zur Zugänglichkeit zum Schacht. Z.B. überdeckt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382075",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "3-stellige Nummer (max. 4-stellig) des Schachtes gemäss Plan des ausgeführten Bauwerks",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382076",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459812",
+                        "name": "IB_ABW_SCHACHT_FUNKT_VL"
+                    },
+                    "name": "Funktion",
+                    "unit": "",
+                    "description": "Funktion des Schachts im Abwassersystem. Z.B. Einlaufschacht, Kontrollschacht, etc.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382077",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459821",
+                        "name": "IB_ABW_SCHACHT_ZUL_VL"
+                    },
+                    "name": "Oberflächenzulauf",
+                    "unit": "",
+                    "description": "Zuflussmöglichkeit von Oberflächenwasser direkt in den Schacht",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459960",
+            "name": "OBJ_WL_22_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_382141",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Dimension 2",
+                    "unit": "",
+                    "description": "Kleinstes Innenmass des Schachtes",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382150",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Dimension 1",
+                    "unit": "",
+                    "description": "Grösstes Innenmass des Schachtes",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382158",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459814",
+                        "name": "IB_ABW_SCHACHT_MAT_VL"
+                    },
+                    "name": "Material",
+                    "unit": "",
+                    "description": "Information zum Haupt-Material des Bauwerks",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Bestand",
+                    "description": ""
+                },
+                {
+                    "designation": "Abbruch",
+                    "description": ""
+                },
+                {
+                    "designation": "Neubau",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459826",
+            "name": "IB_ABW_ZUGANG_VL",
+            "values": [
+                {
+                    "designation": "unzugänglich",
+                    "description": ""
+                },
+                {
+                    "designation": "zugänglich",
+                    "description": ""
+                },
+                {
+                    "designation": "überdeckt",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459812",
+            "name": "IB_ABW_SCHACHT_FUNKT_VL",
+            "values": [
+                {
+                    "designation": "Einlaufschacht",
+                    "description": ""
+                },
+                {
+                    "designation": "Be- / Entlüftung",
+                    "description": ""
+                },
+                {
+                    "designation": "Leitungsknoten",
+                    "description": ""
+                },
+                {
+                    "designation": "Absturzbauwerk",
+                    "description": ""
+                },
+                {
+                    "designation": "Ölabscheider",
+                    "description": ""
+                },
+                {
+                    "designation": "Schlammsammler",
+                    "description": ""
+                },
+                {
+                    "designation": "Schwimmstoffabscheider",
+                    "description": ""
+                },
+                {
+                    "designation": "Regenüberlauf",
+                    "description": ""
+                },
+                {
+                    "designation": "Entwässerungsrinne",
+                    "description": ""
+                },
+                {
+                    "designation": "Pumpwerk",
+                    "description": ""
+                },
+                {
+                    "designation": "Geleiseschacht",
+                    "description": ""
+                },
+                {
+                    "designation": "Spülschacht",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Trennbauwerk",
+                    "description": ""
+                },
+                {
+                    "designation": "Dachwasserschacht",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Kontrollschacht",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459821",
+            "name": "IB_ABW_SCHACHT_ZUL_VL",
+            "values": [
+                {
+                    "designation": "Zulauf seitlich",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Rost",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "keiner",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459814",
+            "name": "IB_ABW_SCHACHT_MAT_VL",
+            "values": [
+                {
+                    "designation": "Kunststoff",
+                    "description": ""
+                },
+                {
+                    "designation": "Beton",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}

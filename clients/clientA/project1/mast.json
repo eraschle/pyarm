@@ -1,0 +1,41 @@
+[
+  {
+    "ID": "M001",
+    "Typ": "DP20",
+    "Bezeichnung": "Mast 1",
+    "E": 2600000.0,
+    "N": 1200000.0,
+    "Z": 456.78,
+    "Höhe": 8.5,
+    "Azimut": 45.0,
+    "Material": "Stahl",
+    "Profiltyp": "HEB",
+    "FundamentID": "F001"
+  },
+  {
+    "ID": "M002",
+    "Typ": "DP22",
+    "Bezeichnung": "Mast 2",
+    "E": 2600050.0,
+    "N": 1200010.0,
+    "Z": 457.12,
+    "Höhe": 9.0,
+    "Azimut": 45.0,
+    "Material": "Stahl",
+    "Profiltyp": "HEB",
+    "FundamentID": "F002"
+  },
+  {
+    "ID": "M003",
+    "Typ": "DP20",
+    "Bezeichnung": "Mast 3",
+    "E": 2600100.0,
+    "N": 1200020.0,
+    "Z": 457.45,
+    "Höhe": 8.5,
+    "Azimut": 45.0,
+    "Material": "Stahl",
+    "Profiltyp": "HEB",
+    "FundamentID": "F003"
+  }
+]

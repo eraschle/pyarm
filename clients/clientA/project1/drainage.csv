@@ -1,0 +1,4 @@
+ID,Typ,Bezeichnung,E,N,Z,E2,N2,Z2,Durchmesser,Material,Gefälle
+D001,Pipe,Entwässerungsleitung 1,2600015.0,1200025.0,456.28,2600115.0,1200045.0,455.78,300,PVC,10
+D002,Shaft,Entwässerungsschacht 1,2600015.0,1200025.0,456.28,,,800,Beton,
+D003,Shaft,Entwässerungsschacht 2,2600115.0,1200045.0,455.78,,,800,Beton,

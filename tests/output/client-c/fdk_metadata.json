@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "version": "1.2.0",
+    "erstellungsDatum": "2025-05-09",
+    "projektName": "Bahnhof Musterstadt",
+    "projektNummer": "BM-2025-001"
+  },
+  "bauphasen": [
+    {
+      "id": "BP001",
+      "name": "Planungsphase",
+      "startDatum": "2025-06-01",
+      "endDatum": "2025-08-31"
+    },
+    {
+      "id": "BP002",
+      "name": "Fundamentarbeiten",
+      "startDatum": "2025-09-01",
+      "endDatum": "2025-10-15"
+    },
+    {
+      "id": "BP003",
+      "name": "Mastmontage",
+      "startDatum": "2025-10-16",
+      "endDatum": "2025-11-30"
+    },
+    {
+      "id": "BP004",
+      "name": "Leitungsbau",
+      "startDatum": "2025-12-01",
+      "endDatum": "2026-01-15"
+    },
+    {
+      "id": "BP005",
+      "name": "Inbetriebnahme",
+      "startDatum": "2026-01-16",
+      "endDatum": "2026-02-28"
+    }
+  ]
+}

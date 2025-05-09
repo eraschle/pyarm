@@ -1,0 +1,3 @@
+ID,Bezeichnung,E,N,Z,E2,N2,Z2,Spurweite,Gleistyp,Überhöhung,Klothoidenparameter,Startradius,Endradius
+CT001,Kurvengleis 1,2600110.0,1200050.0,457.45,2600210.0,1200150.0,458.12,1.435,UIC60,120,150.0,inf,500.0
+CT002,Kurvengleis 2,2600110.0,1200055.0,457.45,2600210.0,1200155.0,458.12,1.435,UIC60,120,150.0,inf,500.0

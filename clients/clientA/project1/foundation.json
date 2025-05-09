@@ -1,0 +1,41 @@
+[
+  {
+    "ID": "F001",
+    "Typ": "Typ A",
+    "Bezeichnung": "Fundament Mast 1",
+    "E": 2600000.0,
+    "N": 1200000.0,
+    "Z": 456.78,
+    "Breite": 1.5,
+    "Tiefe": 2.0,
+    "Höhe": 1.0,
+    "Material": "Beton",
+    "MastID": "M001"
+  },
+  {
+    "ID": "F002",
+    "Typ": "Typ B",
+    "Bezeichnung": "Fundament Mast 2",
+    "E": 2600050.0,
+    "N": 1200010.0,
+    "Z": 457.12,
+    "Breite": 1.8,
+    "Tiefe": 2.2,
+    "Höhe": 1.2,
+    "Material": "Beton",
+    "MastID": "M002"
+  },
+  {
+    "ID": "F003",
+    "Typ": "Typ A",
+    "Bezeichnung": "Fundament Mast 3",
+    "E": 2600100.0,
+    "N": 1200020.0,
+    "Z": 457.45,
+    "Breite": 1.5,
+    "Tiefe": 2.0,
+    "Höhe": 1.0,
+    "Material": "Beton",
+    "MastID": "M003"
+  }
+]

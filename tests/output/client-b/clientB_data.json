@@ -1,0 +1,135 @@
+{
+  "elements": {
+    "mast": [
+      {
+        "id": "M001",
+        "bezeichnung": "Mast 1",
+        "x_wert": "2600000.0",
+        "y_wert": "1200000.0",
+        "z_wert": "456.78",
+        "mast_typ": "DP20",
+        "hoehe_m": "8.5",
+        "azimut_grad": "45.0",
+        "material": "Stahl",
+        "profil_typ": "HEB",
+        "fundament_id": "F001"
+      },
+      {
+        "id": "M002",
+        "bezeichnung": "Mast 2",
+        "x_wert": "2600050.0",
+        "y_wert": "1200010.0",
+        "z_wert": "457.12",
+        "mast_typ": "DP22",
+        "hoehe_m": "9.0",
+        "azimut_grad": "45.0",
+        "material": "Stahl",
+        "profil_typ": "HEB",
+        "fundament_id": "F002"
+      },
+      {
+        "id": "M003",
+        "bezeichnung": "Mast 3",
+        "x_wert": "2600100.0",
+        "y_wert": "1200020.0",
+        "z_wert": "457.45",
+        "mast_typ": "DP20",
+        "hoehe_m": "8.5",
+        "azimut_grad": "45.0",
+        "material": "Stahl",
+        "profil_typ": "HEB",
+        "fundament_id": "F003"
+      }
+    ],
+    "foundation": [
+      {
+        "id": "F001",
+        "bezeichnung": "Fundament 1",
+        "x_wert": "2600000.0",
+        "y_wert": "1200000.0",
+        "z_wert": "456.78",
+        "fundament_typ": "Typ A",
+        "breite_m": "1.5",
+        "tiefe_m": "2.0",
+        "hoehe_m": "1.0",
+        "material": "Beton"
+      },
+      {
+        "id": "F002",
+        "bezeichnung": "Fundament 2",
+        "x_wert": "2600050.0",
+        "y_wert": "1200010.0",
+        "z_wert": "457.12",
+        "fundament_typ": "Typ B",
+        "breite_m": "1.8",
+        "tiefe_m": "2.2",
+        "hoehe_m": "1.2",
+        "material": "Beton"
+      },
+      {
+        "id": "F003",
+        "bezeichnung": "Fundament 3",
+        "x_wert": "2600100.0",
+        "y_wert": "1200020.0",
+        "z_wert": "457.45",
+        "fundament_typ": "Typ A",
+        "breite_m": "1.5",
+        "tiefe_m": "2.0",
+        "hoehe_m": "1.0",
+        "material": "Beton"
+      }
+    ],
+    "drainage": [
+      {
+        "id": "D001",
+        "typ": "Pipe",
+        "bezeichnung": "Entwässerungsleitung 1",
+        "x_wert": "2600015.0",
+        "y_wert": "1200025.0",
+        "z_wert": "456.28",
+        "x_wert_ende": "2600115.0",
+        "y_wert_ende": "1200045.0",
+        "z_wert_ende": "455.78",
+        "durchmesser_mm": "300",
+        "material": "PVC",
+        "gefaelle_promille": "10"
+      },
+      {
+        "id": "D002",
+        "typ": "Shaft",
+        "bezeichnung": "Entwässerungsschacht 1",
+        "x_wert": "2600015.0",
+        "y_wert": "1200025.0",
+        "z_wert": "456.28",
+        "x_wert_ende": "",
+        "y_wert_ende": "",
+        "z_wert_ende": "",
+        "durchmesser_mm": "800",
+        "material": "Beton",
+        "gefaelle_promille": ""
+      },
+      {
+        "id": "D003",
+        "typ": "Shaft",
+        "bezeichnung": "Entwässerungsschacht 2",
+        "x_wert": "2600115.0",
+        "y_wert": "1200045.0",
+        "z_wert": "455.78",
+        "x_wert_ende": "",
+        "y_wert_ende": "",
+        "z_wert_ende": "",
+        "durchmesser_mm": "800",
+        "material": "Beton",
+        "gefaelle_promille": ""
+      }
+    ]
+  },
+  "statistics": {
+    "total_elements": 9,
+    "element_counts": {
+      "mast": 3,
+      "foundation": 3,
+      "drainage": 3
+    }
+  }
+}

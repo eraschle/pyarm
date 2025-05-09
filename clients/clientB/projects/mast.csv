@@ -1,0 +1,4 @@
+id;bezeichnung;x_wert;y_wert;z_wert;mast_typ;hoehe_m;azimut_grad;material;profil_typ;fundament_id
+M001;Mast 1;2600000.0;1200000.0;456.78;DP20;8.5;45.0;Stahl;HEB;F001
+M002;Mast 2;2600050.0;1200010.0;457.12;DP22;9.0;45.0;Stahl;HEB;F002
+M003;Mast 3;2600100.0;1200020.0;457.45;DP20;8.5;45.0;Stahl;HEB;F003

@@ -1,0 +1,1368 @@
+{
+    "id": "OBJ_WL_20",
+    "name": "Abwasser - Leitung",
+    "domainName": "Werkleitungen",
+    "description": "Definition Haltung: Eine Abwasserhaltung ist die Verbindungsstrecke eines Abwasserkanals zwischen zwei Schächten.\r\nEin Düker ist ein geschlossenes Leitungssystem zur Unterfahrung eines Hindernisses. \r\nDer Leitungsinhalt (z.B. Schmutzwasser, Meteorwasser) und Leitungsart (z.B. Druckleitung, Kanal, Rinne, usw.) wird als Attribut mitgeführt. Spezielle Leitungstypen wie Düker und Spülstutzen sind ebenfalls als Attribute einzupflegen.",
+    "structuredDescription": [
+        {
+            "type": "paragraph",
+            "content": "Definition Haltung: Eine Abwasserhaltung ist die Verbindungsstrecke eines Abwasserkanals zwischen zwei Schächten."
+        },
+        {
+            "type": "paragraph",
+            "content": "Ein Düker ist ein geschlossenes Leitungssystem zur Unterfahrung eines Hindernisses."
+        },
+        {
+            "type": "paragraph",
+            "content": "Der Leitungsinhalt (z.B. Schmutzwasser, Meteorwasser) und Leitungsart (z.B. Druckleitung, Kanal, Rinne, usw.) wird als Attribut mitgeführt. Spezielle Leitungstypen wie Düker und Spülstutzen sind ebenfalls als Attribute einzupflegen."
+        }
+    ],
+    "imageId": "ed1cb351-c63e-44ac-8320-9e194d672181",
+    "creationTimestamp": "2025-01-31T10:12:16.798Z",
+    "componentRelationships": [
+        {
+            "id": "OBJ_WL_106",
+            "name": "Abwasser - Leitungssegment"
+        }
+    ],
+    "assemblyRelationships": [
+        {
+            "id": "OBJ_WL_139",
+            "name": "Abwasserentsorgungsbereich"
+        }
+    ],
+    "releaseHistory": [
+        {
+            "versionId": "13.0.0",
+            "isIncluded": false
+        },
+        {
+            "versionId": "14.0.0",
+            "isIncluded": true
+        },
+        {
+            "versionId": "15.0.0",
+            "isIncluded": true
+        }
+    ],
+    "siaPhaseScopes": [
+        {
+            "phaseRange": "31",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "32",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "33",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "41",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "51",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "52",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "53",
+            "isInScope": true
+        },
+        {
+            "phaseRange": "61",
+            "isInScope": true
+        }
+    ],
+    "ifcAssignments": [
+        {
+            "version": "IFC2x3",
+            "ifcClass": "IfcFlowSegment",
+            "ifcType": "IfcPipeSegmentType",
+            "ifcPredefinedType": "RIGIDSEGMENT"
+        },
+        {
+            "version": "IFC4",
+            "ifcClass": "IfcPipeSegment",
+            "ifcType": "IfcPipeSegmentType",
+            "ifcPredefinedType": "RIGIDSEGMENT"
+        },
+        {
+            "version": "IFC4x3_ADD2",
+            "ifcClass": "IfcPipeSegment",
+            "ifcType": "IfcPipeSegmentType",
+            "ifcPredefinedType": "RIGIDSEGMENT"
+        }
+    ],
+    "ebkpConcepts": [
+        {
+            "id": "Q 1.2",
+            "name": "Entwässerungs-, Kanalisationsleitung"
+        }
+    ],
+    "domainModels": [
+        {
+            "id": "DRN",
+            "name": "Entwässerung"
+        },
+        {
+            "id": "SWG",
+            "name": "Abwasser"
+        }
+    ],
+    "propertySets": [
+        {
+            "id": "PST_459210",
+            "name": "SBB-CFF-FFS_LO",
+            "properties": [
+                {
+                    "id": "PTY_380660",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "eBKP-Position",
+                    "unit": "",
+                    "description": "eBKP-Position des Objekttypen bis auf die zweite Stufe des eBKP (eBKP-Element)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380661",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Kennzeichnung",
+                    "unit": "",
+                    "description": "Primäre Kennzeichnung der Anlage (AKS)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_417692",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Die Bezeichnung des Anlagenobjektes wird durch die Anlagengattungen definiert und soll automatisiert erfolgen.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459211",
+            "name": "SBB-CFF-FFS_PO",
+            "properties": [
+                {
+                    "id": "PTY_380662",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Charge",
+                    "unit": "",
+                    "description": "Die Chargennummer liefert weitere Informationen zur Charge und wird für die durchgehende Rückverfolgbarkeit benötigt._x000D_\r\nCharge wird über den Hersteller bereitgestellt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380663",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Einbaudatum",
+                    "unit": "",
+                    "description": "Das Datum (tagesgenau), an dem das physische Objekt an seinem derzeitigen Ort eingebaut wurde.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380664",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Garant",
+                    "unit": "",
+                    "description": "Hersteller, Lieferant oder Verkäufer welcher die Garantieleistungen erbringt, bis das entsprechende Produkt frei von Mängeln ist.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380665",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Anfang",
+                    "unit": "",
+                    "description": "Anfangsdatum des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380666",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 2-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 2-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380667",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Date"
+                    },
+                    "name": "Garantie Ende 5-Jahresfrist",
+                    "unit": "",
+                    "description": "Enddatum der 5-Jahresfrist des Garantiezeitraums",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380668",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Genauigkeit der Verortung",
+                    "unit": "cm",
+                    "description": "Maximale Abweichung der geografischen Lage oder der Ausdehnung des physischen Anlagenobjekts gegenüber der Realität in Zentimeter.",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459212",
+            "name": "SBB-CFF-FFS_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_380669",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "SBB-Artikelnummer",
+                    "unit": "",
+                    "description": "ID zum Materialstammsatz (SBB intern) / darf Wert \"NA\" enthalten",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459213",
+            "name": "SBB-CFF-FFS",
+            "properties": [
+                {
+                    "id": "PTY_380678",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeID",
+                    "unit": "",
+                    "description": "Objekttyp ID gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380679",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "ObjectTypeName",
+                    "unit": "",
+                    "description": "Name des Objekttypen gemäss FDK",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_380680",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459214",
+                        "name": "ObjectStatusProject"
+                    },
+                    "name": "ObjectStatusProject",
+                    "unit": "",
+                    "description": "Objektstatus des Objekttypen im Projekt",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459916",
+            "name": "OBJ_WL_20_LO",
+            "properties": [
+                {
+                    "id": "PTY_382040",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459811",
+                        "name": "IB_ABW_NUTZUNGSART_VL"
+                    },
+                    "name": "Nutzungsart",
+                    "unit": "",
+                    "description": "Information zur aktuellen Nutzung der Abwasserleitung. Z.B. Mischabwasser, Regenabwasser, etc.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382047",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Anfang Bemerkung",
+                    "unit": "",
+                    "description": "Bemerkung zum Leitungsanfang",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382052",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Anfang Lage Anschluss",
+                    "unit": "",
+                    "description": "Wird nur in Zusammenhang mit Kanalfernsehaufnahmen erfasst. Die Anschlussstelle bezogen auf den Kanal in Fleissrichtung für Haus- und Strassenanschlüsse. Bezeichnung mit Zahlen, die dem Uhrzeigersinn folgen. Scheitel = 12 Uhr",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382053",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Enumeration"
+                    },
+                    "name": "Funktion Melioration",
+                    "unit": "",
+                    "description": "Zur Unterscheidung einer Leitung bei Meliorationen",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382054",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459806",
+                        "name": "IB_ABW_HALT_FUNKT_HYD_VL"
+                    },
+                    "name": "Funktion Hydraulisch",
+                    "unit": "",
+                    "description": "Art des Kanals hinsichtlich hydraulischer Ausführung. Z.B. Druckleitung, Sickerleitung, Freispiegelleitung, etc.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382056",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459805",
+                        "name": "IB_ABW_HALT_FUNK_HIR_VL"
+                    },
+                    "name": "Funktion Hierarchisch",
+                    "unit": "",
+                    "description": "Die hierarchische Funktion enthält Informationen zur Bedeutung der Abwasserleitung im Entwässerungssystem. Dabei wird unterschieden zwischen PAA und SAA, die Definitionen stammen aus dem Glossar des VSA Verband Schweizer Abwasser- und Gewässerschutz Fachleute",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382057",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Anfang Bezeichnung",
+                    "unit": "",
+                    "description": "Bezeichnung des Einlaufes in den Kanal mit Zahlen. Die Bezeichnung folgt dem Uhrzeigersinn, dabei ist der tiefste Auslauf des Schachtes immer bei 12 Uhr. Die Bezeichnung wird nur bei mehreren Aus- und Einläufen erfasst. ",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382058",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Bezeichnung",
+                    "unit": "",
+                    "description": "Automatische Bezeichung generiert durch GTECH",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382059",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Ende Bemerkung",
+                    "unit": "",
+                    "description": "Zusatzinformation zum Objekt Rohrende",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382060",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Lichte Höhe",
+                    "unit": "",
+                    "description": "Maximale Innenhöhe des Kanalprofils",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382061",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Länge",
+                    "unit": "",
+                    "description": "Tatsächliche schräge Länge in Metern, d. h. nicht in die horizontale Ebene projiziert, inklusive Kanalkrümmungen.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382062",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459809",
+                        "name": "IB_ABW_HALT_REL_BAU_VL"
+                    },
+                    "name": "Reliner Bautechnik",
+                    "unit": "",
+                    "description": "Bautechnik des Relinings (Rohrsanierung). Z.B. Close Fit Relining, Partieller Liner",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382063",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Ende Bezeichnung",
+                    "unit": "",
+                    "description": "Bezeichnung des Auslaufes in den Kanal mit Zahlen. Die Bezeichnung folgt dem Uhrzeigersinn, dabei ist der tiefste Auslauf des Schachtes immer bei 12 Uhr. Die Bezeichnung wird nur bei mehreren Ausläufen erfasst. ",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382065",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Ende Lage Anschluss",
+                    "unit": "",
+                    "description": "Wird nur in Zusammenhang mit Kanalfernsehaufnahmen erfasst. Die Anschlussstelle bezogen auf den Kanal in Fleissrichtung für Haus- und Strassenanschlüsse. Bezeichnung mit Zahlen, die dem Uhrzeigersinn folgen. Scheitel = 12 Uhr",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382067",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Plangefälle",
+                    "unit": "",
+                    "description": "Information zum Leitungsgefälle in Promille",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382068",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Höhen- / Breitenverhältnis",
+                    "unit": "",
+                    "description": "Verhältnis der Höhe zu Breite",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382073",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Boolean"
+                    },
+                    "name": "Lage unter Gleise",
+                    "unit": "",
+                    "description": "Gibt an, ob die Leitung unter dem Bahngleis liegt",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382078",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459813",
+                        "name": "IB_ABW_HALT_REL_ART_VL"
+                    },
+                    "name": "Reliner Art",
+                    "unit": "",
+                    "description": "Information zur Rohrsanierung",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459950",
+            "name": "OBJ_WL_20_PO",
+            "properties": [
+                {
+                    "id": "PTY_382093",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459818",
+                        "name": "IB_SIA_GENKEIT_VL"
+                    },
+                    "name": "Lagebestimmung",
+                    "unit": "",
+                    "description": "Information zu Lagegenauigkeit der Leitung",
+                    "example": ""
+                }
+            ]
+        },
+        {
+            "id": "PST_459954",
+            "name": "OBJ_WL_20_SPEZ",
+            "properties": [
+                {
+                    "id": "PTY_382122",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459823",
+                        "name": "IB_ABW_HALT_PUNKT_FORM_VL"
+                    },
+                    "name": "Ende Form",
+                    "unit": "",
+                    "description": "Form des Auslaufes in den Kanal. Z.B. scharfkantig, blendenförmig, etc.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382123",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459808",
+                        "name": "IB_ABW_HALT_MAT_VL"
+                    },
+                    "name": "Material",
+                    "unit": "",
+                    "description": "Information zum Rohrmaterial. Z.B. Normalbeton, Polyethylen, etc.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382124",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "String"
+                    },
+                    "name": "Ringsteifigkeit",
+                    "unit": "",
+                    "description": "Ringsteifigkeitsklasse SN, Druckfestigkeit gegen Belastungen von aussen.\r\nEingeteilt wird in vier Normkategorien (DN bedeutet Stiffness Number) SN 2, SN 4, SN 8, SN 16 (kN/m2)\r\nEbenfalls ist eine französische Bezeichnung möglich (CR steht für Classe de Résistance) CR 2, CR 4, CR 8, CR 16 (in/m2)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382125",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459822",
+                        "name": "IB_ABW_HALT_REL_MAT_VL"
+                    },
+                    "name": "Reliner Material",
+                    "unit": "",
+                    "description": "Material des Relinings (Rohrsanierung). Z.B. Epoxidharz - Glasfaserlaminat, GUP-Rohr",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382126",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459810",
+                        "name": "IB_ABW_HALT_PROFIL_VL"
+                    },
+                    "name": "Profiltyp",
+                    "unit": "",
+                    "description": "Informationen zum Kanalprofil. Z.B. Eiprofil, Kreisprofil, etc.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382127",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459820",
+                        "name": "IB_ABW_TWR_MAT_VL"
+                    },
+                    "name": "Trockenwetterrinne - Material",
+                    "unit": "",
+                    "description": "Information zum Material der baulichen Einengung des Kanalquerschnittes, um die Fliessgeschwindigkeit bei trockenem Wetter zu erhöhen.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382128",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459823",
+                        "name": "IB_ABW_HALT_PUNKT_FORM_VL"
+                    },
+                    "name": "Anfang Form",
+                    "unit": "",
+                    "description": "Form des Einlaufes in den Kanal. Z.B. scharfkantig, blendenförmig, etc.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382129",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Breite",
+                    "unit": "",
+                    "description": "Lichte Breite oder Nenndurchmesser der Abwasserleitung",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382131",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Integer"
+                    },
+                    "name": "Reliner Nennweite",
+                    "unit": "",
+                    "description": "Innerer Durchmesser des Relinings (Rohrsanierung)",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382132",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459796",
+                        "name": "IB_ABW_BANKETT_ART_VL"
+                    },
+                    "name": "Bankett Art",
+                    "unit": "",
+                    "description": "Streifen entlang der Wasserrinne",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382134",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459791",
+                        "name": "Abwasser_Leckschutz"
+                    },
+                    "name": "Leckschutz",
+                    "unit": "",
+                    "description": "Doppelwandrohr oder anderes System zum Schutz vor Austritt in Grundwasserschutzzonen.",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382135",
+                    "format": {
+                        "type": "basic",
+                        "fdkId": null,
+                        "name": "Double"
+                    },
+                    "name": "Stricklerbeiwert",
+                    "unit": "",
+                    "description": "Stricklerbeiwert",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382137",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459807",
+                        "name": "IB_ABW_HALT_INNENSCH_VL"
+                    },
+                    "name": "Innenschutz",
+                    "unit": "",
+                    "description": "Information zum Schutz der Kanal-Innenwände. Z.B. Zementmörtelauskleidung",
+                    "example": ""
+                },
+                {
+                    "id": "PTY_382138",
+                    "format": {
+                        "type": "enum",
+                        "fdkId": "ENM_459792",
+                        "name": "Abwasser_Sickerung"
+                    },
+                    "name": "Sickerung",
+                    "unit": "",
+                    "description": "Beschreibung des oberliegenden Materials bei Saugern.",
+                    "example": ""
+                }
+            ]
+        }
+    ],
+    "referencedEnumerations": [
+        {
+            "id": "ENM_459214",
+            "name": "ObjectStatusProject",
+            "values": [
+                {
+                    "designation": "Temporär",
+                    "description": ""
+                },
+                {
+                    "designation": "Bestand",
+                    "description": ""
+                },
+                {
+                    "designation": "Abbruch",
+                    "description": ""
+                },
+                {
+                    "designation": "Neubau",
+                    "description": ""
+                },
+                {
+                    "designation": "Modifiziert",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459811",
+            "name": "IB_ABW_NUTZUNGSART_VL",
+            "values": [
+                {
+                    "designation": "Regenabwasser",
+                    "description": ""
+                },
+                {
+                    "designation": "Bachwasser",
+                    "description": ""
+                },
+                {
+                    "designation": "Schmutzabwasser",
+                    "description": ""
+                },
+                {
+                    "designation": "Reinabwasser",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "entlastetes Mischabwasser",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Industrieabwasser",
+                    "description": ""
+                },
+                {
+                    "designation": "Mischabwasser",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459806",
+            "name": "IB_ABW_HALT_FUNKT_HYD_VL",
+            "values": [
+                {
+                    "designation": "Sickerleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Speicherleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "Vakuumleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "Drosselleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "Pumpendruckleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "Sickerleitung Vollsickerrohr",
+                    "description": ""
+                },
+                {
+                    "designation": "Freispiegelleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "Dükerleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Sickerleitung Teilsickerrohr",
+                    "description": ""
+                },
+                {
+                    "designation": "Spülleitung",
+                    "description": ""
+                },
+                {
+                    "designation": "Drainagetransportleitung",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459805",
+            "name": "IB_ABW_HALT_FUNK_HIR_VL",
+            "values": [
+                {
+                    "designation": "Geleiseentwässerung - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Strassenentwässerung - SAA",
+                    "description": ""
+                },
+                {
+                    "designation": "andere - SAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Sammelkanal - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Geleiseentwässerung - SAA",
+                    "description": ""
+                },
+                {
+                    "designation": "andere - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Sanierungsleitung - SAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Liegenschaftsentwässerung - SAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Hauptsammelkanal - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt - SAA",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Hauptsammelkanal regional - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Liegenschaftsentwässerung - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Sanierungsleitung - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Entwässerungsrinne - SAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Gewässer - PAA",
+                    "description": ""
+                },
+                {
+                    "designation": "Strassenentwässerung - PAA",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459809",
+            "name": "IB_ABW_HALT_REL_BAU_VL",
+            "values": [
+                {
+                    "designation": "Wickelrohrrelining",
+                    "description": ""
+                },
+                {
+                    "designation": "Close Fit Relining",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Schlauchrelining",
+                    "description": ""
+                },
+                {
+                    "designation": "Rohrstrangrelining",
+                    "description": ""
+                },
+                {
+                    "designation": "Kurzrohrrelining",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Noppenschlauchrelining",
+                    "description": ""
+                },
+                {
+                    "designation": "Partieller Liner",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459813",
+            "name": "IB_ABW_HALT_REL_ART_VL",
+            "values": [
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "ganze Haltung",
+                    "description": ""
+                },
+                {
+                    "designation": "partiell",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459818",
+            "name": "IB_SIA_GENKEIT_VL",
+            "values": [
+                {
+                    "designation": "ungenau",
+                    "description": ""
+                },
+                {
+                    "designation": "genau",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459823",
+            "name": "IB_ABW_HALT_PUNKT_FORM_VL",
+            "values": [
+                {
+                    "designation": "keine Querschnittsänderung",
+                    "description": ""
+                },
+                {
+                    "designation": "scharfkantig",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "blendenförmig",
+                    "description": ""
+                },
+                {
+                    "designation": "abgerundet",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459808",
+            "name": "IB_ABW_HALT_MAT_VL",
+            "values": [
+                {
+                    "designation": "AZ - Asbestzement",
+                    "description": ""
+                },
+                {
+                    "designation": "OB - Ortsbeton",
+                    "description": ""
+                },
+                {
+                    "designation": "Z - Zement",
+                    "description": ""
+                },
+                {
+                    "designation": "U - unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "BU - Beton unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "PRB - Pressrohrbeton",
+                    "description": ""
+                },
+                {
+                    "designation": "GUP - Polyester GUP",
+                    "description": ""
+                },
+                {
+                    "designation": "GD - Guss duktil",
+                    "description": ""
+                },
+                {
+                    "designation": "STZ - Steinzeug",
+                    "description": ""
+                },
+                {
+                    "designation": "NB - Normalbeton",
+                    "description": ""
+                },
+                {
+                    "designation": "KUU - unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "HPE - Hartpolyethylen",
+                    "description": ""
+                },
+                {
+                    "designation": "T - Ton",
+                    "description": ""
+                },
+                {
+                    "designation": "STI - Stahl rostfrei",
+                    "description": ""
+                },
+                {
+                    "designation": "ST - Stahl",
+                    "description": ""
+                },
+                {
+                    "designation": "GG - Grauguss",
+                    "description": ""
+                },
+                {
+                    "designation": "SG - Gebrannte Steine",
+                    "description": ""
+                },
+                {
+                    "designation": "SB - Spezialbeton",
+                    "description": ""
+                },
+                {
+                    "designation": "EP - Epoxydharz",
+                    "description": ""
+                },
+                {
+                    "designation": "PE - Polyethylen",
+                    "description": ""
+                },
+                {
+                    "designation": "FZ - Faserzement",
+                    "description": ""
+                },
+                {
+                    "designation": "PVC - Polyvinilchlorid",
+                    "description": ""
+                },
+                {
+                    "designation": "A - andere",
+                    "description": ""
+                },
+                {
+                    "designation": "PP - Polypropylen",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459822",
+            "name": "IB_ABW_HALT_REL_MAT_VL",
+            "values": [
+                {
+                    "designation": "Isocyanatharze - Glasfaserlaminat",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Isocyanatharze - Kunststofffilz",
+                    "description": ""
+                },
+                {
+                    "designation": "Vinylesterharz - Kunststofffilz",
+                    "description": ""
+                },
+                {
+                    "designation": "Vinylesterharz - Glasfaserlaminat",
+                    "description": ""
+                },
+                {
+                    "designation": "GUP-Rohr",
+                    "description": ""
+                },
+                {
+                    "designation": "Polyesterharz - Kunststofffilz",
+                    "description": ""
+                },
+                {
+                    "designation": "Sohle mit Schale aus Polyesterbeton",
+                    "description": ""
+                },
+                {
+                    "designation": "HDPE",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Polyesterharz - Glasfaserlaminat",
+                    "description": ""
+                },
+                {
+                    "designation": "Epoxidharz - Kunststofffilz",
+                    "description": ""
+                },
+                {
+                    "designation": "Polypropylen",
+                    "description": ""
+                },
+                {
+                    "designation": "UP Harz LED Synthesefaserliner",
+                    "description": ""
+                },
+                {
+                    "designation": "Epoxidharz - Glasfaserlaminat",
+                    "description": ""
+                },
+                {
+                    "designation": "Polyvinilchlorid",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459810",
+            "name": "IB_ABW_HALT_PROFIL_VL",
+            "values": [
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Eiprofil",
+                    "description": ""
+                },
+                {
+                    "designation": "Offenes Profil",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Maulprofil",
+                    "description": ""
+                },
+                {
+                    "designation": "Rechteckprofil",
+                    "description": ""
+                },
+                {
+                    "designation": "Kreisprofil",
+                    "description": ""
+                },
+                {
+                    "designation": "Spezialprofil",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459820",
+            "name": "IB_ABW_TWR_MAT_VL",
+            "values": [
+                {
+                    "designation": "Zementmörtel",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Kunststoff",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Steinzeug",
+                    "description": ""
+                },
+                {
+                    "designation": "kombiniert",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459796",
+            "name": "IB_ABW_BANKETT_ART_VL",
+            "values": [
+                {
+                    "designation": "beidseitig",
+                    "description": ""
+                },
+                {
+                    "designation": "kein",
+                    "description": ""
+                },
+                {
+                    "designation": "einseitig",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459791",
+            "name": "Abwasser_Leckschutz",
+            "values": [
+                {
+                    "designation": "nicht_vorhanden",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "vorhanden",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459807",
+            "name": "IB_ABW_HALT_INNENSCH_VL",
+            "values": [
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Zementmörtelauskleidung",
+                    "description": ""
+                },
+                {
+                    "designation": "Steinzeugauskleidung",
+                    "description": ""
+                },
+                {
+                    "designation": "Anstrich Beschichtung",
+                    "description": ""
+                },
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Kanalklinkerauskleidung",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "ENM_459792",
+            "name": "Abwasser_Sickerung",
+            "values": [
+                {
+                    "designation": "andere",
+                    "description": ""
+                },
+                {
+                    "designation": "Sickerkies",
+                    "description": ""
+                },
+                {
+                    "designation": "unbekannt",
+                    "description": ""
+                },
+                {
+                    "designation": "Holzschnitzel",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}

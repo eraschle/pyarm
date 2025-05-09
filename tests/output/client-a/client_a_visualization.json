@@ -1,0 +1,478 @@
+{
+  "scene": {
+    "name": "ClientA Infrastrukturszene",
+    "elements": [
+      {
+        "type": "foundation",
+        "id": "F001",
+        "name": "Fundament Mast 1",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.5,
+            1.5,
+            1.0
+          ],
+          "position": [
+            2600000.0,
+            1200000.0,
+            456.78
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "project": "project1",
+        "properties": {
+          "mast_id": "M001"
+        }
+      },
+      {
+        "type": "foundation",
+        "id": "F002",
+        "name": "Fundament Mast 2",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.8,
+            1.8,
+            1.2
+          ],
+          "position": [
+            2600050.0,
+            1200010.0,
+            457.12
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "project": "project1",
+        "properties": {
+          "mast_id": "M002"
+        }
+      },
+      {
+        "type": "foundation",
+        "id": "F003",
+        "name": "Fundament Mast 3",
+        "geometry": {
+          "type": "box",
+          "dimensions": [
+            1.5,
+            1.5,
+            1.0
+          ],
+          "position": [
+            2600100.0,
+            1200020.0,
+            457.45
+          ]
+        },
+        "material": {
+          "name": "Beton",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "project": "project1",
+        "properties": {
+          "mast_id": "M003"
+        }
+      },
+      {
+        "type": "mast",
+        "id": "M001",
+        "name": "Mast 1",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 8.5,
+          "position": [
+            2600000.0,
+            1200000.0,
+            456.78
+          ]
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "project": "project1",
+        "properties": {
+          "foundation_id": "F001",
+          "typ": "DP20",
+          "azimut": 45.0
+        }
+      },
+      {
+        "type": "mast",
+        "id": "M002",
+        "name": "Mast 2",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 9.0,
+          "position": [
+            2600050.0,
+            1200010.0,
+            457.12
+          ]
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "project": "project1",
+        "properties": {
+          "foundation_id": "F002",
+          "typ": "DP22",
+          "azimut": 45.0
+        }
+      },
+      {
+        "type": "mast",
+        "id": "M003",
+        "name": "Mast 3",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.25,
+          "height": 8.5,
+          "position": [
+            2600100.0,
+            1200020.0,
+            457.45
+          ]
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "project": "project1",
+        "properties": {
+          "foundation_id": "F003",
+          "typ": "DP20",
+          "azimut": 45.0
+        }
+      },
+      {
+        "type": "track",
+        "id": "T001",
+        "name": "Gleis 1",
+        "geometry": {
+          "type": "line",
+          "start": [
+            2600010.0,
+            1200030.0,
+            456.78
+          ],
+          "end": [
+            2600110.0,
+            1200050.0,
+            457.45
+          ],
+          "width": 1.435
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "roughness": 0.2
+        },
+        "project": "project1",
+        "properties": {
+          "gleistyp": "UIC60",
+          "ueberhöhung": 50.0
+        }
+      },
+      {
+        "type": "track",
+        "id": "T002",
+        "name": "Gleis 2",
+        "geometry": {
+          "type": "line",
+          "start": [
+            2600010.0,
+            1200035.0,
+            456.78
+          ],
+          "end": [
+            2600110.0,
+            1200055.0,
+            457.45
+          ],
+          "width": 1.435
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "roughness": 0.2
+        },
+        "project": "project1",
+        "properties": {
+          "gleistyp": "UIC60",
+          "ueberhöhung": 50.0
+        }
+      },
+      {
+        "type": "curved_track",
+        "id": "CT001",
+        "name": "Kurvengleis 1",
+        "geometry": {
+          "type": "curve",
+          "start": [
+            2600110.0,
+            1200050.0,
+            457.45
+          ],
+          "end": [
+            2600210.0,
+            1200150.0,
+            458.12
+          ],
+          "width": 1.435,
+          "start_radius": 9999999.0,
+          "end_radius": 500.0,
+          "clothoid_parameter": 150.0
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "roughness": 0.2
+        },
+        "project": "project1",
+        "properties": {
+          "gleistyp": "UIC60",
+          "ueberhöhung": 120.0
+        }
+      },
+      {
+        "type": "curved_track",
+        "id": "CT002",
+        "name": "Kurvengleis 2",
+        "geometry": {
+          "type": "curve",
+          "start": [
+            2600110.0,
+            1200055.0,
+            457.45
+          ],
+          "end": [
+            2600210.0,
+            1200155.0,
+            458.12
+          ],
+          "width": 1.435,
+          "start_radius": 9999999.0,
+          "end_radius": 500.0,
+          "clothoid_parameter": 150.0
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "roughness": 0.2
+        },
+        "project": "project1",
+        "properties": {
+          "gleistyp": "UIC60",
+          "ueberhöhung": 120.0
+        }
+      },
+      {
+        "type": "joch",
+        "id": "J001",
+        "name": "Joch 1-2",
+        "geometry": {
+          "type": "line",
+          "start": [
+            2600000.0,
+            1200000.0,
+            465.28
+          ],
+          "end": [
+            2600050.0,
+            1200010.0,
+            465.62
+          ],
+          "thickness": 0.1
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "project": "project1",
+        "properties": {
+          "mast1_id": "M001",
+          "mast2_id": "M002",
+          "spannweite": 50.99
+        }
+      },
+      {
+        "type": "joch",
+        "id": "J002",
+        "name": "Joch 2-3",
+        "geometry": {
+          "type": "line",
+          "start": [
+            2600050.0,
+            1200010.0,
+            465.62
+          ],
+          "end": [
+            2600100.0,
+            1200020.0,
+            465.95
+          ],
+          "thickness": 0.1
+        },
+        "material": {
+          "name": "Stahl",
+          "color": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "roughness": 0.3
+        },
+        "project": "project1",
+        "properties": {
+          "mast1_id": "M002",
+          "mast2_id": "M003",
+          "spannweite": 53.85
+        }
+      },
+      {
+        "type": "drainage_pipe",
+        "id": "D001",
+        "name": "Entwässerungsleitung 1",
+        "geometry": {
+          "type": "pipe",
+          "start": [
+            2600015.0,
+            1200025.0,
+            456.28
+          ],
+          "end": [
+            2600115.0,
+            1200045.0,
+            455.78
+          ],
+          "diameter": 0.3
+        },
+        "material": {
+          "name": "PVC",
+          "color": [
+            0.6,
+            0.6,
+            0.6
+          ],
+          "roughness": 0.5
+        },
+        "project": "project1",
+        "properties": {
+          "gefaelle": 10.0
+        }
+      },
+      {
+        "type": "drainage_shaft",
+        "id": "D002",
+        "name": "Entwässerungsschacht 1",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.0,
+          "height": 2.0,
+          "position": [
+            2600015.0,
+            1200025.0,
+            456.28
+          ]
+        },
+        "material": {
+          "name": "",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "project": "project1"
+      },
+      {
+        "type": "drainage_shaft",
+        "id": "D003",
+        "name": "Entwässerungsschacht 2",
+        "geometry": {
+          "type": "cylinder",
+          "radius": 0.0,
+          "height": 2.0,
+          "position": [
+            2600115.0,
+            1200045.0,
+            455.78
+          ]
+        },
+        "material": {
+          "name": "",
+          "color": [
+            0.7,
+            0.7,
+            0.7
+          ],
+          "roughness": 0.8
+        },
+        "project": "project1"
+      }
+    ]
+  }
+}

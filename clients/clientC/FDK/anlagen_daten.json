@@ -1,0 +1,265 @@
+{
+  "anlagenDaten": {
+    "meta": {
+      "version": "1.2.0",
+      "erstellungsDatum": "2025-05-09",
+      "projektName": "Bahnhof Musterstadt",
+      "projektNummer": "BM-2025-001"
+    },
+    "bauphasen": [
+      {
+        "id": "BP001",
+        "name": "Planungsphase",
+        "startDatum": "2025-06-01",
+        "endDatum": "2025-08-31" 
+      },
+      {
+        "id": "BP002",
+        "name": "Fundamentarbeiten",
+        "startDatum": "2025-09-01",
+        "endDatum": "2025-10-15"
+      },
+      {
+        "id": "BP003",
+        "name": "Mastmontage",
+        "startDatum": "2025-10-16",
+        "endDatum": "2025-11-30"
+      },
+      {
+        "id": "BP004",
+        "name": "Leitungsbau",
+        "startDatum": "2025-12-01",
+        "endDatum": "2026-01-15"
+      },
+      {
+        "id": "BP005",
+        "name": "Inbetriebnahme",
+        "startDatum": "2026-01-16",
+        "endDatum": "2026-02-28"
+      }
+    ],
+    "ifcGebäude": {
+      "globalId": "3CqRy5$xv05OkgKkwe6pAp",
+      "name": "Bahnhof Musterstadt",
+      "beschreibung": "Hauptgebäude mit 3 Gleisen",
+      "koordinaten": {
+        "x": 564823.45,
+        "y": 5643921.78,
+        "z": 102.5
+      },
+      "geschosse": 2,
+      "baujahr": 1985,
+      "sanierungsjahr": 2025
+    },
+    "gleisAnlagen": [
+      {
+        "id": "GL001",
+        "name": "Gleis 1",
+        "typ": "Durchgangsgleis",
+        "länge": 450.0,
+        "bogenRadius": 2500.0,
+        "spurweite": 1435,
+        "bauphasenId": "BP003",
+        "ifcDaten": {
+          "globalId": "0Py45GhJ103qERlKcm8tZz",
+          "elementTyp": "IfcRail",
+          "materialTyp": "Stahl",
+          "kategorie": "Infrastruktur"
+        }
+      },
+      {
+        "id": "GL002",
+        "name": "Gleis 2",
+        "typ": "Hauptgleis",
+        "länge": 480.0,
+        "bogenRadius": 0.0,
+        "spurweite": 1435,
+        "bauphasenId": "BP003",
+        "ifcDaten": {
+          "globalId": "2Ws95BcK204lTRmPdn7qYx",
+          "elementTyp": "IfcRail",
+          "materialTyp": "Stahl",
+          "kategorie": "Infrastruktur"
+        }
+      },
+      {
+        "id": "GL003",
+        "name": "Gleis 3",
+        "typ": "Abstellgleis",
+        "länge": 350.0,
+        "bogenRadius": 1800.0,
+        "spurweite": 1435,
+        "bauphasenId": "BP004",
+        "ifcDaten": {
+          "globalId": "1Jt72DmN853pSQnRez6pWv",
+          "elementTyp": "IfcRail",
+          "materialTyp": "Stahl",
+          "kategorie": "Infrastruktur"
+        }
+      }
+    ],
+    "masten": [
+      {
+        "id": "MA001",
+        "standort": {
+          "kilometerLage": 45.782,
+          "gleisId": "GL001",
+          "abstand": 3.2
+        },
+        "typ": "Fahrleitungsmast",
+        "höhe": 8.5,
+        "material": "Beton",
+        "bauphasenId": "BP003",
+        "fundamentId": "FU001",
+        "ifcDaten": {
+          "globalId": "4Aq38Fgh705vCDtLwe9sYj",
+          "elementTyp": "IfcColumn",
+          "materialTyp": "Beton",
+          "kategorie": "Tragstruktur"
+        }
+      },
+      {
+        "id": "MA002",
+        "standort": {
+          "kilometerLage": 45.832,
+          "gleisId": "GL001",
+          "abstand": 3.2
+        },
+        "typ": "Fahrleitungsmast",
+        "höhe": 8.5,
+        "material": "Beton",
+        "bauphasenId": "BP003",
+        "fundamentId": "FU002",
+        "ifcDaten": {
+          "globalId": "5Bt47Hji806wDEuMxf0tZk",
+          "elementTyp": "IfcColumn",
+          "materialTyp": "Beton",
+          "kategorie": "Tragstruktur"
+        }
+      },
+      {
+        "id": "MA003",
+        "standort": {
+          "kilometerLage": 45.882,
+          "gleisId": "GL002",
+          "abstand": 3.0
+        },
+        "typ": "Signalmast",
+        "höhe": 6.0,
+        "material": "Stahl",
+        "bauphasenId": "BP004",
+        "fundamentId": "FU003",
+        "ifcDaten": {
+          "globalId": "6Cu56Ijk907xEFvNyg1uAl",
+          "elementTyp": "IfcColumn",
+          "materialTyp": "Stahl",
+          "kategorie": "Signaltechnik"
+        }
+      }
+    ],
+    "fundamente": [
+      {
+        "id": "FU001",
+        "typ": "Blockfundament",
+        "tiefe": 2.5,
+        "volumen": 3.2,
+        "material": "Stahlbeton",
+        "tragfähigkeit": 250.0,
+        "bauphasenId": "BP002",
+        "standort": {
+          "kilometerLage": 45.782,
+          "gleisId": "GL001",
+          "abstand": 3.2
+        },
+        "ifcDaten": {
+          "globalId": "7Dv65Jkl008yFGwOzh2vBm",
+          "elementTyp": "IfcFooting",
+          "materialTyp": "Stahlbeton",
+          "kategorie": "Fundament"
+        }
+      },
+      {
+        "id": "FU002",
+        "typ": "Blockfundament",
+        "tiefe": 2.5,
+        "volumen": 3.2,
+        "material": "Stahlbeton",
+        "tragfähigkeit": 250.0,
+        "bauphasenId": "BP002",
+        "standort": {
+          "kilometerLage": 45.832,
+          "gleisId": "GL001",
+          "abstand": 3.2
+        },
+        "ifcDaten": {
+          "globalId": "8Ew74Klm109zGHxPAi3wCn",
+          "elementTyp": "IfcFooting",
+          "materialTyp": "Stahlbeton",
+          "kategorie": "Fundament"
+        }
+      },
+      {
+        "id": "FU003",
+        "typ": "Pfahlfundament",
+        "tiefe": 4.0,
+        "volumen": 2.8,
+        "material": "Stahlbeton",
+        "tragfähigkeit": 180.0,
+        "bauphasenId": "BP002",
+        "standort": {
+          "kilometerLage": 45.882,
+          "gleisId": "GL002",
+          "abstand": 3.0
+        },
+        "ifcDaten": {
+          "globalId": "9Fx83Lmn110AHIyQBj4xDo",
+          "elementTyp": "IfcPile",
+          "materialTyp": "Stahlbeton",
+          "kategorie": "Fundament"
+        }
+      }
+    ],
+    "entwässerungssysteme": [
+      {
+        "id": "EN001",
+        "typ": "Lineenentwässerung",
+        "länge": 120.0,
+        "material": "Beton",
+        "bauphasenId": "BP002",
+        "standort": {
+          "kilometerLage": {
+            "start": 45.750,
+            "ende": 45.870
+          },
+          "gleisId": "GL001",
+          "abstand": 1.8
+        },
+        "ifcDaten": {
+          "globalId": "0Gy92Mno211BIJzRCk5yEp",
+          "elementTyp": "IfcPipeSegment",
+          "materialTyp": "Beton",
+          "kategorie": "Entwässerung"
+        }
+      },
+      {
+        "id": "EN002",
+        "typ": "Schacht",
+        "durchmesser": 1.0,
+        "tiefe": 3.5,
+        "material": "Beton",
+        "bauphasenId": "BP002",
+        "standort": {
+          "kilometerLage": 45.870,
+          "gleisId": "GL001",
+          "abstand": 2.5
+        },
+        "ifcDaten": {
+          "globalId": "1Hz01Nop312CJKASDl6zFq",
+          "elementTyp": "IfcFlowTerminal",
+          "materialTyp": "Beton",
+          "kategorie": "Entwässerung"
+        }
+      }
+    ]
+  }
+}
