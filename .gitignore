@@ -5,12 +5,52 @@ build/
 dist/
 wheels/
 *.egg-info
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
 # Virtual environments
 .venv
+venv/
+env/
+ENV/
 
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Project specific
+# Ignoriere kundenspezifische Plugins
+/client_plugins/
+/client_plugins_env/
+
+# Ignoriere alle Plugins außer Kernplugins
+/plugins/*
+!/plugins/core_plugins/
+
+# Cache und Logs
+/.ruff_cache/
+**/logs/
+*.log
+
+# Claude and AI tools
 **/.claude/settings.local.json
 .aider*
 .env
-
 **/CLAUDE.local.md
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local configuration
+local_config.json

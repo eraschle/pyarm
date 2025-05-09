@@ -1,7 +1,62 @@
+
 [project]
-name = "test-client"
+name = "pyarm"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python Architecture Restructuring Model - Component System Framework"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "elyo", email = "erichraschle@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+dependencies = [
+    "typing-extensions>=4.0.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/pyarm"
+"Bug Tracker" = "https://github.com/yourusername/pyarm/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "isort>=5.10.0",
+    "ruff>=0.0.244",
+]
+
+# Plugin Konfiguration
+[tool.pyarm.plugins]
+auto_discovery = true
+plugin_paths = ["plugins", "client_plugins"]
+
+# Pytest Konfiguration
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+pythonpath = ["src"]
+
+# Ruff Konfiguration
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+select = ["E", "F", "B", "I"]
+ignore = []
+
+# Isort Konfiguration
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

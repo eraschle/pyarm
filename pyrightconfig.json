@@ -1,5 +1,7 @@
 {
-    "include": [],
+    "include": [
+        "src"
+    ],
     "exclude": [
         "**/node_modules",
         "**/build/**",
@@ -11,22 +13,39 @@
     ],
     "ignore": [],
     "stubPath": "/home/elyo/workspace/python/__stubs__/",
+    "extraPaths": [
+        "src",
+        "plugins",
+        "convert/examples/clients/clientA/code/",
+        "convert/examples/clients/clientB/code/",
+        "convert/examples/clients/clientC/code/"
+    ],
     "defineConstant": {
         "DEBUG": true
     },
     "reportMissingImports": "error",
-    // "pythonPlatform": "Windows",
+    "useLibraryCodeForTypes": true,
     "executionEnvironments": [
         {
-            "root": "code"
+            "root": "src",
+            "extraPaths": [
+                "plugins",
+            ]
         }
-        // {
-        //     "root": "plugin/src/",
-
-
-
-//     "reportMissingTypeStubs": true,
-        //     "reportMissingModuleSource": false
-        // }
+        {
+            "root": "plugins",
+            "extraPaths": [
+                "src"
+            ]
+        },
+        {
+            "root": "convert/examples/clients/clientA/code/",
+        },
+        {
+            "root": "convert/examples/clients/clientB/code/",
+        },
+        {
+            "root": "convert/examples/clients/clientC/code/",
+        },
     ]
 }

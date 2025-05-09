@@ -1,0 +1,40 @@
+{
+  "plugin_paths": [
+    {
+      "name": "Core Plugins",
+      "path": "./plugins/core_plugins",
+      "enabled": true
+    },
+    {
+      "name": "Development Plugins",
+      "path": "./plugins",
+      "enabled": true
+    },
+    {
+      "name": "Client Plugins",
+      "path": "./client_plugins",
+      "enabled": true
+    }
+  ],
+  "external_plugin_paths": [
+    {
+      "name": "Client A Plugins",
+      "path": "C:/Users/ClientA/Documents/PyArm/Plugins",
+      "enabled": true
+    },
+    {
+      "name": "Network Plugins",
+      "path": "//server/shared/plugins",
+      "enabled": true
+    }
+  ],
+  "disabled_plugins": [
+    "legacy_plugin"
+  ],
+  "plugin_settings": {
+    "Example Plugin": {
+      "option1": "value1",
+      "option2": true
+    }
+  }
+}

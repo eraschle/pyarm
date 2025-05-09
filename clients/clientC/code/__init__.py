@@ -1,3 +1,0 @@
-"""
-Client C Modul.
-"""
