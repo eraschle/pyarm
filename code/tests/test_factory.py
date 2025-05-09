@@ -5,8 +5,8 @@ Unit Tests für die Element-Factory.
 import unittest
 from uuid import uuid4
 
-from common.enums.process_enums import ElementType, ProcessEnum, UnitEnum
-from common.models.element_models import (
+from ..common.enums.process_enums import ElementType, ProcessEnum, UnitEnum
+from ..common.models.element_models import (
     CurvedTrack,
     Foundation,
     Mast,

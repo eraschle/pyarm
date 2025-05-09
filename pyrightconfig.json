@@ -1,7 +1,5 @@
 {
-    "include": [
-    ],
-
+    "include": [],
     "exclude": [
         "**/node_modules",
         "**/build/**",
@@ -11,27 +9,24 @@
         "**/__pycache__",
         "src/typestubs"
     ],
-
-    "ignore": [
-
-    ],
-
+    "ignore": [],
     "stubPath": "/home/elyo/workspace/python/__stubs__/",
     "defineConstant": {
         "DEBUG": true
     },
-
     "reportMissingImports": "error",
     // "pythonPlatform": "Windows",
-
     "executionEnvironments": [
         {
-            "root": "app/src"
-        },
-        {
-            "root": "plugin/src/",
-            "reportMissingTypeStubs": true,
-            "reportMissingModuleSource": false
+            "root": "code"
         }
+        // {
+        //     "root": "plugin/src/",
+
+
+
+//     "reportMissingTypeStubs": true,
+        //     "reportMissingModuleSource": false
+        // }
     ]
 }

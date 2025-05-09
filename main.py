@@ -26,9 +26,7 @@ from code.processes.process2_calculation import CalculationProcess
 
 
 # Logging konfigurieren
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
 
@@ -43,9 +41,7 @@ def parse_arguments():
         choices=["clientA", "clientB", "clientC"],
         help="Zu verarbeitender Client",
     )
-    parser.add_argument(
-        "--project", type=str, help="Zu verarbeitendes Projekt (für Client A)"
-    )
+    parser.add_argument("--project", type=str, help="Zu verarbeitendes Projekt (für Client A)")
     parser.add_argument(
         "--input_dir", type=str, required=True, help="Verzeichnis mit Eingabedateien"
     )
@@ -55,9 +51,7 @@ def parse_arguments():
         required=True,
         help="Verzeichnis für das Repository",
     )
-    parser.add_argument(
-        "--output_dir", type=str, required=True, help="Verzeichnis für die Ausgabe"
-    )
+    parser.add_argument("--output_dir", type=str, required=True, help="Verzeichnis für die Ausgabe")
     parser.add_argument(
         "--process",
         type=str,
@@ -66,9 +60,7 @@ def parse_arguments():
         help="Auszuführender Prozess",
     )
     parser.add_argument(
-        "--fdk_file",
-        type=str,
-        help="Pfad zur FDK-JSON-Datei (für FDK-Import-Prozess)"
+        "--fdk_file", type=str, help="Pfad zur FDK-JSON-Datei (für FDK-Import-Prozess)"
     )
 
     return parser.parse_args()
@@ -145,9 +137,7 @@ def process_files(input_dir, client, project, repository_dir):
                         processed_files += 1
                         converted_elements += len(elements)
                     else:
-                        logger.warning(
-                            f"Konverter kann Daten nicht konvertieren: {file_path.name}"
-                        )
+                        logger.warning(f"Konverter kann Daten nicht konvertieren: {file_path.name}")
                 except Exception as e:
                     logger.error(f"Fehler beim Verarbeiten von {file_path.name}: {e}")
 
@@ -201,10 +191,14 @@ def run_fdk_import_process(fdk_file, repository_dir, output_dir):
         result = process.run()
 
         if result["status"] == "success":
-            logger.info(f"FDK-Import-Prozess abgeschlossen. {result['conversion_stats']['converted_elements']} Elemente importiert.")
+            logger.info(
+                f"FDK-Import-Prozess abgeschlossen. {result['conversion_stats']['converted_elements']} Elemente importiert."
+            )
             return True
         else:
-            logger.error(f"FDK-Import-Prozess fehlgeschlagen: {result.get('message', 'Unbekannter Fehler')}")
+            logger.error(
+                f"FDK-Import-Prozess fehlgeschlagen: {result.get('message', 'Unbekannter Fehler')}"
+            )
             return False
     except Exception as e:
         logger.error(f"Fehler beim Importieren oder Ausführen des FDK-Prozesses: {str(e)}")

@@ -81,6 +81,7 @@ class TestVisualizationService(unittest.TestCase):
         self.track.east = 100.0
         self.track.north = 200.0
         self.track.altitude = 300.0
+        self.dimensions
         self.track.x_end = 200.0
         self.track.y_end = 300.0
         self.track.z_end = 310.0
