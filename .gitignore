@@ -1,4 +1,14 @@
 # Python-generated files
+
+# Project specific
+# Ignoriere kundenspezifische Plugins
+# /client_plugins/
+/client_plugins_env/
+
+# Ignoriere alle Plugins außer Kernplugins
+
+# /plugins/*
+!/plugins/core_plugins/
 __pycache__/
 *.py[oc]
 build/
@@ -23,15 +33,6 @@ ENV/
 *.swp
 *.swo
 *~
-
-# Project specific
-# Ignoriere kundenspezifische Plugins
-/client_plugins/
-/client_plugins_env/
-
-# Ignoriere alle Plugins außer Kernplugins
-/plugins/*
-!/plugins/core_plugins/
 
 # Cache und Logs
 /.ruff_cache/
