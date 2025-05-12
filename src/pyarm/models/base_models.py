@@ -317,6 +317,23 @@ class InfrastructureElement[TDimension: Dimension](abc.ABC):
             return cast(TDimension, comp)
         raise PyArmComponentError(self, ComponentType.DIMENSION)
 
+    def does_reference_exist(self, reference: ElementReference) -> bool:
+        return reference.name in self.components
+
+    def update_reference_with(self, reference: ElementReference) -> None:
+        """
+        Adds the reference to the element if it doesn't exist.
+        If it exists, it updates the reference with the new value.
+
+        Parameters
+        ----------
+        reference: ElementReference
+            The reference to add or update
+        """
+        if self.does_reference_exist(reference):
+            return
+        self.add_component(reference)
+
     def add_reference(
         self,
         reference_type: Type["InfrastructureElement"],
@@ -325,19 +342,21 @@ class InfrastructureElement[TDimension: Dimension](abc.ABC):
     ) -> None:
         """
         Adds a reference to another element.
+        If bidirectional is True, this only declares the intent;
+        the RelationshipManager is responsible for creating the reverse link.
 
         Parameters
         ----------
-        reference_type: str
-            Type of reference (e.g., "foundation", "mast")
+        reference_type: Type["InfrastructureElement"]
+            The class type of the referenced element (e.g., Foundation, Mast).
         referenced_uuid: UUID
             UUID of the referenced element
+        bidirectional : bool, optional
+            If True, indicates this reference is part of a bidirectional link.
+            Defaults to False.
         """
-        reference = ElementReference(
-            name=f"{reference_type}_reference",
-            referenced_uuid=referenced_uuid,
-            reference_type=reference_type,
-            bidirectional=bidirectional,
+        reference = ComponentFactory.create_reference(
+            reference_type, referenced_uuid, bidirectional
         )
         self.add_component(reference)
 
@@ -360,3 +379,11 @@ class InfrastructureElement[TDimension: Dimension](abc.ABC):
         if reference_type:
             references = [ref for ref in references if ref.reference_type == reference_type]
         return references
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, InfrastructureElement):
+            return False
+        return self.uuid == other.uuid
+
+    def __hash__(self) -> int:
+        return hash(self.uuid)

@@ -109,15 +109,15 @@ def resolve_element_type(type_str: str) -> ElementType:
         "foundation": ElementType.FOUNDATION,
         "joch": ElementType.JOCH,
         "yoke": ElementType.JOCH,
-        "drainage": ElementType.DRAINAGE_PIPE,
-        "drainagepipe": ElementType.DRAINAGE_PIPE,
-        "pipe": ElementType.DRAINAGE_PIPE,
-        "leitung": ElementType.DRAINAGE_PIPE,
-        "drain": ElementType.DRAINAGE_PIPE,
-        "shaft": ElementType.DRAINAGE_SHAFT,
-        "schacht": ElementType.DRAINAGE_SHAFT,
-        "drainageschacht": ElementType.DRAINAGE_SHAFT,
-        "drainageshaft": ElementType.DRAINAGE_SHAFT,
+        "drainage": ElementType.SEWER_SHAFT,
+        "drainagepipe": ElementType.SEWER_SHAFT,
+        "pipe": ElementType.SEWER_SHAFT,
+        "leitung": ElementType.SEWER_SHAFT,
+        "drain": ElementType.SEWER_SHAFT,
+        "shaft": ElementType.SEWER_SHAFT,
+        "schacht": ElementType.SEWER_SHAFT,
+        "drainageschacht": ElementType.SEWER_SHAFT,
+        "drainageshaft": ElementType.SEWER_SHAFT,
         "gleis": ElementType.TRACK,
         "track": ElementType.TRACK,
         "rail": ElementType.TRACK,
@@ -139,9 +139,7 @@ def resolve_element_type(type_str: str) -> ElementType:
                 return element_type
 
     # Fallback if no match
-    logger.warning(
-        f"Could not resolve ElementType for '{type_str}', using {ElementType.UNDEFINED}"
-    )
+    logger.warning(f"Could not resolve ElementType for '{type_str}', using {ElementType.UNDEFINED}")
     return ElementType.UNDEFINED
 
 

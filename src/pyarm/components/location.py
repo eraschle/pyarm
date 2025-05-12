@@ -1,6 +1,7 @@
+import abc
 import logging
 from dataclasses import dataclass, field
-from typing import TYPE_CHECKING, Any, Protocol
+from typing import TYPE_CHECKING, Any
 
 from pyarm.components.base import Component, ComponentType
 from pyarm.components.descriptor import AComponentDescriptor
@@ -79,28 +80,8 @@ class Coordinate:
         return f"Coordinate(x={self.x}, y={self.y}, z={self.z})"
 
 
-class Location(Protocol):
-    @property
-    def point(self) -> Coordinate:
-        """Returns the coordinates of the point."""
-        ...
-
-    @property
-    def end_point(self) -> Coordinate:
-        """
-        Returns the coordinates of the end point. If the location is not a line,
-        this will return the same as the point property.
-        """
-        ...
-
-    def as_tuple(self) -> tuple:
-        """Returns a tuple of coordinates."""
-        ...
-
-
 @dataclass
-class PointLocation(Location, Component):
-    location: Coordinate
+class Location(Component):
     name: str = field(init=False)
     component_type: ComponentType = field(init=False, repr=False)
 
@@ -109,15 +90,62 @@ class PointLocation(Location, Component):
         self.component_type = ComponentType.LOCATION
 
     @property
+    @abc.abstractmethod
     def point(self) -> Coordinate:
-        return self.location
+        """Returns the coordinates of the point."""
+        pass
 
     @property
     def end_point(self) -> Coordinate:
-        return self.location
+        """
+        Returns the coordinates of the end point. If the location is not a line,
+        this will return the same as the point property.
+        """
+        raise NotImplementedError("Component does not have an end point")
 
-    def as_tuple(self) -> tuple[float, ...]:
-        return self.location.as_tuple()
+    @property
+    def has_end_point(self) -> bool:
+        """
+        Checks if the location is of line based elements with a start and end point.
+
+        Returns
+        -------
+        bool
+            True if the location has an end point, otherwise False
+        """
+        try:
+            end_point = self.end_point
+            return end_point is not None
+        except NotImplementedError:
+            return False
+
+    @property
+    def distance(self) -> float:
+        """Returns the distance to the end point if available, otherwise to itself."""
+        if self.has_end_point:
+            return self.point.distance_to(self.end_point)
+        return 0.0
+
+    def as_tuple(self, flatten: bool = False) -> tuple:
+        if self.has_end_point:
+            if flatten:
+                return self.point.as_tuple() + self.end_point.as_tuple()
+            return self.point.as_tuple(), self.end_point.as_tuple()
+        return self.point.as_tuple()
+
+    def __str__(self) -> str:
+        if self.has_end_point:
+            return f"{self.point} -> {self.end_point}"
+        return str(self.point)
+
+
+@dataclass
+class PointLocation(Location, Component):
+    location: Coordinate
+
+    @property
+    def point(self) -> Coordinate:
+        return self.location
 
 
 @dataclass
@@ -126,12 +154,6 @@ class LineLocation(Location, Component):
 
     start: Coordinate
     end: Coordinate
-    name: str = field(init=False)
-    component_type: ComponentType = field(init=False)
-
-    def __post_init__(self):
-        self.name = "location"
-        self.component_type = ComponentType.LOCATION
 
     @property
     def point(self) -> Coordinate:
@@ -140,9 +162,3 @@ class LineLocation(Location, Component):
     @property
     def end_point(self) -> Coordinate:
         return self.end
-
-    def __str__(self) -> str:
-        return f"{self.start} -> {self.end}"
-
-    def as_tuple(self) -> tuple[tuple[float, ...], tuple[float, ...]]:
-        return self.start.as_tuple(), self.end.as_tuple()

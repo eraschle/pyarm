@@ -1,7 +1,9 @@
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Type
+from uuid import UUID
 
-from pyarm.components.dimension import Dimension
+from pyarm.components.dimension import Dimension, RectangularDimension, RoundDimension
 from pyarm.components.location import Coordinate, LineLocation, PointLocation
+from pyarm.components.reference import ElementReference
 from pyarm.models.process_enums import ProcessEnum
 
 if TYPE_CHECKING:
@@ -16,9 +18,9 @@ class ComponentFactory:
         cls, element: "InfrastructureElement", params: dict[str, ProcessEnum]
     ) -> Coordinate | None:
         """Erstellt eine Location-Komponente aus Parametern."""
-        params["rotation_x"] = ProcessEnum.ROTATION_X
-        params["rotation_y"] = ProcessEnum.ROTATION_Y
-        params["rotation_z"] = ProcessEnum.ROTATION_Z
+        coord_2d = [params[coord] for coord in ("x", "y") if coord in params]
+        if not all(element.has_param(coord) for coord in coord_2d):
+            return None
         return Coordinate(element, params)
 
     @classmethod
@@ -28,14 +30,20 @@ class ComponentFactory:
             "x": ProcessEnum.X_COORDINATE,
             "y": ProcessEnum.Y_COORDINATE,
             "z": ProcessEnum.Z_COORDINATE,
+            "rotation_x": ProcessEnum.X_ROTATION,
+            "rotation_y": ProcessEnum.Y_ROTATION,
+            "rotation_z": ProcessEnum.Z_ROTATION,
         }
         point = cls._create_coordinate(element, point_enums)
         if point is None:
-            raise ValueError("Invalid point or start point values")
+            raise ValueError("Element has no (start) point defined")
         end_enums = {
             "x": ProcessEnum.X_COORDINATE_END,
             "y": ProcessEnum.X_COORDINATE_END,
             "z": ProcessEnum.X_COORDINATE_END,
+            "rotation_x": ProcessEnum.X_COORDINATE_END,
+            "rotation_y": ProcessEnum.Y_COORDINATE_END,
+            "rotation_z": ProcessEnum.Z_COORDINATE_END,
         }
         end_point = cls._create_coordinate(element, end_enums)
         if end_point is None:
@@ -45,12 +53,23 @@ class ComponentFactory:
     @classmethod
     def create_dimension(cls, element: "InfrastructureElement") -> Dimension:
         """Erstellt eine Dimension-Komponente für ein Rohr."""
-        dimension_param = {
-            "width": ProcessEnum.WIDTH,
-            "height": ProcessEnum.HEIGHT,
-            "depth": ProcessEnum.DEPTH,
-            "diameter": ProcessEnum.DIAMETER,
-            "radius": ProcessEnum.RADIUS,
-            "length": ProcessEnum.LENGTH,
-        }
-        return Dimension(element=element)
+        round_params = [ProcessEnum.DIAMETER, ProcessEnum.RADIUS]
+        if any(element.has_param(param) for param in round_params):
+            return RoundDimension(element=element)
+        return RectangularDimension(element=element)
+
+    @classmethod
+    def create_reference(
+        cls,
+        reference_type: Type["InfrastructureElement"],
+        referenced_uuid: UUID,
+        bidirectional: bool = False,
+    ) -> ElementReference:
+        ref_name_prefix = reference_type.__name__
+        component_name = f"{ref_name_prefix.lower()}_ref_to_{str(referenced_uuid)}"
+        return ElementReference(
+            name=component_name,
+            referenced_uuid=referenced_uuid,
+            reference_type=reference_type,
+            bidirectional=bidirectional,
+        )

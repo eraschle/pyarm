@@ -30,6 +30,16 @@ class PyArmComponentError(PyArmError):
         return f"Element {name} [UUID: {uuid}] has no component '{cmp_name}'."
 
 
+class PyArmReferenceError(PyArmError):
+    """Exception raised when Element has no location."""
+
+    def __init__(self, message: str):
+        self.message = message
+
+    def get_message(self) -> str:
+        return self.message
+
+
 class PyArmParameterError(PyArmError):
     """Exception raised when Element has no location."""
 

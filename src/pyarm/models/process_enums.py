@@ -3,7 +3,7 @@ Central definitions of enums for modeling infrastructure projects.
 These enums are used for mapping parameters to process requirements.
 """
 
-from enum import Enum, auto
+from enum import Enum
 
 
 class ElementType(str, Enum):
@@ -16,8 +16,8 @@ class ElementType(str, Enum):
     JOCH = "joch"
     TRACK = "track"
     SLEEPER = "sleeper"
-    DRAINAGE_PIPE = "drainage_pipe"
-    DRAINAGE_SHAFT = "drainage_shaft"
+    SEWER_PIPE = "sewer_pipe"
+    SEWER_SHAFT = "sewer_shaft"
     BUILDING = "building"
 
 
@@ -31,19 +31,22 @@ class ProcessEnum(str, Enum):
     NAME = "name"
     ELEMENT_TYPE = "element_type"
 
-    # Geometric fundamentals - Position
-    X_COORDINATE = "x_coordinate"
-    Y_COORDINATE = "y_coordinate"
-    Z_COORDINATE = "z_coordinate"
-    X_COORDINATE_END = "x_coordinate_end"
-    Y_COORDINATE_END = "y_coordinate_end"
-    Z_COORDINATE_END = "z_coordinate_end"
+    # Geometric - Position
+    # Point or Startpoint
+    X_COORDINATE = "x"
+    Y_COORDINATE = "y"
+    Z_COORDINATE = "z"
+    X_ROTATION = "x_rotation"
+    Y_ROTATION = "y_rotation"
+    Z_ROTATION = "z_rotation"
 
-    # Orientation
-    AZIMUTH = "azimuth"
-    ROTATION_X = "rotation_x"
-    ROTATION_Y = "rotation_y"
-    ROTATION_Z = "rotation_z"
+    # Endpoint
+    X_COORDINATE_END = "x"
+    Y_COORDINATE_END = "y"
+    Z_COORDINATE_END = "z"
+    X_ROTATION_END = "x_rotation"
+    Y_ROTATION_END = "y_rotation"
+    Z_ROTATION_END = "z_rotation"
 
     # General dimensions
     WIDTH = "width"
@@ -51,20 +54,28 @@ class ProcessEnum(str, Enum):
     DEPTH = "depth"
     LENGTH = "length"
     DIAMETER = "diameter"
+    SLOPE = "slope"
+    RADIUS = "radius"
 
     # Foundation-specific
     FOUNDATION_TYPE = "foundation_type"
+    FOUNDATION_TO_MAST_UUID = "foundation_to_mast_uuid"
 
     # Mast-specific
     MAST_TYPE = "mast_type"
     MAST_PROFILE_TYPE = "mast_profile_type"
+    MAST_TO_FOUNDATION_UUID = "mast_to_foundation_uuid"
+    MAST_TO_CANTILEVER_UUID = "mast_to_cantilever_uuid"
+    MAST_TO_JOCH_UUID = "mast_to_joch_uuid"
 
     # Cantilever-specific
     CANTILEVER_TYPE = "cantilever_type"
+    CANTILEVER_TO_MAST_UUID = "cantilever_to_mast_uuid"
 
     # Joch-specific
     JOCH_TYPE = "joch_type"
     JOCH_SPAN = "joch_span"
+    JOCH_TO_MAST_UUID = "joch_to_mast_uuid"
 
     # Track-specific
     TRACK_GAUGE = "track_gauge"
@@ -82,7 +93,6 @@ class ProcessEnum(str, Enum):
 
     # Drainage-specific
     PIPE_MATERIAL = "pipe_material"
-    PIPE_SLOPE = "pipe_slope"
     SHAFT_MANHOLE_DIAMETER = "manhole_diameter"
     SHAFT_COVER_TYPE = "shaft_cover_type"
 
@@ -98,7 +108,6 @@ class ProcessEnum(str, Enum):
     DISTANCE = "distance"
     START_KILOMETER = "start_kilometer"
     END_KILOMETER = "end_kilometer"
-    RADIUS = "radius"
 
     # Specific properties
     VOLUME = "volume"

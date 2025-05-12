@@ -42,7 +42,6 @@ def determine_element_class(data: Dict[str, Any]) -> Type[Any]:
         DrainagePipe,
         DrainageShaft,
         Foundation,
-        LinearElement,
         Mast,
         Track,
     )
@@ -84,13 +83,10 @@ def determine_element_class(data: Dict[str, Any]) -> Type[Any]:
             return CurvedTrack
         else:
             return Track
-    elif element_type == ElementType.DRAINAGE_PIPE:
+    elif element_type == ElementType.SEWER_PIPE:
         return DrainagePipe
-    elif element_type == ElementType.DRAINAGE_SHAFT:
+    elif element_type == ElementType.SEWER_SHAFT:
         return DrainageShaft
-    elif has_end_coordinates:
-        # Generic linear element
-        return LinearElement
     else:
         return InfrastructureElement
 
@@ -153,11 +149,11 @@ def create_element(data: dict[str, Any]) -> Any:
 
     if isinstance(element, Mast) and "foundation" in references:
         foundation_uuid = references["foundation"]
-        element.add_reference("foundation", foundation_uuid)
+        element.add_reference(Mast, foundation_uuid)
 
     if isinstance(element, (Track, CurvedTrack)) and "track" in references:
         track_uuid = references["track"]
-        element.add_reference("track", track_uuid)
+        element.add_reference(type(element), track_uuid)
 
     # Add additional references
     for ref_type, ref_uuid in references.items():
@@ -225,7 +221,6 @@ def create_component_based_element(
         DrainagePipe,
         DrainageShaft,
         Foundation,
-        LinearElement,
         Mast,
         Track,
     )
@@ -238,12 +233,10 @@ def create_component_based_element(
         element_class = Mast
     elif element_type == ElementType.TRACK:
         element_class = Track
-    elif element_type == ElementType.DRAINAGE_PIPE:
+    elif element_type == ElementType.SEWER_PIPE:
         element_class = DrainagePipe
-    elif element_type == ElementType.DRAINAGE_SHAFT:
+    elif element_type == ElementType.SEWER_SHAFT:
         element_class = DrainageShaft
-    elif line_location is not None:
-        element_class = LinearElement
     else:
         element_class = InfrastructureElement
 

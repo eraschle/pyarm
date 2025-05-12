@@ -5,9 +5,9 @@ Service für die Visualisierung von Infrastrukturelementen (Prozess 1).
 from typing import Any, Dict, List, Optional, Tuple, Union
 from uuid import UUID
 
-from pyarm.core.enums.process_enums import ElementType, ProcessEnum
-from pyarm.core.models.base_models import InfrastructureElement
-from pyarm.core.models.element_models import Joch, Mast
+from pyarm.models.process_enums import ElementType, ProcessEnum
+from pyarm.models.base_models import InfrastructureElement
+from pyarm.models.element_models import Joch, Mast
 from pyarm.interfaces.protocols import HasClothoid
 from pyarm.utils.type_guards import (
     has_clothoid_capability,

@@ -1,6 +1,10 @@
+from typing import TYPE_CHECKING, Type
 from uuid import UUID
 
 from pyarm.components.base import Component, ComponentType
+
+if TYPE_CHECKING:
+    from pyarm.models.base_models import InfrastructureElement
 
 
 class ElementReference(Component):
@@ -8,9 +12,9 @@ class ElementReference(Component):
 
     def __init__(
         self,
+        name: str,
         referenced_uuid: UUID,
-        reference_type: str = "unknown",
-        name: str = "reference",
+        reference_type: Type["InfrastructureElement"],
         bidirectional: bool = False,
         component_type: ComponentType = ComponentType.REFERENCE,
     ):

@@ -187,7 +187,7 @@ def is_drainage_pipe(obj: Any) -> TypeGuard[DrainagePipe]:
         True if the object is a DrainagePipe
     """
     return isinstance(obj, DrainagePipe) or (
-        isinstance(obj, InfrastructureElement) and obj.element_type == ElementType.DRAINAGE_PIPE
+        isinstance(obj, InfrastructureElement) and obj.element_type == ElementType.SEWER_SHAFT
     )
 
 
@@ -206,7 +206,7 @@ def is_drainage_shaft(obj: Any) -> TypeGuard[DrainageShaft]:
         True if the object is a DrainageShaft
     """
     return isinstance(obj, DrainageShaft) or (
-        isinstance(obj, InfrastructureElement) and obj.element_type == ElementType.DRAINAGE_SHAFT
+        isinstance(obj, InfrastructureElement) and obj.element_type == ElementType.SEWER_SHAFT
     )
 
 

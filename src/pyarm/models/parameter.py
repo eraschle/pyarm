@@ -53,6 +53,20 @@ class Parameter:
     process: ProcessEnum | None = field(default=None)
     unit: UnitEnum = field(default=UnitEnum.NONE)
 
+    @property
+    def has_value(self) -> bool:
+        """
+        Check if the parameter has a value.
+
+        Returns
+        -------
+        bool
+            True if the parameter has a value, False otherwise
+        """
+        if self.value is None:
+            return False
+        return len(str(self.value).strip()) > 0
+
     def __str__(self) -> str:
         """
         String representation of the parameter.
