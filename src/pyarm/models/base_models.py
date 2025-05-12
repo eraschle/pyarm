@@ -4,6 +4,7 @@ This module defines the basic structure of the data models
 that are used in all processes.
 """
 
+import abc
 import logging
 from dataclasses import (
     dataclass,
@@ -13,6 +14,7 @@ from typing import (
     Any,
     ClassVar,
     Optional,
+    Type,
     cast,
 )
 from uuid import UUID, uuid4
@@ -44,7 +46,7 @@ log = logging.getLogger(__name__)
 
 
 @dataclass
-class InfrastructureElement:
+class InfrastructureElement[TDimension: Dimension](abc.ABC):
     """
     Base class for all infrastructure elements.
     Uses the flexible parameter model with process enums and components.
@@ -70,8 +72,8 @@ class InfrastructureElement:
 
     # Basic attributes
     name: str
+    element_type: ElementType
     uuid: UUID = field(default_factory=uuid4)
-    element_type: ElementType = field(default=ElementType.UNDEFINED)
 
     # Parameter storage
     parameters: list[Parameter] = field(default_factory=list)
@@ -145,6 +147,22 @@ class InfrastructureElement:
         component = ComponentFactory.create_dimension(self)
         self.components[component.name] = component
 
+    def has_param(self, process_enum: ProcessEnum) -> bool:
+        """
+        Check if the parameter exists in the known parameters.
+
+        Parameters
+        ----------
+        process_enum: ProcessEnum
+            The ProcessEnum of the parameter to check
+
+        Returns
+        -------
+        bool
+            True if the parameter exists, False otherwise
+        """
+        return process_enum in self.known_params
+
     def get_param(self, process_enum: ProcessEnum) -> Parameter:
         """
         Return the parameter based on the process enum.
@@ -163,6 +181,27 @@ class InfrastructureElement:
         if param is None:
             raise PyArmParameterError(self, process_enum)
         return param
+
+    def get_reference_params(self, process_enum: ProcessEnum) -> list[Parameter]:
+        """
+        Returns zero, one or more parameters with the given process enum.
+
+        Parameters
+        ----------
+        process_enum: ProcessEnum
+            The ProcessEnum of the parameter to get
+
+        Returns
+        -------
+        list[Parameter]
+            List of Parameters with the given process enum
+        """
+        references = []
+        for param in self.parameters:
+            if param.process != process_enum:
+                continue
+            references.append(param)
+        return references
 
     def get_component(self, component_name: str) -> Optional[Component]:
         """
@@ -269,14 +308,21 @@ class InfrastructureElement:
         raise PyArmComponentError(self, ComponentType.LOCATION)
 
     @property
-    def dimension(self) -> Dimension:
+    def dimension(self) -> TDimension:
         """Dimensions of the element."""
         components = self.get_components_by_type(ComponentType.DIMENSION)
-        if components:
-            return cast(Dimension, components[0])
+        for comp in components:
+            if not isinstance(comp, (PointLocation, LineLocation)):
+                continue
+            return cast(TDimension, comp)
         raise PyArmComponentError(self, ComponentType.DIMENSION)
 
-    def add_reference(self, reference_type: str, referenced_uuid: UUID) -> None:
+    def add_reference(
+        self,
+        reference_type: Type["InfrastructureElement"],
+        referenced_uuid: UUID,
+        bidirectional: bool = False,
+    ) -> None:
         """
         Adds a reference to another element.
 
@@ -288,13 +334,11 @@ class InfrastructureElement:
             UUID of the referenced element
         """
         reference = ElementReference(
+            name=f"{reference_type}_reference",
             referenced_uuid=referenced_uuid,
             reference_type=reference_type,
+            bidirectional=bidirectional,
         )
-        # Set name and type consistently
-        reference.name = f"{reference_type}_reference"
-        reference.component_type = ComponentType.REFERENCE
-        # Add component
         self.add_component(reference)
 
     def get_references(self, reference_type: Optional[str] = None) -> list[ElementReference]:
