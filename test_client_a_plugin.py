@@ -10,6 +10,7 @@ import logging
 from pathlib import Path
 from typing import Any, Dict
 
+
 # Wir nutzen unsere eigene Funktion, um die Pfade korrekt zu setzen
 def setupPaths():
     # Hauptverzeichnis ermitteln
@@ -23,6 +24,7 @@ def setupPaths():
     # Hauptverzeichnis in den Python-Pfad einfügen
     if base_dir not in sys.path:
         sys.path.insert(0, base_dir)
+
 
 # Pfade setzen
 setupPaths()
@@ -123,7 +125,7 @@ def main():
 
     from src.pyarm.models.element_models import Foundation
     from src.pyarm.models.parameter import Parameter, UnitEnum, DataType
-    from src.pyarm.models.process_enums import ProcessEnum, ElementType
+    from src.pyarm.models.process_enums import ProcessEnum
 
     try:
         # Manuell ein Fundament erstellen
@@ -136,56 +138,56 @@ def main():
                 value="F001",
                 process=ProcessEnum.UUID,
                 datatype=DataType.STRING,
-                unit=UnitEnum.NONE
+                unit=UnitEnum.NONE,
             ),
             Parameter(
                 name="Bezeichnung",
                 value="Test Fundament",
                 process=ProcessEnum.NAME,
                 datatype=DataType.STRING,
-                unit=UnitEnum.NONE
+                unit=UnitEnum.NONE,
             ),
             Parameter(
                 name="E",
                 value=2600000.0,
                 process=ProcessEnum.X_COORDINATE,
                 datatype=DataType.FLOAT,
-                unit=UnitEnum.METER
+                unit=UnitEnum.METER,
             ),
             Parameter(
                 name="N",
                 value=1200000.0,
                 process=ProcessEnum.Y_COORDINATE,
                 datatype=DataType.FLOAT,
-                unit=UnitEnum.METER
+                unit=UnitEnum.METER,
             ),
             Parameter(
                 name="Z",
                 value=456.78,
                 process=ProcessEnum.Z_COORDINATE,
                 datatype=DataType.FLOAT,
-                unit=UnitEnum.METER
+                unit=UnitEnum.METER,
             ),
             Parameter(
                 name="Breite",
                 value=1.5,
                 process=ProcessEnum.WIDTH,
                 datatype=DataType.FLOAT,
-                unit=UnitEnum.METER
+                unit=UnitEnum.METER,
             ),
             Parameter(
                 name="Tiefe",
                 value=2.0,
                 process=ProcessEnum.DEPTH,
                 datatype=DataType.FLOAT,
-                unit=UnitEnum.METER
+                unit=UnitEnum.METER,
             ),
             Parameter(
                 name="Höhe",
                 value=1.0,
                 process=ProcessEnum.HEIGHT,
                 datatype=DataType.FLOAT,
-                unit=UnitEnum.METER
+                unit=UnitEnum.METER,
             ),
         ]
 
@@ -208,6 +210,7 @@ def main():
     except Exception as e:
         logger.error(f"Fehler bei manueller Konvertierung: {e}")
         import traceback
+
         logger.error(traceback.format_exc())
 
     logger.info("Plugin-Test abgeschlossen.")

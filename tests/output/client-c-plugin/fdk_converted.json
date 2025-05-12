@@ -1,0 +1,165 @@
+{
+  "element_type": "fdk",
+  "project_id": "BM-2025-001",
+  "elements": [
+    {
+      "uuid": "3ff3c36d-5402-4a6e-9803-c764820ca87f",
+      "name": "Gleis 1",
+      "element_type": "track",
+      "components": {
+        "location": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "dimension": {
+          "length": 0.0,
+          "end_x": 0.0,
+          "end_y": 0.0,
+          "end_z": 0.0
+        }
+      },
+      "metadata": {
+        "source": "client_c_fdk",
+        "client_id": "GL001",
+        "project_id": "BM-2025-001",
+        "conversion_date": "2025-05-12T14:02:41.527626",
+        "ifc_data": {},
+        "bauphasen": []
+      }
+    },
+    {
+      "uuid": "a4204f49-02af-4a91-a25d-1020c12b2085",
+      "name": "Gleis 2",
+      "element_type": "track",
+      "components": {
+        "location": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "dimension": {
+          "length": 0.0,
+          "end_x": 0.0,
+          "end_y": 0.0,
+          "end_z": 0.0
+        }
+      },
+      "metadata": {
+        "source": "client_c_fdk",
+        "client_id": "GL002",
+        "project_id": "BM-2025-001",
+        "conversion_date": "2025-05-12T14:02:41.527678",
+        "ifc_data": {},
+        "bauphasen": []
+      }
+    },
+    {
+      "uuid": "221acdd0-5a5a-48b1-8d53-e2270615b703",
+      "name": "Mast-MA001",
+      "element_type": "mast",
+      "components": {
+        "location": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "dimension": {
+          "height": 0.0,
+          "width": 0.0003,
+          "length": 0.0003
+        }
+      },
+      "metadata": {
+        "source": "client_c_fdk",
+        "client_id": "MA001",
+        "project_id": "BM-2025-001",
+        "conversion_date": "2025-05-12T14:02:41.527704",
+        "ifc_data": {},
+        "bauphasen": []
+      }
+    },
+    {
+      "uuid": "34b41c5c-88cf-478d-af69-9ced8d0cac35",
+      "name": "Mast-MA002",
+      "element_type": "mast",
+      "components": {
+        "location": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "dimension": {
+          "height": 0.0,
+          "width": 0.0003,
+          "length": 0.0003
+        }
+      },
+      "metadata": {
+        "source": "client_c_fdk",
+        "client_id": "MA002",
+        "project_id": "BM-2025-001",
+        "conversion_date": "2025-05-12T14:02:41.527728",
+        "ifc_data": {},
+        "bauphasen": []
+      }
+    },
+    {
+      "uuid": "b6f7aa50-791c-4c62-a3d3-228431fb7379",
+      "name": "Foundation-FU001",
+      "element_type": "foundation",
+      "components": {
+        "location": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "dimension": {
+          "length": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      },
+      "metadata": {
+        "source": "client_c_fdk",
+        "client_id": "FU001",
+        "project_id": "BM-2025-001",
+        "conversion_date": "2025-05-12T14:02:41.527751",
+        "ifc_data": {},
+        "bauphasen": []
+      }
+    },
+    {
+      "uuid": "d23e099b-6588-49ce-aeeb-a7389685c6d6",
+      "name": "Foundation-FU002",
+      "element_type": "foundation",
+      "components": {
+        "location": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "dimension": {
+          "length": 0.0,
+          "width": 0.0,
+          "height": 0.0
+        }
+      },
+      "metadata": {
+        "source": "client_c_fdk",
+        "client_id": "FU002",
+        "project_id": "BM-2025-001",
+        "conversion_date": "2025-05-12T14:02:41.527773",
+        "ifc_data": {},
+        "bauphasen": []
+      }
+    }
+  ],
+  "converted_by": "SimplifiedClientCPlugin",
+  "metadata": {
+    "source": "client_c_fdk",
+    "version": "1.2.0",
+    "project_name": "Bahnhof Musterstadt",
+    "conversion_date": "2025-05-12T14:02:41.527796"
+  }
+}

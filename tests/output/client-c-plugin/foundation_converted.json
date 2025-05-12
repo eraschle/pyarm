@@ -1,0 +1,76 @@
+{
+  "element_type": "foundation",
+  "project_id": "client_c",
+  "elements": [
+    {
+      "uuid": "199c177b-f259-4894-9a3d-bcae975179ad",
+      "name": "Fundament 1",
+      "element_type": "foundation",
+      "components": {
+        "location": {
+          "x": 2600.0,
+          "y": 1200.0,
+          "z": 0.45677999999999996
+        },
+        "dimension": {
+          "length": 2.0,
+          "width": 1.5,
+          "height": 1.0
+        }
+      },
+      "metadata": {
+        "source": "client_c_sql",
+        "client_id": "F001",
+        "project_id": "client_c",
+        "conversion_date": "2025-05-12T14:02:41.529375"
+      }
+    },
+    {
+      "uuid": "51d33948-94ff-4c34-afbb-af170571fac4",
+      "name": "Fundament 2",
+      "element_type": "foundation",
+      "components": {
+        "location": {
+          "x": 2600.05,
+          "y": 1200.01,
+          "z": 0.45712
+        },
+        "dimension": {
+          "length": 2.2,
+          "width": 1.8,
+          "height": 1.2
+        }
+      },
+      "metadata": {
+        "source": "client_c_sql",
+        "client_id": "F002",
+        "project_id": "client_c",
+        "conversion_date": "2025-05-12T14:02:41.529399"
+      }
+    },
+    {
+      "uuid": "ac363f33-6b94-4c43-b416-4087a98b3e3b",
+      "name": "Fundament 3",
+      "element_type": "foundation",
+      "components": {
+        "location": {
+          "x": 2600.1,
+          "y": 1200.02,
+          "z": 0.45744999999999997
+        },
+        "dimension": {
+          "length": 2.0,
+          "width": 1.5,
+          "height": 1.0
+        }
+      },
+      "metadata": {
+        "source": "client_c_sql",
+        "client_id": "F003",
+        "project_id": "client_c",
+        "conversion_date": "2025-05-12T14:02:41.529415"
+      }
+    }
+  ],
+  "converted_by": "SimplifiedClientCPlugin"
+}

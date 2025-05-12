@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-05-12T14:02:45.492433",
+    "generated": "2025-05-12T12:56:20.734386",
     "project_id": "BM-2025-001",
     "element_count": 6,
     "element_types": {
@@ -11,7 +11,7 @@
   },
   "elements": [
     {
-      "id": "ba2f1080-f889-40a8-a23b-91223284a2cb",
+      "id": "7779c1f8-6fac-4b29-903b-d879358b92ce",
       "type": "track",
       "name": "Gleis 1",
       "position": {
@@ -27,7 +27,7 @@
       "references": []
     },
     {
-      "id": "4d5bf8ba-5822-4a6e-bc9e-0476b171d18b",
+      "id": "8dd59b9b-77a9-4426-94d8-d059679faced",
       "type": "track",
       "name": "Gleis 2",
       "position": {
@@ -43,7 +43,7 @@
       "references": []
     },
     {
-      "id": "2e4b6a3f-2978-4387-ac31-e0c48996aa3c",
+      "id": "075d3461-7aed-4f06-b8b9-7a88ee7cd0ab",
       "type": "mast",
       "name": "Mast-MA001",
       "position": {
@@ -59,7 +59,7 @@
       "references": []
     },
     {
-      "id": "ba948aa8-1e1b-4764-925f-45e56cb87a52",
+      "id": "29b54811-7bf8-4108-bc11-933143daa75b",
       "type": "mast",
       "name": "Mast-MA002",
       "position": {
@@ -75,7 +75,7 @@
       "references": []
     },
     {
-      "id": "2af74a6a-9d32-4f6f-8dd8-b99ba5371a97",
+      "id": "7166f5e7-6399-444d-b0b4-55ba0cd99a65",
       "type": "foundation",
       "name": "Foundation-FU001",
       "position": {
@@ -91,7 +91,7 @@
       "references": []
     },
     {
-      "id": "a5d08dd8-24fb-446d-8321-da7908dbe1c4",
+      "id": "75960eab-e474-45bc-a23a-1121eb3c8919",
       "type": "foundation",
       "name": "Foundation-FU002",
       "position": {

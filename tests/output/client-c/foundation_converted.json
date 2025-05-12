@@ -1,0 +1,392 @@
+{
+  "element_type": "foundation",
+  "project_id": "client_c",
+  "elements": [
+    {
+      "id": "F001",
+      "name": " Fundament 1",
+      "element_type": "foundation",
+      "parameters": [
+        {
+          "name": "ID",
+          "value": "F001",
+          "process": "uuid",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "Name",
+          "value": " Fundament 1",
+          "process": "name",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "coord_x",
+          "value": 2600000.0,
+          "process": "x",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_y",
+          "value": 1200000.0,
+          "process": "y",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_z",
+          "value": 456.78,
+          "process": "z",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "width_mm",
+          "value": 1.5,
+          "process": "width",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "depth_mm",
+          "value": 2.0,
+          "process": "depth",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "height_mm",
+          "value": 1.0,
+          "process": "height",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "type",
+          "value": " Typ A",
+          "process": "foundation_type",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "material",
+          "value": " Beton",
+          "process": "ifc_material",
+          "datatype": "string",
+          "unit": "none"
+        }
+      ]
+    },
+    {
+      "id": "F002",
+      "name": " Fundament 2",
+      "element_type": "foundation",
+      "parameters": [
+        {
+          "name": "ID",
+          "value": "F002",
+          "process": "uuid",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "Name",
+          "value": " Fundament 2",
+          "process": "name",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "coord_x",
+          "value": 2600050.0,
+          "process": "x",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_y",
+          "value": 1200010.0,
+          "process": "y",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_z",
+          "value": 457.12,
+          "process": "z",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "width_mm",
+          "value": 1.8,
+          "process": "width",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "depth_mm",
+          "value": 2.2,
+          "process": "depth",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "height_mm",
+          "value": 1.2,
+          "process": "height",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "type",
+          "value": " Typ B",
+          "process": "foundation_type",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "material",
+          "value": " Beton",
+          "process": "ifc_material",
+          "datatype": "string",
+          "unit": "none"
+        }
+      ]
+    },
+    {
+      "id": "F003",
+      "name": " Fundament 3",
+      "element_type": "foundation",
+      "parameters": [
+        {
+          "name": "ID",
+          "value": "F003",
+          "process": "uuid",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "Name",
+          "value": " Fundament 3",
+          "process": "name",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "coord_x",
+          "value": 2600100.0,
+          "process": "x",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_y",
+          "value": 1200020.0,
+          "process": "y",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_z",
+          "value": 457.45,
+          "process": "z",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "width_mm",
+          "value": 1.5,
+          "process": "width",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "depth_mm",
+          "value": 2.0,
+          "process": "depth",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "height_mm",
+          "value": 1.0,
+          "process": "height",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "type",
+          "value": " Typ A",
+          "process": "foundation_type",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "material",
+          "value": " Beton",
+          "process": "ifc_material",
+          "datatype": "string",
+          "unit": "none"
+        }
+      ]
+    },
+    {
+      "id": "F004",
+      "name": " Fundament 4",
+      "element_type": "foundation",
+      "parameters": [
+        {
+          "name": "ID",
+          "value": "F004",
+          "process": "uuid",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "Name",
+          "value": " Fundament 4",
+          "process": "name",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "coord_x",
+          "value": 2600150.0,
+          "process": "x",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_y",
+          "value": 1200030.0,
+          "process": "y",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_z",
+          "value": 457.8,
+          "process": "z",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "width_mm",
+          "value": 2.0,
+          "process": "width",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "depth_mm",
+          "value": 2.5,
+          "process": "depth",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "height_mm",
+          "value": 1.3,
+          "process": "height",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "type",
+          "value": " Typ C",
+          "process": "foundation_type",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "material",
+          "value": " Stahlbeton",
+          "process": "ifc_material",
+          "datatype": "string",
+          "unit": "none"
+        }
+      ]
+    },
+    {
+      "id": "F005",
+      "name": " Fundament 5",
+      "element_type": "foundation",
+      "parameters": [
+        {
+          "name": "ID",
+          "value": "F005",
+          "process": "uuid",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "Name",
+          "value": " Fundament 5",
+          "process": "name",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "coord_x",
+          "value": 2600200.0,
+          "process": "x",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_y",
+          "value": 1200040.0,
+          "process": "y",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "coord_z",
+          "value": 458.1,
+          "process": "z",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "width_mm",
+          "value": 1.8,
+          "process": "width",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "depth_mm",
+          "value": 2.2,
+          "process": "depth",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "height_mm",
+          "value": 1.2,
+          "process": "height",
+          "datatype": "float",
+          "unit": "meter"
+        },
+        {
+          "name": "type",
+          "value": " Typ B",
+          "process": "foundation_type",
+          "datatype": "string",
+          "unit": "none"
+        },
+        {
+          "name": "material",
+          "value": " Beton",
+          "process": "ifc_material",
+          "datatype": "string",
+          "unit": "none"
+        }
+      ]
+    }
+  ],
+  "converted_by": "SQL Foundation Converter"
+}
