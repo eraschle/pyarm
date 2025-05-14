@@ -11,14 +11,13 @@
         "**/__pycache__",
         "src/typestubs"
     ],
-    "ignore": [],
+    "ignore": [
+        "**/examples"
+    ],
     "stubPath": "/home/elyo/workspace/python/__stubs__/",
     "extraPaths": [
         "src",
-        "plugins",
-        "convert/examples/clients/clientA/code/",
-        "convert/examples/clients/clientB/code/",
-        "convert/examples/clients/clientC/code/"
+        "plugins"
     ],
     "defineConstant": {
         "DEBUG": true
@@ -29,23 +28,18 @@
         {
             "root": "src",
             "extraPaths": [
-                "plugins",
+                "plugins"
+            ],
+            "ignore": [
+        "**/examples"
             ]
-        }
+        },
         {
             "root": "plugins",
             "extraPaths": [
                 "src"
             ]
-        },
-        {
-            "root": "convert/examples/clients/clientA/code/",
-        },
-        {
-            "root": "convert/examples/clients/clientB/code/",
-        },
-        {
-            "root": "convert/examples/clients/clientC/code/",
-        },
+        }
+
     ]
 }

@@ -36,7 +36,7 @@ class ComponentFactory:
         }
         point = cls._create_coordinate(element, point_enums)
         if point is None:
-            raise ValueError("Element has no (start) point defined")
+            raise ValueError(f"Element has no (start) point defined {element.known_params.keys()}")
         end_enums = {
             "x": ProcessEnum.X_COORDINATE_END,
             "y": ProcessEnum.X_COORDINATE_END,

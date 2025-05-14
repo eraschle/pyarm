@@ -3,12 +3,12 @@
 Eigenstaendiges Skript fuer den ClientA-Import.
 """
 
+import argparse
+import csv
+import json
+import logging
 import os
 import sys
-import json
-import csv
-import argparse
-import logging
 from pathlib import Path
 from typing import Any
 
@@ -31,7 +31,9 @@ def parse_arguments():
         default="all",
         help="Zu verarbeitendes Projekt (project1, project2 oder all)",
     )
-    parser.add_argument("--output_dir", type=str, required=True, help="Verzeichnis fuer die Ausgabe")
+    parser.add_argument(
+        "--output_dir", type=str, required=True, help="Verzeichnis fuer die Ausgabe"
+    )
 
     return parser.parse_args()
 
@@ -236,7 +238,8 @@ def run_client_a_import(input_dir: str, project: str, output_dir: str) -> bool:
         # Statistiken anzeigen
         stats = processed_data["statistics"]
         logger.info(
-            f"Insgesamt {stats['total_elements']} Elemente in {stats['projects_processed']} Projekten verarbeitet"
+            f"Insgesamt {stats['total_elements']} Elemente in "
+            f"{stats['projects_processed']} Projekten verarbeitet"
         )
 
         for proj_name, proj_data in processed_data["projects"].items():

@@ -9,8 +9,8 @@ from pyarm.models.base_models import InfrastructureElement
 from pyarm.models.element_models import (
     Cantilever,
     CurvedTrack,
-    DrainagePipe,
-    DrainageShaft,
+    SewerPipe,
+    SewerShaft,
     Foundation,
     Joch,
     Mast,
@@ -172,7 +172,7 @@ def is_sleeper(obj: Any) -> TypeGuard[Sleeper]:
     )
 
 
-def is_drainage_pipe(obj: Any) -> TypeGuard[DrainagePipe]:
+def is_drainage_pipe(obj: Any) -> TypeGuard[SewerPipe]:
     """
     Checks if an object is a DrainagePipe.
 
@@ -186,12 +186,12 @@ def is_drainage_pipe(obj: Any) -> TypeGuard[DrainagePipe]:
     TypeGuard[DrainagePipe]
         True if the object is a DrainagePipe
     """
-    return isinstance(obj, DrainagePipe) or (
+    return isinstance(obj, SewerPipe) or (
         isinstance(obj, InfrastructureElement) and obj.element_type == ElementType.SEWER_SHAFT
     )
 
 
-def is_drainage_shaft(obj: Any) -> TypeGuard[DrainageShaft]:
+def is_drainage_shaft(obj: Any) -> TypeGuard[SewerShaft]:
     """
     Checks if an object is a DrainageShaft.
 
@@ -205,7 +205,7 @@ def is_drainage_shaft(obj: Any) -> TypeGuard[DrainageShaft]:
     TypeGuard[DrainageShaft]
         True if the object is a DrainageShaft
     """
-    return isinstance(obj, DrainageShaft) or (
+    return isinstance(obj, SewerShaft) or (
         isinstance(obj, InfrastructureElement) and obj.element_type == ElementType.SEWER_SHAFT
     )
 

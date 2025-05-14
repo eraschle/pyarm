@@ -74,12 +74,6 @@ class RelationshipManager:
         element : InfrastructureElement
             The infrastructure element for which to establish bidirectional references.
         """
-        if not isinstance(element, InfrastructureElement):
-            log.debug(
-                f"Item {getattr(element, 'uuid', element)} in subset "
-                "is not an InfrastructureElement. Skipping."
-            )
-            return
         self._add_element_references_to_target(element)
         self._add_element_reference_to_current(element)
 

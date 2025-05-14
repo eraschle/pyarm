@@ -3,10 +3,10 @@ Central definitions of enums for modeling infrastructure projects.
 These enums are used for mapping parameters to process requirements.
 """
 
-from enum import Enum
+from enum import StrEnum
 
 
-class ElementType(str, Enum):
+class ElementType(StrEnum):
     """Types of infrastructure elements"""
 
     UNDEFINED = "undefined"
@@ -21,7 +21,7 @@ class ElementType(str, Enum):
     BUILDING = "building"
 
 
-class ProcessEnum(str, Enum):
+class ProcessEnum(StrEnum):
     """
     Central enum for process relevance of parameters.
     Used for mapping client-specific data to the canonical model.
@@ -33,17 +33,17 @@ class ProcessEnum(str, Enum):
 
     # Geometric - Position
     # Point or Startpoint
-    X_COORDINATE = "x"
-    Y_COORDINATE = "y"
-    Z_COORDINATE = "z"
+    X_COORDINATE = "x_coordinate"
+    Y_COORDINATE = "y_coordinate"
+    Z_COORDINATE = "z_coordinate"
     X_ROTATION = "x_rotation"
     Y_ROTATION = "y_rotation"
     Z_ROTATION = "z_rotation"
 
     # Endpoint
-    X_COORDINATE_END = "x"
-    Y_COORDINATE_END = "y"
-    Z_COORDINATE_END = "z"
+    X_COORDINATE_END = "x_coordinate_end"
+    Y_COORDINATE_END = "y_coordinate_end"
+    Z_COORDINATE_END = "z_coordinate_end"
     X_ROTATION_END = "x_rotation"
     Y_ROTATION_END = "y_rotation"
     Z_ROTATION_END = "z_rotation"

@@ -130,6 +130,7 @@ class Track(InfrastructureElement):
 
     def __post_init__(self):
         super().__post_init__()
+        add_references_to_other_elements(self)
 
 
 @dataclass
@@ -140,6 +141,7 @@ class CurvedTrack(Track):
 
     def __post_init__(self):
         super().__post_init__()
+        add_references_to_other_elements(self)
 
 
 @dataclass
@@ -150,23 +152,26 @@ class Sleeper(InfrastructureElement):
 
     def __post_init__(self):
         super().__post_init__()
+        add_references_to_other_elements(self)
 
 
 @dataclass
-class DrainagePipe(InfrastructureElement):
+class SewerPipe(InfrastructureElement):
     """Drainage pipe element."""
 
     element_type: ElementType = ElementType.SEWER_SHAFT
 
     def __post_init__(self):
         super().__post_init__()
+        add_references_to_other_elements(self)
 
 
 @dataclass
-class DrainageShaft(InfrastructureElement):
+class SewerShaft(InfrastructureElement):
     """Drainage shaft element."""
 
     element_type: ElementType = ElementType.SEWER_SHAFT
 
     def __post_init__(self):
         super().__post_init__()
+        add_references_to_other_elements(self)

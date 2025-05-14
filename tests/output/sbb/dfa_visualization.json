@@ -1,0 +1,6809 @@
+{
+  "project_name": "SBB DFA Import",
+  "elements": [
+    {
+      "name": "Mast (FS)",
+      "uuid": "dd198a35-4362-444f-b3ad-50be5def821a",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586768.752,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222896.52,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 517.104900437244,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "dd198a35-4362-444f-b3ad-50be5def821a",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 34,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "90aa5d62-b84f-4ac2-9c4d-436486653caa",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586779.374,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222894.433,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 516.680699065112,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "90aa5d62-b84f-4ac2-9c4d-436486653caa",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 35,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "d8bd493e-7bc5-49ad-90a1-88f1d9814114",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586782.912,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222918.376,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 517.257836572857,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "d8bd493e-7bc5-49ad-90a1-88f1d9814114",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 37,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "668a6859-ee0c-4e28-8c4a-5c8873b08bd7",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586773.243,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222919.768,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 517.490009120639,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "668a6859-ee0c-4e28-8c4a-5c8873b08bd7",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 36,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "0d649030-7660-4d45-8f04-ff3a49326751",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586784.81,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222942.479,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 518.002744114958,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 12.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "0d649030-7660-4d45-8f04-ff3a49326751",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 38,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "bedaaecc-d5f1-4af2-b61b-f9aac0464731",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586784.82,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222961.743,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 518.612519500973,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 6.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "bedaaecc-d5f1-4af2-b61b-f9aac0464731",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "38A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "a01a20b3-3b2a-4baa-9ef9-cd3cf2fe3559",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586784.613,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222966.672,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 518.759528513342,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "a01a20b3-3b2a-4baa-9ef9-cd3cf2fe3559",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 39,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "dd6768cf-132b-4bed-a94a-4d869a3bbf3a",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586782.506,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1222990.782,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 519.386455729674,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "dd6768cf-132b-4bed-a94a-4d869a3bbf3a",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 40,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "c3a34132-946e-4136-87b3-c42a4fcf9448",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586778.478,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223014.656,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 520.022691156174,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "c3a34132-946e-4136-87b3-c42a4fcf9448",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 41,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "9b6214a8-3458-4a7b-92aa-b3ea216814ae",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586766.467,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223036.284,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 520.190553256914,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "9b6214a8-3458-4a7b-92aa-b3ea216814ae",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 42,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "d56bf1d0-a7bf-4404-8c3c-5c6e3256ea92",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586772.544,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223038.142,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 520.988171062392,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "d56bf1d0-a7bf-4404-8c3c-5c6e3256ea92",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 43,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "b5717155-f022-4820-91d6-2312de049347",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586765.429,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223057.887,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 521.121294584846,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.2,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "b5717155-f022-4820-91d6-2312de049347",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "44A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "0175dcb1-7216-48dd-9715-9b761b5b5843",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586764.727,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223061.107,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 521.561892908624,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "0175dcb1-7216-48dd-9715-9b761b5b5843",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 44,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "2640b598-0173-47db-8dd7-113e4080098b",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586755.166,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223083.375,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 521.907442201772,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "2640b598-0173-47db-8dd7-113e4080098b",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 46,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "925d93e1-28fd-4c15-ac3d-121146202eac",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586749.86,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223080.919,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 521.555813189505,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "925d93e1-28fd-4c15-ac3d-121146202eac",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 45,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "1640abcf-04a2-4143-81df-f5d701cec947",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586745.479,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223103.555,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 517.46367085856,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 5.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "1640abcf-04a2-4143-81df-f5d701cec947",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 2,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "06e532d4-e641-424b-8bdb-28ec80dc4692",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586743.45,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223105.174,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 517.053264252532,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 6.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "06e532d4-e641-424b-8bdb-28ec80dc4692",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 1,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "8006bc35-f8f6-4c10-ab1c-c2c913796605",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2586723.375,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1223129.593,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 488.821578846742,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 6.8,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "8006bc35-f8f6-4c10-ab1c-c2c913796605",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "Dpv 16",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 3,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "90f12705-737e-4780-a67f-b9a73fe09458",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585408.612,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225194.291,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 587.40844948111,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 5.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "90f12705-737e-4780-a67f-b9a73fe09458",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 353,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "22b48ed6-68d3-4b53-897c-9519b9f25a0d",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585408.19,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225199.789,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 587.377782203603,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 6.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "22b48ed6-68d3-4b53-897c-9519b9f25a0d",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D18",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "353A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "888c5ec4-31df-4ce5-8350-9353abe59b74",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585405.71,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225215.277,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 587.427354658513,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "888c5ec4-31df-4ce5-8350-9353abe59b74",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 355,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "f8e985be-fcbd-4d28-8bb2-c69f478f2af0",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585403.847,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225235.438,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 587.748126328848,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "f8e985be-fcbd-4d28-8bb2-c69f478f2af0",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 357,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "6841003e-a6a5-409c-92ec-06274417c632",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585403.361,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225259.395,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 587.851279393701,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "6841003e-a6a5-409c-92ec-06274417c632",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 359,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "fef69ae7-4162-4242-a0bb-234e223292f3",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585404.831,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225283.494,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 588.213076046137,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "fef69ae7-4162-4242-a0bb-234e223292f3",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 361,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "808943a2-59b8-4ce4-935c-239696db7706",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585407.924,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225305.64,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 588.362627142145,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "808943a2-59b8-4ce4-935c-239696db7706",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 363,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "43e7348e-c125-4d08-b8bd-d32f8863ff4d",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585412.612,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225327.157,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 588.514997796043,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "43e7348e-c125-4d08-b8bd-d32f8863ff4d",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 365,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "bf2f43bc-1482-4dd6-b8ad-587d0d529279",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585418.921,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225348.401,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 588.826151318904,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "bf2f43bc-1482-4dd6-b8ad-587d0d529279",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 367,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "262fcc3e-1da4-4484-9eec-ef0fb4244420",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585430.306,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225378.615,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 589.1247833302,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "262fcc3e-1da4-4484-9eec-ef0fb4244420",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 369,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "98773253-6c4a-4331-a545-792f45e5e0b1",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585446.94,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225416.946,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 589.499069831792,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "98773253-6c4a-4331-a545-792f45e5e0b1",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 371,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "ae2c2842-126e-4873-a1db-120c31597670",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585452.422,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225414.535,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 589.383079145838,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "ae2c2842-126e-4873-a1db-120c31597670",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 372,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "e579f816-ace8-4c5f-849f-0ba9d5db39d9",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585475.824,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225467.596,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 589.932196285991,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "e579f816-ace8-4c5f-849f-0ba9d5db39d9",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 374,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "1b405bcb-dec3-43a3-8f6d-b15f0640f8e2",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585470.152,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225470.119,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 589.75062400701,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "1b405bcb-dec3-43a3-8f6d-b15f0640f8e2",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 373,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "51c388e4-ce5a-4f79-b1e2-e5cdaba36f12",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585493.219,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225523.202,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 590.195070470093,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "51c388e4-ce5a-4f79-b1e2-e5cdaba36f12",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 375,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "be11e44d-e361-437b-a35b-b09b6c1bad4e",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585513.386,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225568.96,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 590.587123815209,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 13.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "be11e44d-e361-437b-a35b-b09b6c1bad4e",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 377,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "8cd9bb38-d4bd-4ce8-8b0c-d276c247d9bb",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585534.376,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225616.635,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 591.191984895058,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 15.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "8cd9bb38-d4bd-4ce8-8b0c-d276c247d9bb",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 379,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "2b41fe7a-e4f2-467b-800f-348c08ad6902",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585552.097,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225656.831,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 591.637559677062,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 17.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "2b41fe7a-e4f2-467b-800f-348c08ad6902",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DPM24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 381,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "36986f95-4878-48c8-9ea2-b92226d4f4d1",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585573.405,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225705.135,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 592.443208688784,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 14.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "36986f95-4878-48c8-9ea2-b92226d4f4d1",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 383,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "29655a4d-d06c-4524-b091-a06aeb69a9ea",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585596.781,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225758.168,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 593.192052822777,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "29655a4d-d06c-4524-b091-a06aeb69a9ea",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 385,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "f73964cd-fe4d-44a8-b810-d0cb09afe2b0",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585625.878,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225808.085,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 593.261862978319,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "f73964cd-fe4d-44a8-b810-d0cb09afe2b0",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 388,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "ef177bea-b2dd-485b-8903-b601de90a66d",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585619.918,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225810.741,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 593.595603545413,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "ef177bea-b2dd-485b-8903-b601de90a66d",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 387,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "bb7fdb0a-e662-498a-888e-aa0f96d56827",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585643.359,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225863.824,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 593.865886553099,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "bb7fdb0a-e662-498a-888e-aa0f96d56827",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 389,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "d16ebdc4-ee56-4522-b523-bd330c007317",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585666.717,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225916.886,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 594.29949993372,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "d16ebdc4-ee56-4522-b523-bd330c007317",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 391,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "a354a091-0128-4e8c-bb6c-626d2b3a7f24",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585690.14,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1225969.957,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 594.884289907728,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 11.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "a354a091-0128-4e8c-bb6c-626d2b3a7f24",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 393,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "6b4d7679-c6f9-4f25-aeaa-8a94ef7919ed",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585710.596,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226015.403,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.517143301063,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 12.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "6b4d7679-c6f9-4f25-aeaa-8a94ef7919ed",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 395,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "5444f394-ec32-4773-85b4-ebff2ae91d66",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585730.765,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226061.17,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.478714938158,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 12.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "5444f394-ec32-4773-85b4-ebff2ae91d66",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 397,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "88999701-0e7f-4bf2-ba1e-5691e780609e",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585744.161,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226091.286,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.719737187121,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 9.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "88999701-0e7f-4bf2-ba1e-5691e780609e",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "Dpv 18",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "397A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "57826e86-c295-4d14-bdd5-8a993ebdc5e0",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585746.438,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226097.969,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.636770634876,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "57826e86-c295-4d14-bdd5-8a993ebdc5e0",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 399,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "10fcc27d-91bd-4952-8482-9976064a18f0",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585761.425,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226116.627,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.055478598505,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "10fcc27d-91bd-4952-8482-9976064a18f0",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "1A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "8618caf5-ecba-4f14-bb04-29fc9400461c",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585755.392,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226119.074,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.635473457461,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "8618caf5-ecba-4f14-bb04-29fc9400461c",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 1,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "2a973b06-2c9b-4a96-9f9f-69ade20662c1",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585769.125,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226137.174,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.998680743102,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "2a973b06-2c9b-4a96-9f9f-69ade20662c1",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "Dpv 18",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "1B",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "66c73892-70b0-4293-a08f-8e97688cf2fe",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585776.655,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226162.745,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.136174599085,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.4,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "66c73892-70b0-4293-a08f-8e97688cf2fe",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "1C",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "cbd1f799-cec8-4093-b3f6-d9352c0a9be0",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585781.713,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226187.803,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.986713082645,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.3,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "cbd1f799-cec8-4093-b3f6-d9352c0a9be0",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 2,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "3a705a27-6252-48c1-bb31-a8d132b51b1a",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585784.504,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226213.756,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.066336227035,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.3,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "3a705a27-6252-48c1-bb31-a8d132b51b1a",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 3,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "77063fa3-8dea-4225-9500-ec387bc56223",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585785.004,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226240.179,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.076356994645,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.8,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "77063fa3-8dea-4225-9500-ec387bc56223",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 4,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "728987dd-6270-4658-a883-fc38f71f3b02",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585783.166,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226266.325,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.984082153941,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 5.9,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "728987dd-6270-4658-a883-fc38f71f3b02",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D16",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 5,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "ed97d32d-69ed-42f8-ae61-32c512f1de62",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585779.167,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226292.231,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.950141271864,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.1,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "ed97d32d-69ed-42f8-ae61-32c512f1de62",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 6,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "9aeb1ae4-6c4e-4ea3-8a21-724fad79991f",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585772.871,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226317.541,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.928901357792,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.4,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "9aeb1ae4-6c4e-4ea3-8a21-724fad79991f",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D16",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 7,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "310aaf51-89b4-4525-976d-94f9eaa07bca",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585768.897,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226329.951,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.020235514495,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 10.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "310aaf51-89b4-4525-976d-94f9eaa07bca",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "7A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "bd719275-9b6c-45b5-b094-221ab6cb4b79",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585764.519,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226342.26,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.028207959488,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 9.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "bd719275-9b6c-45b5-b094-221ab6cb4b79",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 8,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "72132843-d5a1-4cd1-accf-536d43ee1ff4",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585753.968,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226366.179,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.100561039959,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.4,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "72132843-d5a1-4cd1-accf-536d43ee1ff4",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D16",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 9,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "6fce13c3-495d-45f9-a918-afc9e63cf15d",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585741.372,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226389.23,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.935325270603,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 9.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "6fce13c3-495d-45f9-a918-afc9e63cf15d",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 10,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "2430617a-df42-4513-8142-421ca98ea699",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585726.893,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226410.999,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.743207622434,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.4,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "2430617a-df42-4513-8142-421ca98ea699",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D16",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 11,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "a5caf8d3-bc8c-4a7e-a412-7bcac95beacb",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585710.603,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226431.381,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.883984411271,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 9.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "a5caf8d3-bc8c-4a7e-a412-7bcac95beacb",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 12,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "a1585814-9680-4b6f-902f-ddd259fd5b2f",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585697.693,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226444.635,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.950794652254,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "a1585814-9680-4b6f-902f-ddd259fd5b2f",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D18",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "12A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "f565990b-b3ae-40c7-aa07-8f12f5247542",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585690.228,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226437.52,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.498686692503,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.7,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "f565990b-b3ae-40c7-aa07-8f12f5247542",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 14,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "6e1edcc1-88fb-474c-b60a-9781122e2161",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585682.996,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226430.825,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.483132719447,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.7,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "6e1edcc1-88fb-474c-b60a-9781122e2161",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 13,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "58eb9266-7b3b-444a-aeca-9deecf8e73ac",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585683.328,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226458.79,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.937336336839,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 9.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "58eb9266-7b3b-444a-aeca-9deecf8e73ac",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 16,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "fdefb3d9-9522-410e-a981-4a4487c4ea33",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585669.801,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226443.02,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.594403557471,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.3,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "fdefb3d9-9522-410e-a981-4a4487c4ea33",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "Autre",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 15,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "b8737b5e-8058-4269-bf06-d9ebaa9249cf",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585668.019,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226472.81,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.052082733526,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.8,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "b8737b5e-8058-4269-bf06-d9ebaa9249cf",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "16A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "e7301a89-48db-4080-a962-41aa4b9f5905",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585654.848,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226454.819,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.291166478136,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.2,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "e7301a89-48db-4080-a962-41aa4b9f5905",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "15A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "168a3ea2-8e09-47b5-9f00-0067218f0587",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585652.93,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226485.59,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.199608056951,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 9.4,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "168a3ea2-8e09-47b5-9f00-0067218f0587",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 18,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "a882930f-3005-4494-8fad-1086c90306a3",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585639.791,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226465.498,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.293869323142,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "a882930f-3005-4494-8fad-1086c90306a3",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 17,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "bb766735-ab88-46d2-ad81-53a9f9ceeb36",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585636.424,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226497.755,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.280802876911,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.2,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "bb766735-ab88-46d2-ad81-53a9f9ceeb36",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "18A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "fa51872a-803e-4103-a32b-f5a5b7c2b479",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585628.678,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226483.299,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.431669594402,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.2,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "fa51872a-803e-4103-a32b-f5a5b7c2b479",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "17A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "074b3a46-3065-45ef-82ee-509f5a11a128",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585606.567,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226480.707,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.798365541447,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "074b3a46-3065-45ef-82ee-509f5a11a128",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "DP20",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "17B",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "3d3df441-7420-463f-b195-90d509b15455",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585611.574,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226492.34,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.430360160155,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "3d3df441-7420-463f-b195-90d509b15455",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 19,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "59ec849d-207c-4488-86c7-751807b9bc5b",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585618.755,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226509.024,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 596.238417519908,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 9.5,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "59ec849d-207c-4488-86c7-751807b9bc5b",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D24",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 20,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "0928259f-955d-45a9-8cd6-36c016b87f41",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585601.138,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226520.021,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.985745053813,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 7.6,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "0928259f-955d-45a9-8cd6-36c016b87f41",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "20A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "4d60d5be-ce9a-4665-89a2-16058e144d0f",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585593.494,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226499.802,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.435769865315,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "4d60d5be-ce9a-4665-89a2-16058e144d0f",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": "19A",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "4995b1cd-4c39-4e32-b9bf-619306b05642",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585582.986,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226530.919,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.890302111686,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.0,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "4995b1cd-4c39-4e32-b9bf-619306b05642",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D22",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 22,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    },
+    {
+      "name": "Mast (FS)",
+      "uuid": "9c7aea2d-12ec-40bc-b832-202e6be7d49f",
+      "element_type": "mast",
+      "parameters": [
+        {
+          "name": "E",
+          "value": 2585574.681,
+          "datatype": "float",
+          "unit": "m",
+          "process": "x_coordinate"
+        },
+        {
+          "name": "N",
+          "value": 1226505.943,
+          "datatype": "float",
+          "unit": "m",
+          "process": "y_coordinate"
+        },
+        {
+          "name": "H-RSRG",
+          "value": 595.478505769494,
+          "datatype": "float",
+          "unit": "m",
+          "process": "z_coordinate"
+        },
+        {
+          "name": "Family",
+          "value": "Mast (FS)",
+          "datatype": "str",
+          "unit": "",
+          "process": "name"
+        },
+        {
+          "name": "Width",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "width"
+        },
+        {
+          "name": "Diameter",
+          "value": NaN,
+          "datatype": "float",
+          "unit": "m",
+          "process": "diameter"
+        },
+        {
+          "name": "L\u00e4nge (m)",
+          "value": 8.4,
+          "datatype": "float",
+          "unit": "m",
+          "process": "height"
+        },
+        {
+          "name": "UUID",
+          "value": "9c7aea2d-12ec-40bc-b832-202e6be7d49f",
+          "datatype": "str",
+          "unit": "",
+          "process": "uuid"
+        },
+        {
+          "name": "Typ",
+          "value": "D26",
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_type"
+        },
+        {
+          "name": "Mastnummer",
+          "value": 21,
+          "datatype": "str",
+          "unit": "",
+          "process": "mast_profile_type"
+        },
+        {
+          "name": "ElementType",
+          "value": "mast",
+          "datatype": "str",
+          "unit": "",
+          "process": "element_type"
+        }
+      ]
+    }
+  ]
+}

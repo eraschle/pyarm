@@ -1,0 +1,50 @@
+{
+  "plugin_config": {
+    "ClientA Plugin": {
+      "element_links": {
+        "project1": {
+          "foundation_mast": {
+            "source_type": "foundation",
+            "target_type": "mast",
+            "source_param": "MastID",
+            "target_param": "ID"
+          },
+          "mast_foundation": {
+            "source_type": "mast",
+            "target_type": "foundation",
+            "source_param": "FundamentID",
+            "target_param": "ID"
+          },
+          "joch_mast": {
+            "source_type": "joch",
+            "target_type": "mast",
+            "source_param": "Mast1ID",
+            "target_param": "ID"
+          }
+        },
+        "project2": {
+          "foundation_mast": {
+            "source_type": "foundation",
+            "target_type": "mast",
+            "source_param": "MastReference",
+            "target_param": "UUID"
+          },
+          "mast_foundation": {
+            "source_type": "mast",
+            "target_type": "foundation",
+            "source_param": "FoundationReference",
+            "target_param": "UUID"
+          }
+        },
+        "custom_project": {
+          "foundation_mast": {
+            "source_type": "foundation",
+            "target_type": "mast",
+            "source_param": "StationNr",
+            "target_param": "StationNr"
+          }
+        }
+      }
+    }
+  }
+}

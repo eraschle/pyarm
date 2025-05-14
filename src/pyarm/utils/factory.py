@@ -39,8 +39,8 @@ def determine_element_class(data: Dict[str, Any]) -> Type[Any]:
     # Runtime import to avoid circular imports
     from pyarm.models.element_models import (
         CurvedTrack,
-        DrainagePipe,
-        DrainageShaft,
+        SewerPipe,
+        SewerShaft,
         Foundation,
         Mast,
         Track,
@@ -84,9 +84,9 @@ def determine_element_class(data: Dict[str, Any]) -> Type[Any]:
         else:
             return Track
     elif element_type == ElementType.SEWER_PIPE:
-        return DrainagePipe
+        return SewerPipe
     elif element_type == ElementType.SEWER_SHAFT:
-        return DrainageShaft
+        return SewerShaft
     else:
         return InfrastructureElement
 
@@ -218,8 +218,8 @@ def create_component_based_element(
     """
     # Runtime import to avoid circular imports
     from pyarm.models.element_models import (
-        DrainagePipe,
-        DrainageShaft,
+        SewerPipe,
+        SewerShaft,
         Foundation,
         Mast,
         Track,
@@ -234,9 +234,9 @@ def create_component_based_element(
     elif element_type == ElementType.TRACK:
         element_class = Track
     elif element_type == ElementType.SEWER_PIPE:
-        element_class = DrainagePipe
+        element_class = SewerPipe
     elif element_type == ElementType.SEWER_SHAFT:
-        element_class = DrainageShaft
+        element_class = SewerShaft
     else:
         element_class = InfrastructureElement
 

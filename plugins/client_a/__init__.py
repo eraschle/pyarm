@@ -17,33 +17,35 @@ if src_path not in sys.path:
 
 try:
     from pyarm.interfaces.plugin import PluginInterface
+    from pyarm.linking.element_linker import ElementLinker
     from pyarm.models.base_models import InfrastructureElement
     from pyarm.models.element_models import (
         CurvedTrack,
-        DrainagePipe,
-        DrainageShaft,
+        SewerPipe,
+        SewerShaft,
         Foundation,
         Joch,
         Mast,
         Track,
     )
     from pyarm.models.parameter import DataType, Parameter, UnitEnum
-    from pyarm.models.process_enums import ProcessEnum
+    from pyarm.models.process_enums import ElementType, ProcessEnum
 except ImportError:
     # If that fails, try direct import from src
     from src.pyarm.interfaces.plugin import PluginInterface
+    from src.pyarm.linking.element_linker import ElementLinker
     from src.pyarm.models.base_models import InfrastructureElement
     from src.pyarm.models.element_models import (
         CurvedTrack,
-        DrainagePipe,
-        DrainageShaft,
+        SewerPipe,
+        SewerShaft,
         Foundation,
         Joch,
         Mast,
         Track,
     )
     from src.pyarm.models.parameter import DataType, Parameter, UnitEnum
-    from src.pyarm.models.process_enums import ProcessEnum
+    from src.pyarm.models.process_enums import ElementType, ProcessEnum
 
 log = logging.getLogger(__name__)
 
@@ -66,7 +68,118 @@ class ClientAPlugin(PluginInterface):
         """Initialisiert das Plugin mit der Konfiguration."""
         log.info(f"Initialisiere {self.name} v{self.version}")
         log.debug(f"Konfiguration: {config}")
+
+        # ElementLinker für die Verbindung von Elementen basierend auf Attributen erstellen
+        try:
+            from pyarm.linking.element_linker import ElementLinker
+            self._element_linker = ElementLinker()
+
+            # Link-Definitionen basierend auf der Konfiguration registrieren
+            self._configure_element_links(config)
+            log.info("ElementLinker wurde erfolgreich initialisiert")
+        except ImportError:
+            log.warning("ElementLinker konnte nicht importiert werden. Element-Verknüpfungen werden nicht erstellt.")
+            self._element_linker = None
+
         return True
+
+    def _configure_element_links(self, config: Dict[str, Any]) -> None:
+        """
+        Konfiguriert Element-Verknüpfungen basierend auf der Plugin-Konfiguration.
+
+        Parameters
+        ----------
+        config: Dict[str, Any]
+            Die Plugin-Konfiguration
+        """
+        # Standard-Link-Definitionen für verschiedene Projekte
+        link_configs = {
+            "project1": {
+                "foundation_mast": {
+                    "source_type": ElementType.FOUNDATION,
+                    "target_type": ElementType.MAST,
+                    "source_param": "MastID",
+                    "target_param": "ID"
+                },
+                "mast_foundation": {
+                    "source_type": ElementType.MAST,
+                    "target_type": ElementType.FOUNDATION,
+                    "source_param": "FundamentID",
+                    "target_param": "ID"
+                }
+            },
+            "project2": {
+                "foundation_mast": {
+                    "source_type": ElementType.FOUNDATION,
+                    "target_type": ElementType.MAST,
+                    "source_param": "MastReference",
+                    "target_param": "UUID"
+                },
+                "mast_foundation": {
+                    "source_type": ElementType.MAST,
+                    "target_type": ElementType.FOUNDATION,
+                    "source_param": "FoundationReference",
+                    "target_param": "UUID"
+                }
+            }
+        }
+
+        # Aus der Konfiguration vorhandene Link-Definitionen nutzen (wenn vorhanden)
+        user_link_configs = config.get("element_links", {})
+
+        # Link-Konfigurationen aus der Benutzer-Konfiguration mit den Standard-Konfigurationen zusammenführen
+        for project_id, project_links in user_link_configs.items():
+            if project_id not in link_configs:
+                link_configs[project_id] = {}
+
+            for link_name, link_def in project_links.items():
+                link_configs[project_id][link_name] = link_def
+
+        # Link-Definitionen im ElementLinker registrieren, wenn vorhanden
+        if self._element_linker:
+            from pyarm.linking.element_linker import LinkDefinition
+            from pyarm.models.element_models import Foundation, Mast
+
+            # ElementType-zu-Klasse-Mapping für die Konvertierung
+            element_type_map = {
+                "foundation": Foundation,
+                "mast": Mast,
+            }
+
+            for project_id, project_links in link_configs.items():
+                for link_name, link_def in project_links.items():
+                    source_type_str = link_def["source_type"]
+                    target_type_str = link_def["target_type"]
+
+                    # Von ElementType.XXX zu tatsächlicher Klasse konvertieren
+                    source_type = element_type_map.get(source_type_str, None)
+                    target_type = element_type_map.get(target_type_str, None)
+
+                    if not source_type or not target_type:
+                        log.warning(f"Unbekannter Elementtyp in Link-Definition: {source_type_str} -> {target_type_str}")
+                        continue
+
+                    # ProcessEnum für die Parameter bestimmen (wenn bekannt)
+                    source_process_enum = None
+                    target_process_enum = None
+
+                    if source_type == Foundation and target_type == Mast:
+                        source_process_enum = ProcessEnum.FOUNDATION_TO_MAST_UUID
+                    elif source_type == Mast and target_type == Foundation:
+                        source_process_enum = ProcessEnum.MAST_TO_FOUNDATION_UUID
+
+                    # LinkDefinition erstellen und registrieren
+                    self._element_linker.register_link_definition(
+                        LinkDefinition(
+                            source_type=source_type,
+                            target_type=target_type,
+                            source_param_name=link_def["source_param"],
+                            target_param_name=link_def["target_param"],
+                            source_process_enum=source_process_enum,
+                            target_process_enum=ProcessEnum.UUID,
+                            bidirectional=True
+                        )
+                    )
 
     def get_supported_element_types(self) -> List[str]:
         """Gibt die unterstützten Elementtypen zurück."""
@@ -117,6 +230,21 @@ class ClientAPlugin(PluginInterface):
                 f"Konvertierung für {element_type} in Projekt {project_id} ergab keine Elemente"
             )
             return None
+
+        # Konvertierte Elemente zum ElementLinker hinzufügen für die spätere Verknüpfung
+        if self._element_linker:
+            # Elemente im Linker registrieren
+            for element in converted_elements:
+                self._element_linker.register_element(element)
+
+            # Verarbeite Verknüpfungen für die neuen Elemente
+            for element in converted_elements:
+                self._element_linker.process_element_links(element)
+
+            # Nach der Verarbeitung des letzten Elementtyps Verknüpfungen finalisieren
+            if element_type in ["foundation", "mast"]:
+                self._element_linker.finalize_links()
+                log.info(f"Verknüpfungen für Elemente vom Typ {element_type} wurden erstellt")
 
         # Konvertiere die Elemente in ein Dictionary für die Serialisierung
         serialized_elements = [element.to_dict() for element in converted_elements]
@@ -1090,10 +1218,10 @@ class ClientAPlugin(PluginInterface):
 
                 if element_typ == "pipe":
                     # Entwässerungsleitung erstellen
-                    element = DrainagePipe(name=name)
+                    element = SewerPipe(name=name)
                 elif element_typ in ["shaft", "manhole"]:
                     # Entwässerungsschacht erstellen
-                    element = DrainageShaft(name=name)
+                    element = SewerShaft(name=name)
                 else:
                     log.warning(f"Unbekannter Entwässerungstyp: {element_typ}")
                     continue

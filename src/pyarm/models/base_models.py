@@ -4,7 +4,6 @@ This module defines the basic structure of the data models
 that are used in all processes.
 """
 
-import abc
 import logging
 from dataclasses import (
     dataclass,
@@ -40,13 +39,11 @@ from pyarm.models.process_enums import (
     ProcessEnum,
 )
 
-# Import at the end of the file to avoid circular imports
-
 log = logging.getLogger(__name__)
 
 
 @dataclass
-class InfrastructureElement[TDimension: Dimension](abc.ABC):
+class InfrastructureElement[TDimension: Dimension]:
     """
     Base class for all infrastructure elements.
     Uses the flexible parameter model with process enums and components.
@@ -77,7 +74,7 @@ class InfrastructureElement[TDimension: Dimension](abc.ABC):
 
     # Parameter storage
     parameters: list[Parameter] = field(default_factory=list)
-    known_params: dict[ProcessEnum, Any] = field(
+    known_params: dict[ProcessEnum, Parameter] = field(
         default_factory=dict,
         repr=False,
     )
@@ -93,7 +90,7 @@ class InfrastructureElement[TDimension: Dimension](abc.ABC):
         After initialization: Analyze parameters and categorize in known_params.
         Also create standard components.
         """
-
+        self._update_known_params()
         # Add standard parameters if they are missing
         if ProcessEnum.UUID not in self.known_params:
             self.parameters.append(
@@ -121,23 +118,19 @@ class InfrastructureElement[TDimension: Dimension](abc.ABC):
             self.parameters.append(
                 Parameter(
                     name="ElementType",
-                    value=self.element_type.value,
+                    value=self.element_type,
                     process=ProcessEnum.ELEMENT_TYPE,
                     datatype=DataType.STRING,
                     unit=UnitEnum.NONE,
                 )
             )
-
-        self._update_known_params()
-        # Create standard components
         self._initialize_components()
 
     def _update_known_params(self):
-        self.known_params.clear()
         for param in self.parameters:
             if not isinstance(param.process, ProcessEnum):
                 continue
-            self.known_params[param.process] = param.value
+            self.known_params[param.process] = param
 
     def _initialize_components(self):
         """Initializes the standard components based on the parameters."""

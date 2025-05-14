@@ -1,0 +1,73 @@
+{
+    "Abwasser_Haltung": {
+        "E": "ProcessEnum.X_COORDINATE",
+        "N": "ProcessEnum.Y_COORDINATE",
+        "H-RSRG": "ProcessEnum.Z_COORDINATE",
+        "E2": "ProcessEnum.X_COORDINATE_END",
+        "N2": "ProcessEnum.Y_COORDINATE_END",
+        "H-RSRG_2": "ProcessEnum.Z_COORDINATE_END",
+        "Family": "ProcessEnum.NAME",
+        "Width": "ProcessEnum.WIDTH",
+        "Diameter": "ProcessEnum.DIAMETER",
+        "UUID": "ProcessEnum.UUID"
+    },
+    "Abwasser_Schacht": {
+        "E": "ProcessEnum.X_COORDINATE",
+        "N": "ProcessEnum.Y_COORDINATE",
+        "H-RSRG": "ProcessEnum.Z_COORDINATE",
+        "Family": "ProcessEnum.NAME",
+        "Width": "ProcessEnum.WIDTH",
+        "Diameter": "ProcessEnum.DIAMETER",
+        "Dimension 2 (mm)": "ProcessEnum.SHAFT_MANHOLE_DIAMETER",
+        "UUID": "ProcessEnum.UUID"
+    },
+    "Alle_Kabelschächte": {
+        "E": "ProcessEnum.X_COORDINATE",
+        "N": "ProcessEnum.Y_COORDINATE",
+        "H-RSRG": "ProcessEnum.Z_COORDINATE",
+        "Family": "ProcessEnum.NAME",
+        "Width": "ProcessEnum.WIDTH",
+        "Diameter": "ProcessEnum.DIAMETER",
+        "UUID": "ProcessEnum.UUID",
+        "Depth": "ProcessEnum.DEPTH"
+    },
+    "Ausleger": {
+        "E": "ProcessEnum.X_COORDINATE",
+        "N": "ProcessEnum.Y_COORDINATE",
+        "H-RSRG": "ProcessEnum.Z_COORDINATE",
+        "E2": "ProcessEnum.X_COORDINATE_END",
+        "N2": "ProcessEnum.Y_COORDINATE_END",
+        "H-RSRG_2": "ProcessEnum.Z_COORDINATE_END",
+        "Family": "ProcessEnum.NAME",
+        "Width": "ProcessEnum.WIDTH",
+        "Diameter": "ProcessEnum.DIAMETER",
+        "UUID": "ProcessEnum.UUID",
+        "Depth": "ProcessEnum.DEPTH",
+        "Typ": "ProcessEnum.CANTILEVER_TYPE",
+        "MasterFID": "ProcessEnum.CANTILEVER_TO_MAST_UUID"
+    },
+    "Mast": {
+        "E": "ProcessEnum.X_COORDINATE",
+        "N": "ProcessEnum.Y_COORDINATE",
+        "H-RSRG": "ProcessEnum.Z_COORDINATE",
+        "Family": "ProcessEnum.NAME",
+        "Width": "ProcessEnum.WIDTH",
+        "Diameter": "ProcessEnum.DIAMETER",
+        "Länge (m)": "ProcessEnum.HEIGHT",
+        "UUID": "ProcessEnum.UUID",
+        "Typ": "ProcessEnum.MAST_TYPE",
+        "Mastnummer": "ProcessEnum.MAST_PROFILE_TYPE"
+    },
+    "Fundament": {
+        "E": "ProcessEnum.X_COORDINATE",
+        "N": "ProcessEnum.Y_COORDINATE",
+        "H-RSRG": "ProcessEnum.Z_COORDINATE",
+        "Family": "ProcessEnum.NAME",
+        "Width": "ProcessEnum.WIDTH",
+        "Diameter": "ProcessEnum.DIAMETER",
+        "Länge (m)": "ProcessEnum.HEIGHT",
+        "UUID": "ProcessEnum.UUID",
+        "Typ": "ProcessEnum.FOUNDATION_TYPE",
+        "Mast Master FID": "ProcessEnum.FOUNDATION_TO_MAST_UUID"
+    }
+}
