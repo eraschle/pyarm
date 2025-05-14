@@ -2,11 +2,41 @@
 
 Diese Funktionalität ermöglicht die Verknüpfung von Infrastrukturelementen (wie Fundamente und Masten) während der Import-Phase innerhalb der Client-Plugins, basierend auf beliebigen Attributen anstatt UUIDs.
 
+## Prozessübersicht
+
+Der Element-Linking-Prozess läuft wie folgt ab:
+
+```mermaid
+sequenceDiagram
+    participant Plugin as Client-Plugin
+    participant Linker as ElementLinker
+    participant Cache as Element-Cache
+    participant Element as Infrastruktur-Element
+    
+    Note over Plugin,Element: Importphase beginnt
+    
+    Plugin->>Linker: register_link_definition(source: Foundation, target: Mast, params: "MastID" -> "ID")
+    Plugin->>Linker: register_element(foundation)
+    Linker->>Cache: Speichere Element unter seinen Attributwerten
+    Plugin->>Linker: register_element(mast)
+    Linker->>Cache: Speichere Element unter seinen Attributwerten
+    
+    Plugin->>Linker: process_element_links(foundation)
+    Linker->>Cache: Suche Mast mit ID = foundation.MastID
+    Cache-->>Linker: Gefundenes Mast-Element
+    Linker->>Element: foundation.add_reference(Mast, mast.uuid, bidirectional=true)
+    
+    Note over Plugin,Element: Bei bidirektionaler Verknüpfung
+    Linker->>Element: mast.add_reference(Foundation, foundation.uuid)
+    
+    Note over Plugin,Element: Importphase endet
+```
+
 ## Kernfunktionen
 
-- **Flexible Verknüpfung**: Verbindung von Elementen basierend auf beliebigen Attributen (z.B. "MastID", "MastName", "StationNr")
-- **Frühzeitige Verknüpfung**: Verknüpfungen werden während der Import-Phase im Plugin erstellt, nicht erst danach
-- **Bidirektionale Referenzen**: Nach der Verknüpfung werden bidirektionale Referenzen mit den tatsächlichen UUIDs erstellt
+- **Flexible Verknüpfung**: Verbindung von Elementen basierend auf beliebigen Attributen (z.B. "MastID", "MastName", "StationNr") (siehe Diagramm: Attribute "MastID" und "ID")
+- **Frühzeitige Verknüpfung**: Verknüpfungen werden während der Import-Phase im Plugin erstellt, nicht erst danach (siehe Diagramm: "Importphase")
+- **Bidirektionale Referenzen**: Nach der Verknüpfung werden bidirektionale Referenzen mit den tatsächlichen UUIDs erstellt (siehe Diagramm: bidirektionale Verknüpfung)
 - **Erweiterbarkeit**: Die Lösung lässt sich auf beliebige Elementtypen erweitern
 
 ## Verwendung

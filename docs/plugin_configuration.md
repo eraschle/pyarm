@@ -6,6 +6,36 @@ Die Plugin-Konfiguration in PyArm ist flexibel gestaltet und ermöglicht es, Plu
 
 PyArm sucht in der folgenden Reihenfolge nach Konfigurationsdateien:
 
+```mermaid
+flowchart TD
+    Start[Konfiguration laden] --> EnvVar{"$PYARM_CONFIG\nvorhanden?"};
+    
+    EnvVar -->|Ja| FileExists1{"Datei\nexistiert?"}
+    EnvVar -->|Nein| ProjectConfig{"./config/plugins.json\nexistiert?"}
+    
+    FileExists1 -->|Ja| LoadEnvConfig["Lade Konfiguration\naus Umgebungsvariable"];
+    FileExists1 -->|Nein| ProjectConfig
+    
+    ProjectConfig -->|Ja| LoadProjectConfig["Lade Konfiguration\naus Projektverzeichnis"];
+    ProjectConfig -->|Nein| UserConfig{"~/.pyarm/plugins.json\nexistiert?"};
+    
+    UserConfig -->|Ja| LoadUserConfig["Lade Konfiguration\naus Benutzerverzeichnis"];
+    UserConfig -->|Nein| DefaultConfig["Verwende\nStandardkonfiguration"];
+    
+    LoadEnvConfig --> MergeConfig;
+    LoadProjectConfig --> MergeConfig;
+    LoadUserConfig --> MergeConfig;
+    DefaultConfig --> MergeConfig;
+    
+    MergeConfig["Führe Konfigurationsquellen\nzusammen"] --> PluginConfig["Angewendete\nPlugin-Konfiguration"];
+    
+    style LoadEnvConfig fill:#bbf,stroke:#333;
+    style LoadProjectConfig fill:#bbf,stroke:#333;
+    style LoadUserConfig fill:#bbf,stroke:#333;
+    style DefaultConfig fill:#bbf,stroke:#333;
+    style PluginConfig fill:#bfb,stroke:#333;
+```
+
 1. `$PYARM_CONFIG` (Umgebungsvariable)
 2. `./config/plugins.json` (Projektverzeichnis)
 3. `~/.pyarm/plugins.json` (Benutzerverzeichnis)
@@ -103,6 +133,18 @@ set PYARM_PLUGIN_PATHS=C:\path\to\plugins;D:\another\path
 ## Priorität der Konfiguration
 
 Die Konfiguration wird in der folgenden Reihenfolge angewendet:
+
+```mermaid
+flowchart BT
+    StandardValues["Standardwerte\n(eingebaute Plugins und\nStandardverzeichnisse)"] --> ConfigFile
+    ConfigFile["Konfigurationsdatei\n(plugins.json)"] --> EnvVars
+    EnvVars["Umgebungsvariablen\n(PYARM_PLUGIN_PATHS)"] --> ProgramConfig
+    ProgramConfig["Programmatisch\nübergebene Konfiguration"] --> FinalConfig
+    FinalConfig["Endgültige Konfiguration"] 
+    
+    class FinalConfig output;
+    classDef output fill:#9f9,stroke:#333,stroke-width:2px;
+```
 
 1. Standardwerte (eingebaute Plugins und Standardverzeichnisse)
 2. Konfigurationsdatei (plugins.json)
