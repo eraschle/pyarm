@@ -65,7 +65,10 @@ def add_references_to(reference_params: list[Parameter], element: Infrastructure
         if reference_type is None:
             log.warning(f"Could not find reference type for process enum: {param.process}")
             continue
-        element.add_reference(reference_type=reference_type, referenced_uuid=param.value)
+        if not param.can_as_uuid():
+            log.warning(f"Parameter {param} can not be converted to UUID.")
+            continue
+        element.add_reference(reference_type=reference_type, referenced_uuid=param.as_uuid())
 
 
 def add_references_to_other_elements(element: InfrastructureElement):
@@ -171,6 +174,17 @@ class SewerShaft(InfrastructureElement):
     """Drainage shaft element."""
 
     element_type: ElementType = ElementType.SEWER_SHAFT
+
+    def __post_init__(self):
+        super().__post_init__()
+        add_references_to_other_elements(self)
+
+
+@dataclass
+class CableShaft(InfrastructureElement):
+    """Cable shaft element."""
+
+    element_type: ElementType = ElementType.CABLE_SHAFT
 
     def __post_init__(self):
         super().__post_init__()

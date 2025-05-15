@@ -6,6 +6,7 @@ i
 """
 
 from enum import Enum
+from typing import Any, Dict
 
 
 class ComponentType(str, Enum):
@@ -14,13 +15,10 @@ class ComponentType(str, Enum):
     UNKNWOWN = "UNKNWOWN"  # Position im Raum
     LOCATION = "location"  # Position im Raum
     DIMENSION = "dimension"  # Abmessungen
-    MATERIAL = "material"  # Materialeigenschaften
     REFERENCE = "reference"  # Referenz zu einem anderen Element
-    PHYSICAL = "physical"  # Physikalische Eigenschaften (Gewicht, Dichte, etc.)
-    VISUAL = "visual"  # Visuelle Eigenschaften (Farbe, Textur, etc.)
     CUSTOM = "custom"  # Benutzerdefinierte Komponente
     METADATA = "metadata"  # Metadaten
-    BUILDING_PHASE = "building_phase"  # Bauphasen
+    PROJECT_PHASE = "building_phase"  # Bauphasen
     IFC_CONFIG = "ifc_config"  # IFC-Konfiguration
 
 
@@ -31,7 +29,7 @@ class Component:
         self.name = name
         self.component_type = component_type
 
-    def to_dict(self):
+    def to_dict(self) -> Dict[str, Any]:
         """
         Convert component to a dictionary for serialization.
 

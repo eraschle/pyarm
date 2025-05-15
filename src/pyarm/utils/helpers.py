@@ -6,6 +6,7 @@ These functions reduce code duplication and improve maintainability.
 import logging
 from typing import Any
 
+from pyarm.models import units
 from pyarm.models.parameter import DataType, Parameter, UnitEnum
 from pyarm.models.process_enums import ElementType, ProcessEnum
 
@@ -14,6 +15,7 @@ logger = logging.getLogger(__name__)
 
 def create_parameter_from(param_data: dict[str, Any]) -> "Parameter":
     """
+
     Creates a Parameter object from a dictionary.
 
     Parameters
@@ -39,50 +41,6 @@ def create_parameter_from(param_data: dict[str, Any]) -> "Parameter":
         datatype=datatype,
         unit=unit,
     )
-
-
-def convert_unit(value: int | float, from_unit: UnitEnum, to_unit: UnitEnum) -> float:
-    """
-    Converts a value from one unit to another.
-
-    Parameters
-    ----------
-    value: int | float
-        The value to be converted
-    from_unit: UnitEnum
-        Source unit
-    to_unit: UnitEnum
-        Target unit
-
-    Returns
-    -------
-    float
-        The converted value
-
-    Raises
-    ------
-    ValueError
-        If the conversion is not supported
-    """
-    # Length units
-    length_conversions = {
-        (UnitEnum.MILLIMETER, UnitEnum.METER): lambda x: x / 1000,
-        (UnitEnum.METER, UnitEnum.MILLIMETER): lambda x: x * 1000,
-        (UnitEnum.CENTIMETER, UnitEnum.METER): lambda x: x / 100,
-        (UnitEnum.METER, UnitEnum.CENTIMETER): lambda x: x * 100,
-    }
-
-    # If units are the same, no conversion necessary
-    if from_unit == to_unit:
-        return float(value)
-
-    # Look up conversion
-    conversion_key = (from_unit, to_unit)
-    if conversion_key in length_conversions:
-        return length_conversions[conversion_key](value)
-
-    # Unsupported conversion
-    raise ValueError(f"Conversion from {from_unit.value} to {to_unit.value} not supported")
 
 
 def resolve_element_type(type_str: str) -> ElementType:
@@ -237,7 +195,7 @@ def extract_value(
     if unit_conversion and isinstance(value, (int, float)):
         from_unit, to_unit = unit_conversion
         try:
-            value = convert_unit(value, from_unit, to_unit)
+            value = units.convert_unit(value, from_unit, to_unit)
         except ValueError as e:
             logger.warning(f"Unit conversion failed: {e}")
 

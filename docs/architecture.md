@@ -16,7 +16,6 @@ graph TD
     subgraph "Kern-System"
         CanonicalModel[Kanonisches Modell]
         RepositoryLayer[Repository-Schicht]
-        ValidationSystem[Validierungssystem]
         ElementLinker[Element-Linker]
     end
     
@@ -29,7 +28,6 @@ graph TD
     %% Verbindungen
     ClientData -->|wird verarbeitet durch| PluginSystem
     PluginSystem -->|konvertiert zu| CanonicalModel
-    CanonicalModel -->|validiert durch| ValidationSystem
     CanonicalModel -->|verknüpft durch| ElementLinker
     CanonicalModel -->|gespeichert in| RepositoryLayer
     RepositoryLayer -->|liefert Daten an| VisualizationService
@@ -42,7 +40,7 @@ graph TD
     classDef servicePart fill:#bfb,stroke:#333,stroke-width:2px;
     
     class ClientData,PluginSystem clientPart;
-    class CanonicalModel,RepositoryLayer,ValidationSystem,ElementLinker corePart;
+    class CanonicalModel,RepositoryLayer,ElementLinker corePart;
     class VisualizationService,CalculationService,ExportService servicePart;
 ```
 
@@ -120,21 +118,13 @@ Wichtige Komponententypen sind:
            self.bidirectional = bidirectional
    ```
 
-4. **Metadaten-Komponenten**: Behandeln zusätzliche Informationen
-   ```python
-   class Metadata(Component):
-       def __init__(self, metadata: Dict[str, Any]):
-           super().__init__("metadata", ComponentType.METADATA)
-           self.metadata = metadata
-   ```
-
 ### Integration im Element-Modell
 
 Die `InfrastructureElement`-Klasse integriert diese Komponenten:
 
 ```python
 @dataclass
-class InfrastructureElement[TDimension: Dimension]:
+class InfrastructureElement[TDimension: Dimension](IComponentModel):
     # Grundlegende Attribute
     name: str
     element_type: ElementType
@@ -193,10 +183,7 @@ foundation = Foundation(name="Fundament 1")
 
 # Benutzerdefinierte Komponenten hinzufügen
 foundation.add_component(
-    Metadata({
-        "installation_date": "2023-05-15",
-        "manufacturer": "ACME Corp"
-    })
+    CustomComponent("my_custom_component", ComponentType.CUSTOM)
 )
 
 # Referenz zu einem anderen Element hinzufügen
@@ -239,7 +226,7 @@ class PluginInterface(ABC):
         pass
         
     @abstractmethod
-    def convert_element(self, data: Dict[str, Any], element_type: str) -> Optional[Dict[str, Any]]:
+    def convert_element(self, element_type: ElementType) -> Optional[ConversionResult]:
         """Konvertiert Daten in ein Element des angegebenen Typs."""
         pass
 ```
@@ -291,8 +278,8 @@ class Application:
         ...
 
     def convert_element(
-        self, data: dict[str, Any], element_type: str, plugin_name: str | None = None
-    ) -> dict[str, Any] | None:
+        self, element_type: ElementType, plugin_name: str | None = None
+    ) -> Optional[ConversionResult]:
         # Daten mit einem bestimmten Plugin oder dem ersten passenden Plugin konvertieren
         ...
 ```
@@ -494,68 +481,6 @@ class ElementLinker:
         ...
 ```
 
-## Validierungssystem
-
-### Schema-Definition
-
-Die Validierung basiert auf Schema-Definitionen:
-
-```python
-@dataclass
-class SchemaDefinition:
-    # Elementtyp für dieses Schema
-    element_type: ElementType
-    
-    # Erforderliche Parameter
-    required_params: Set[ProcessEnum] = field(default_factory=set)
-    
-    # Erwartete Parametertypen
-    param_types: Dict[ProcessEnum, DataType] = field(default_factory=dict)
-    
-    # Erwartete Parametereinheiten
-    param_units: Dict[ProcessEnum, UnitEnum] = field(default_factory=dict)
-    
-    # Validierungseinschränkungen
-    constraints: Dict[ProcessEnum, List[Constraint]] = field(default_factory=dict)
-```
-
-### Einschränkungen
-
-Verschiedene Einschränkungstypen stehen zur Verfügung:
-
-```python
-class ConstraintType(Enum):
-    REQUIRED = auto()  # Parameter muss vorhanden sein
-    TYPE = auto()      # Parameter muss einen bestimmten Typ haben
-    UNIT = auto()      # Parameter muss eine bestimmte Einheit haben
-    MIN_VALUE = auto() # Parameter muss einen Mindestwert haben
-    MAX_VALUE = auto() # Parameter darf einen Maximalwert nicht überschreiten
-    RANGE = auto()     # Parameter muss innerhalb eines Bereichs liegen
-    REGEX = auto()     # Parameter muss einem Regex-Muster entsprechen
-    ENUM = auto()      # Parameter muss einem Aufzählungswert entsprechen
-    CUSTOM = auto()    # Benutzerdefinierte Validierungsfunktion
-```
-
-### Validierungsintegration
-
-Die Validierung kann über den `ValidatedPlugin`-Wrapper in Plugins integriert werden:
-
-```python
-class ValidatedPlugin(PluginInterface):
-    def __init__(self, plugin: PluginInterface, validation_service: IValidationService):
-        self._plugin = plugin
-        self._validation_service = validation_service
-        self._validation_enabled = True
-        self._validation_config = {
-            "strict_mode": False,
-            "ignore_warnings": True,
-            "log_level": "WARNING",
-        }
-        
-    # Implementierung der PluginInterface-Methoden mit Validierung
-    ...
-```
-
 ## Spezialisierte Element-Modelle
 
 PyArm enthält spezialisierte Modelle für verschiedene Infrastrukturelemente:
@@ -596,9 +521,72 @@ Der vollständige Datenfluss durch das System ist:
 1. **Daten lesen**: Kundenspezifische Reader lesen Rohdaten aus Dateien
 2. **Datenkonvertierung**: Converter transformieren Rohdaten in kanonische Elemente
 3. **Element-Verknüpfung**: Elemente werden auf Basis von Attributen verknüpft
-4. **Validierung**: Elemente werden anhand von Schemas validiert
-5. **Speicherung**: Elemente werden in einem Repository gespeichert
-6. **Verarbeitung**: Elemente werden abgerufen und von Services verarbeitet
+4. **Speicherung**: Elemente werden in einem Repository gespeichert
+5. **Verarbeitung**: Elemente werden abgerufen und von Services verarbeitet
+
+## Einheitenkonvertierung
+
+PyArm unterstützt die Konvertierung zwischen verschiedenen Maßeinheiten, um die Integration von Daten aus verschiedenen Quellen zu erleichtern:
+
+```python
+class UnitCategory(str, Enum):
+    """Kategorien für Maßeinheiten"""
+    
+    LENGTH = "length"
+    AREA = "area"
+    VOLUME = "volume"
+    MASS = "mass"
+    FORCE = "force"
+    ANGLE = "angle"
+    RATIO = "ratio"
+    TIME = "time"
+    TEMPERATURE = "temperature"
+    PRESSURE = "pressure"
+    VELOCITY = "velocity"
+    UNKNOWN = "unknown"
+```
+
+Die Einheitenkonvertierung wird durch spezialisierte Funktionen unterstützt:
+
+```python
+def convert_unit(value: int | float, from_unit: UnitEnum, to_unit: UnitEnum) -> float:
+    """Konvertiert einen Wert von einer Einheit in eine andere."""
+    # Wenn Einheiten gleich sind, keine Konvertierung notwendig
+    if from_unit == to_unit:
+        return float(value)
+    
+    # Prüfen, ob Einheiten aus derselben Kategorie stammen
+    from_category = get_unit_category(from_unit)
+    to_category = get_unit_category(to_unit)
+    
+    if from_category != to_category:
+        raise ValueError(
+            f"Konvertierung zwischen verschiedenen Einheitskategorien nicht möglich: "
+            f"{from_category.value} und {to_category.value}"
+        )
+    
+    # Jede Kategorie mit spezifischer Konvertierungslogik behandeln
+    if from_category == UnitCategory.LENGTH:
+        return _convert_length(value, from_unit, to_unit)
+    # ... andere Kategorien ...
+```
+
+Die Parameter-Klasse bietet Methoden für die direkte Einheitenkonvertierung:
+
+```python
+class Parameter:
+    # ...
+    
+    def convert_to(self, target_unit: UnitEnum) -> "Parameter":
+        """Konvertiert diesen Parameter in eine andere Einheit."""
+        from pyarm.models import units
+        return units.convert_parameter_unit(self, target_unit)
+    
+    def with_standard_unit(self) -> "Parameter":
+        """Konvertiert diesen Parameter in die Standard-SI-Einheit für seine Einheitskategorie."""
+        from pyarm.models import units
+        # ...
+```
 
 ## Fazit
 

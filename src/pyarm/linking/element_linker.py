@@ -7,7 +7,7 @@ nicht erst nachträglich.
 """
 
 import logging
-from typing import Dict, List, Optional, Set, Type
+from typing import Dict, List, Optional, Protocol, Set, Type
 from uuid import UUID
 
 from pyarm.models.base_models import InfrastructureElement
@@ -16,10 +16,18 @@ from pyarm.models.process_enums import ProcessEnum
 log = logging.getLogger(__name__)
 
 
-class LinkDefinition:
+class ILinkDefinition(Protocol):
+    source_type: Type[InfrastructureElement]
+    target_type: Type[InfrastructureElement]
+    source_uuid_param: Optional[ProcessEnum] = ProcessEnum.UUID
+    target_uuid_param: Optional[ProcessEnum] = ProcessEnum.UUID
+    bidirectional: bool
+
+
+class LinkDefinition(ILinkDefinition):
     """
-    Definition einer Verknüpfung zwischen zwei Elementtypen.
-    Spezifiziert, welche Parameter zur Verknüpfung verwendet werden sollen.
+    Definition of a link between two elements.
+    Specifies which parameters should be used for the link.
     """
 
     def __init__(
@@ -28,33 +36,42 @@ class LinkDefinition:
         target_type: Type[InfrastructureElement],
         source_param_name: str,
         target_param_name: str,
-        source_uuid_param: Optional[ProcessEnum] = None,
-        target_uuid_param: Optional[ProcessEnum] = ProcessEnum.UUID,
+        source_uuid_param: ProcessEnum = ProcessEnum.UUID,
+        target_uuid_param: ProcessEnum = ProcessEnum.UUID,
         bidirectional: bool = True,
+        try_link_with_coordinate: bool = False,
+        offset_coordinate: Optional[float] = None,
     ):
         """
-        Initialisiert eine neue Link-Definition.
+        Initializes a new link definition.
 
         Parameters
         ----------
         source_type: Type[InfrastructureElement]
-            Der Quell-Elementtyp (z.B. Foundation)
+            Source element type (e.g. Foundation)
         target_type: Type[InfrastructureElement]
-            Der Ziel-Elementtyp (z.B. Mast)
+            Target element type (e.g. Mast)
         source_param_name: str
-            Name des Parameters im Quell-Element, der auf das Ziel-Element verweist
+            Parameter name in the source element that corresponds to the target parameter
             (z.B. "MastID" oder "MastReference")
         target_param_name: str
-            Name des Parameters im Ziel-Element, der dem in source_param_name entspricht
+            Parameter name in the target element that corresponds to the source parameter
             (z.B. "ID" oder "UUID")
-        source_uuid_param: Optional[ProcessEnum]
-            Prozess-Enum für die UUID-Referenz im Quell-Element
-            (z.B. ProcessEnum.FOUNDATION_TO_MAST_UUID)
-        target_uuid_param: Optional[ProcessEnum]
-            Prozess-Enum für die UUID des Ziel-Elements
-            (z.B. ProcessEnum.UUID)
+        source_uuid_param: ProcessEnum
+            Parameter name in the source element that corresponds to the UUID
+            (default: ProcessEnum.UUID)
+        target_uuid_param: ProcessEnum
+            Parameter name in the target element that corresponds to the UUID
+            (default: ProcessEnum.UUID)
         bidirectional: bool
-            Ob die Verknüpfung bidirektional sein soll (Standard: True)
+            If the link should be bidirectional
+            (default: True)
+        try_link_with_coordinate: bool
+            If the link should be attempted using coordinates
+            (default: False)
+        offset_coordinate: Optional[float]
+            Offset for the coordinate link
+            (default: None)
         """
         self.source_type = source_type
         self.target_type = target_type
@@ -63,6 +80,8 @@ class LinkDefinition:
         self.source_uuid_param = source_uuid_param
         self.target_uuid_param = target_uuid_param
         self.bidirectional = bidirectional
+        self.try_link_with_coordinate = try_link_with_coordinate
+        self.offset_coordinate = offset_coordinate
 
     def __repr__(self) -> str:
         return (
@@ -85,6 +104,10 @@ class ElementLinker:
         # Element-Cache für den schnellen Zugriff nach Typ und Attributwert
         # Format: {ElementTypName: {AttributName:AttributWert: [Elemente]}}
         self.element_cache: Dict[str, Dict[str, List[InfrastructureElement]]] = {}
+
+        # Coordinate-Cache für den schnellen Zugriff auf Koordinaten
+        # Format: {Tuple: [Elemente]}
+        self.coordinate_cache: Dict[tuple, List[InfrastructureElement]] = {}
 
         # UUID-zu-Element-Cache für den direkten Zugriff über UUIDs
         # Format: {UUID-String: Element}
@@ -116,19 +139,6 @@ class ElementLinker:
         if target_type_name not in self.element_cache:
             self.element_cache[target_type_name] = {}
 
-    def register_link_definitions_for_project(self, project_id: str) -> None:
-        """
-        Registriert Link-Definitionen basierend auf der Projekt-ID.
-        Nutze diese Methode, um projektspezifische Verknüpfungen zu definieren.
-
-        Parameters
-        ----------
-        project_id: str
-            ID des Projekts
-        """
-        # Diese Methode würde von konkretren Implementierungen überschrieben
-        log.warning(f"Keine spezifischen Link-Definitionen für Projekt {project_id} gefunden")
-
     def register_element(self, element: InfrastructureElement) -> None:
         """
         Registriert ein Element im Cache für spätere Verknüpfungen.
@@ -147,20 +157,10 @@ class ElementLinker:
 
         # Speichere das Element unter all seinen relevanten Parametern
         for param in element.parameters:
-            param_value = str(param.value)
-            param_name = param.name
-
-            # Speichere unter der Kombination aus Parametername und -wert
-            cache_key_with_name = f"{param_name}:{param_value}"
-            if cache_key_with_name not in self.element_cache[element_type]:
-                self.element_cache[element_type][cache_key_with_name] = []
-            self.element_cache[element_type][cache_key_with_name].append(element)
-
-            # Zusätzlich: Speichere das Element auch nur unter dem Parameterwert
-            # (für den Fall, dass wir den Namen nicht kennen)
-            if param_value not in self.element_cache[element_type]:
-                self.element_cache[element_type][param_value] = []
-            self.element_cache[element_type][param_value].append(element)
+            cache_key_with_point = f"{param.name}:{param.value}"
+            if cache_key_with_point not in self.element_cache[element_type]:
+                self.element_cache[element_type][cache_key_with_point] = []
+            self.element_cache[element_type][cache_key_with_point].append(element)
 
     def process_element_links(self, element: InfrastructureElement) -> None:
         """
@@ -200,13 +200,6 @@ class ElementLinker:
             if target_type in self.element_cache and target_key in self.element_cache[target_type]:
                 target_elements = self.element_cache[target_type][target_key]
 
-            # Alternativ nur nach dem Wert suchen, falls noch nichts gefunden wurde
-            elif (
-                target_type in self.element_cache
-                and source_param_value in self.element_cache[target_type]
-            ):
-                target_elements = self.element_cache[target_type][source_param_value]
-
             # Erstelle Referenzen zu allen gefundenen Ziel-Elementen
             for target_element in target_elements:
                 self._create_reference(element, target_element, link_def)
@@ -214,7 +207,10 @@ class ElementLinker:
         self.processed_elements.add(element.uuid)
 
     def _create_reference(
-        self, source: InfrastructureElement, target: InfrastructureElement, link_def: LinkDefinition
+        self,
+        source: InfrastructureElement,
+        target: InfrastructureElement,
+        link_def: ILinkDefinition,
     ) -> None:
         """
         Erstellt eine Referenz zwischen zwei Elementen.
@@ -236,21 +232,13 @@ class ElementLinker:
                 bidirectional=link_def.bidirectional,
             )
 
-            # Bei bidirektionalen Referenzen: Speichere die UUID im passenden Parameter
-            if link_def.source_uuid_param:
-                from pyarm.models.parameter import DataType, Parameter, UnitEnum
-
-                # Erstelle Parameter für die UUID-Referenz, falls nicht vorhanden
-                if not source.has_param(link_def.source_uuid_param):
-                    param = Parameter(
-                        name=link_def.source_param_name,
-                        value=target.uuid,
-                        process=link_def.source_uuid_param,
-                        datatype=DataType.STRING,
-                        unit=UnitEnum.NONE,
-                    )
-                    source.parameters.append(param)
-                    source.known_params[link_def.source_uuid_param] = param
+            source_uuid_param = link_def.source_uuid_param or ProcessEnum.UUID
+            # Erstelle Parameter für die UUID-Referenz, falls nicht vorhanden
+            if not source.has_param(source_uuid_param):
+                raise ValueError(
+                    f"Parameter '{source_uuid_param}' in element "
+                    f"{type(source).__name__}({source.name}) does not exist"
+                )
 
             # Erfolgreiche Verknüpfung protokollieren
             self.links_created += 1

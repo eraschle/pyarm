@@ -11,10 +11,11 @@ from uuid import UUID
 
 from pyarm.models.base_models import InfrastructureElement
 from pyarm.models.process_enums import ElementType
+from pyarm.repository.elements import IElementRepository
 from pyarm.utils import factory
 
 
-class JsonElementRepository:
+class JsonElementRepository(IElementRepository):
     """
     Repository for storing infrastructure elements in JSON files.
     """
@@ -89,49 +90,15 @@ class JsonElementRepository:
                 json.dump(elements_data, f, indent=2)
 
     def get_all(self) -> list[InfrastructureElement]:
-        """
-        Retrieves all elements.
-
-        Returns
-        -------
-        list[InfrastructureElement]
-            List of all elements
-        """
         self._load_cache()
         return list(self._elements_cache.values())
 
     def get_by_id(self, uuid: Union[UUID, str]) -> Optional[InfrastructureElement]:
-        """
-        Retrieves an element by its UUID.
-
-        Parameters
-        ----------
-        uuid: Union[UUID, str]
-            UUID of the element
-
-        Returns
-        -------
-        Optional[InfrastructureElement]
-            The found element or None
-        """
         self._load_cache()
         uuid_str = str(uuid)
         return self._elements_cache.get(uuid_str)
 
     def get_by_type(self, element_type: ElementType) -> list[InfrastructureElement]:
-        """
-        Retrieves elements of a specific type.
-
-        Parameters
-        ----------
-        element_type: ElementType
-            Type of elements to retrieve
-
-        Returns
-        -------
-        list[InfrastructureElement]
-            List of found elements
-        """
         self._load_cache()
         return [
             element
@@ -140,28 +107,12 @@ class JsonElementRepository:
         ]
 
     def save(self, element: InfrastructureElement) -> None:
-        """
-        Saves an element.
-
-        Parameters
-        ----------
-        element: InfrastructureElement
-            Element to be saved
-        """
         self._load_cache()
         uuid_str = str(element.uuid)
         self._elements_cache[uuid_str] = element
         self._save_cache()
 
     def save_all(self, elements: list[InfrastructureElement]) -> None:
-        """
-        Saves multiple elements.
-
-        Parameters
-        ----------
-        elements: list[InfrastructureElement]
-            Elements to be saved
-        """
         self._load_cache()
         for element in elements:
             uuid_str = str(element.uuid)
@@ -169,14 +120,6 @@ class JsonElementRepository:
         self._save_cache()
 
     def delete(self, uuid: Union[UUID, str]) -> None:
-        """
-        Deletes an element.
-
-        Parameters
-        ----------
-        uuid: Union[UUID, str]
-            UUID of the element to be deleted
-        """
         self._load_cache()
         uuid_str = str(uuid)
         if uuid_str in self._elements_cache:
@@ -184,9 +127,6 @@ class JsonElementRepository:
             self._save_cache()
 
     def clear(self) -> None:
-        """
-        Deletes all elements.
-        """
         self._elements_cache.clear()
         self._cache_loaded = True
         self._save_cache()

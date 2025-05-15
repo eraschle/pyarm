@@ -4,7 +4,25 @@ All plugins must implement this interface.
 """
 
 from abc import ABC, abstractmethod
-from typing import Any, Dict, List, Optional
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Union
+
+from pyarm.linking.element_linker import ElementLinker
+from pyarm.models.base_models import InfrastructureElement
+from pyarm.models.process_enums import ElementType
+
+
+@dataclass
+class ConversionResult:
+    """
+    Class representing the result of a conversion process for an element type.
+    """
+
+    elements: List[InfrastructureElement]
+    element_type: ElementType
+    plugin_name: str
+    validation: Dict[str, Any] = field(default_factory=dict)
 
 
 class PluginInterface(ABC):
@@ -43,32 +61,56 @@ class PluginInterface(ABC):
         pass
 
     @abstractmethod
-    def get_supported_element_types(self) -> List[str]:
+    def get_supported_element_types(self) -> List[ElementType]:
         """
         Returns the element types supported by this plugin.
 
         Returns
         -------
-        List[str]
-            List of supported element types
+        List[ElementType]
+            List of supported element types as ElementType enum values
         """
         pass
 
     @abstractmethod
-    def convert_element(self, data: Dict[str, Any], element_type: str) -> Optional[Dict[str, Any]]:
+    def load_data_from_directory(self, directory_path: Union[str, Path]) -> None:
         """
-        Converts data into an element of the specified type.
+        Loads all relevant data from the specified directory and stores it internally in the plugin.
+        The plugin is responsible for finding and reading all necessary files.
 
         Parameters
         ----------
-        data: Dict[str, Any]
-            The data to be converted
-        element_type: str
-            Type of the element to be created
+        directory_path: Union[str, Path]
+            Path to the directory containing the files
+        """
+        pass
+
+    @abstractmethod
+    def convert_element(self, element_type: ElementType) -> Optional[ConversionResult]:
+        """
+        Converts internally stored data into elements of the specified type.
+
+        Parameters
+        ----------
+        element_type: ElementType
+            Type of the elements to be created
 
         Returns
         -------
-        Optional[Dict[str, Any]]
-            Converted element or None if conversion is not possible
+        Optional[ConversionResult]
+            Conversion result containing the created elements and their type
+        """
+        pass
+
+    @abstractmethod
+    def define_element_links(self, linker_manager: ElementLinker) -> None:
+        """
+        Defines element links using the provided linker manager.
+        This method should be called after all elements have been converted.
+
+        Parameters
+        ----------
+        linker_manager: Any
+            The linker manager to use for defining element links
         """
         pass

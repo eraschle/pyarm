@@ -132,7 +132,8 @@ class ValidationService(IValidationService):
         # Zusammenfassung loggen
         valid_count = sum(1 for result in results if result.is_valid)
         log.info(
-            f"Validierungsergebnis: {valid_count} von {len(results)} {element_type}-Elementen valide"
+            f"Validierungsergebnis: {valid_count} von "
+            f"{len(results)} {element_type}-Elementen valide"
         )
 
         return results

@@ -11,7 +11,6 @@ from dataclasses import (
 )
 from typing import (
     Any,
-    ClassVar,
     Optional,
     Type,
     cast,
@@ -28,6 +27,7 @@ from pyarm.components import (
     Location,
 )
 from pyarm.components.location import PointLocation
+from pyarm.interfaces.component import IComponentModel
 from pyarm.models.errors import PyArmComponentError, PyArmParameterError
 from pyarm.models.parameter import (
     DataType,
@@ -43,29 +43,11 @@ log = logging.getLogger(__name__)
 
 
 @dataclass
-class InfrastructureElement[TDimension: Dimension]:
+class InfrastructureElement[TDimension: Dimension](IComponentModel):
     """
     Base class for all infrastructure elements.
     Uses the flexible parameter model with process enums and components.
     """
-
-    # Class attribute: Required parameters for different processes
-    required_params: ClassVar[dict[str, set[ProcessEnum]]] = {
-        "common": {
-            ProcessEnum.UUID,
-            ProcessEnum.NAME,
-            ProcessEnum.ELEMENT_TYPE,
-        },
-        "geometry": {
-            ProcessEnum.X_COORDINATE,
-            ProcessEnum.Y_COORDINATE,
-            ProcessEnum.Z_COORDINATE,
-        },
-        "visualization": {ProcessEnum.ELEMENT_TYPE},
-        "calculation": {
-            ProcessEnum.ELEMENT_TYPE,
-        },
-    }
 
     # Basic attributes
     name: str
@@ -124,9 +106,11 @@ class InfrastructureElement[TDimension: Dimension]:
                     unit=UnitEnum.NONE,
                 )
             )
+        self._update_known_params()
         self._initialize_components()
 
     def _update_known_params(self):
+        self.known_params.clear()
         for param in self.parameters:
             if not isinstance(param.process, ProcessEnum):
                 continue
@@ -196,63 +180,16 @@ class InfrastructureElement[TDimension: Dimension]:
             references.append(param)
         return references
 
+    def add_component(self, component: Component) -> None:
+        self.components[component.name] = component
+
     def get_component(self, component_name: str) -> Optional[Component]:
-        """
-        Returns a component by its name.
-
-        Parameters
-        ----------
-        component_name: str
-            Name of the component
-
-        Returns
-        -------
-        Optional[Component]
-            The component or None if it doesn't exist
-        """
         return self.components.get(component_name)
 
     def get_components_by_type(self, component_type: ComponentType) -> list[Component]:
-        """
-        Returns all components of a specific type.
-
-        Parameters
-        ----------
-        component_type: ComponentType
-            Type of the components
-
-        Returns
-        -------
-        list[Component]
-            List of components of the specified type
-        """
         return [comp for comp in self.components.values() if comp.component_type == component_type]
 
-    def add_component(self, component: Component) -> None:
-        """
-        Adds a component or replaces an existing one with the same name.
-
-        Parameters
-        ----------
-        component: Component
-            The component to add
-        """
-        self.components[component.name] = component
-
     def remove_component(self, component_name: str) -> bool:
-        """
-        Removes a component by its name.
-
-        Parameters
-        ----------
-        component_name: str
-            Name of the component
-
-        Returns
-        -------
-        bool
-            True if the component was removed, False if it didn't exist
-        """
         if component_name in self.components:
             del self.components[component_name]
             return True
@@ -276,17 +213,7 @@ class InfrastructureElement[TDimension: Dimension]:
 
         # Add parameters
         for param in self.parameters:
-            param_dict = {
-                "name": param.name,
-                "value": param.value,
-                "datatype": param.datatype,
-                "unit": param.unit.value,
-            }
-
-            if param.process:
-                param_dict["process"] = param.process.value
-
-            result["parameters"].append(param_dict)
+            result["parameters"].append(param.to_dict())
 
         return result
 

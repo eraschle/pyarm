@@ -3,10 +3,10 @@ Main application class for PyArm.
 """
 
 import logging
-from typing import Any
+from typing import Any, Union
 
-from pyarm.interfaces.plugin import PluginInterface
-
+from pyarm.interfaces.plugin import ConversionResult, PluginInterface
+from pyarm.models.process_enums import ElementType
 from pyarm.plugins import discover_plugins, get_plugin_settings
 
 logger = logging.getLogger(__name__)
@@ -79,20 +79,30 @@ class Application:
         """
         return self.plugins.get(name)
 
-    def get_plugins_for_element_type(self, element_type: str) -> list[PluginInterface]:
+    def get_plugins_for_element_type(
+        self, element_type: Union[str, ElementType]
+    ) -> list[PluginInterface]:
         """
         Returns all plugins that support a specific element type.
 
         Parameters
         ----------
-        element_type: str
-            Type of the element
+        element_type: Union[str, ElementType]
+            Type of the element as a string or ElementType enum
 
         Returns
         -------
         list[PluginInterface]
             List of plugins that support the element type
         """
+        # Convert string to ElementType if needed
+        if isinstance(element_type, str):
+            try:
+                element_type = ElementType(element_type)
+            except ValueError:
+                logger.warning(f"Invalid element type: {element_type}")
+                return []
+
         return [
             plugin
             for plugin in self.plugins.values()
@@ -100,8 +110,8 @@ class Application:
         ]
 
     def convert_element(
-        self, data: dict[str, Any], element_type: str, plugin_name: str | None = None
-    ) -> dict[str, Any] | None:
+        self, element_type: Union[str, ElementType], plugin_name: str | None = None
+    ) -> ConversionResult | None:
         """
         Converts data into an element using a specific plugin.
 
@@ -109,8 +119,8 @@ class Application:
         ----------
         data: dict[str, Any]
             The data to be converted
-        element_type: str
-            Type of the element to be created
+        element_type: Union[str, ElementType]
+            Type of the element to be created as string or ElementType enum
         plugin_name: str | None
             Optional name of the plugin to be used
 
@@ -119,16 +129,24 @@ class Application:
         dict[str, Any] | None
             Converted element or None if conversion is not possible
         """
+        # Convert string to ElementType if needed
+        if isinstance(element_type, str):
+            try:
+                element_type = ElementType(element_type)
+            except ValueError:
+                logger.warning(f"Invalid element type: {element_type}")
+                return None
+
         if plugin_name:
             # Use specific plugin
             plugin = self.get_plugin(plugin_name)
             if plugin and element_type in plugin.get_supported_element_types():
-                return plugin.convert_element(data, element_type)
+                return plugin.convert_element(element_type)
             return None
         else:
             # Use first plugin that supports the element type
             for plugin in self.get_plugins_for_element_type(element_type):
-                result = plugin.convert_element(data, element_type)
+                result = plugin.convert_element(element_type)
                 if result:
                     return result
             return None

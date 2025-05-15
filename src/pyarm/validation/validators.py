@@ -322,7 +322,7 @@ class ElementValidator(GenericValidator):
             The schema to which constraints should be added
         """
         # Gemeinsame Dimensionsparameter
-        if element_type in [ElementType.FOUNDATION, ElementType.MAST, ElementType.BUILDING]:
+        if element_type in [ElementType.FOUNDATION, ElementType.MAST]:
             schema.required_params.update(
                 {
                     ProcessEnum.WIDTH,

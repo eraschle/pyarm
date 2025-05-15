@@ -18,7 +18,7 @@ class ElementType(StrEnum):
     SLEEPER = "sleeper"
     SEWER_PIPE = "sewer_pipe"
     SEWER_SHAFT = "sewer_shaft"
-    BUILDING = "building"
+    CABLE_SHAFT = "cable_shaft"
 
 
 class ProcessEnum(StrEnum):
@@ -30,6 +30,7 @@ class ProcessEnum(StrEnum):
     UUID = "uuid"
     NAME = "name"
     ELEMENT_TYPE = "element_type"
+    DOMAIN = "domain"
 
     # Geometric - Position
     # Point or Startpoint
@@ -54,28 +55,23 @@ class ProcessEnum(StrEnum):
     DEPTH = "depth"
     LENGTH = "length"
     DIAMETER = "diameter"
-    SLOPE = "slope"
     RADIUS = "radius"
+    ANGLE = "angle"
+    SLOPE = "slope"
 
     # Foundation-specific
     FOUNDATION_TYPE = "foundation_type"
-    FOUNDATION_TO_MAST_UUID = "foundation_to_mast_uuid"
 
     # Mast-specific
     MAST_TYPE = "mast_type"
     MAST_PROFILE_TYPE = "mast_profile_type"
-    MAST_TO_FOUNDATION_UUID = "mast_to_foundation_uuid"
-    MAST_TO_CANTILEVER_UUID = "mast_to_cantilever_uuid"
-    MAST_TO_JOCH_UUID = "mast_to_joch_uuid"
 
     # Cantilever-specific
     CANTILEVER_TYPE = "cantilever_type"
-    CANTILEVER_TO_MAST_UUID = "cantilever_to_mast_uuid"
 
     # Joch-specific
     JOCH_TYPE = "joch_type"
     JOCH_SPAN = "joch_span"
-    JOCH_TO_MAST_UUID = "joch_to_mast_uuid"
 
     # Track-specific
     TRACK_GAUGE = "track_gauge"
@@ -91,16 +87,10 @@ class ProcessEnum(StrEnum):
     SLEEPER_TYPE = "sleeper_type"
     SLEEPER_SPACING = "sleeper_spacing"
 
-    # Drainage-specific
-    PIPE_MATERIAL = "pipe_material"
+    # Sewer-specific
     SHAFT_MANHOLE_DIAMETER = "manhole_diameter"
     SHAFT_COVER_TYPE = "shaft_cover_type"
-
-    # Building-specific
-    DESCRIPTION = "description"
-    YEAR_BUILT = "year_built"
-    RENOVATION_YEAR = "renovation_year"
-    FLOORS = "floors"
+    SEWER_TYPE = "sewer_type"
 
     # Location/Positioning
     KILOMETER_POSITION = "kilometer_position"
@@ -109,16 +99,9 @@ class ProcessEnum(StrEnum):
     START_KILOMETER = "start_kilometer"
     END_KILOMETER = "end_kilometer"
 
-    # Specific properties
-    VOLUME = "volume"
-    CAPACITY = "capacity"
-    DRAINAGE_TYPE = "drainage_type"
-
     # IFC data
     IFC_GLOBAL_ID = "ifc_global_id"
     IFC_TYPE = "ifc_type"
-    IFC_MATERIAL = "ifc_material"
-    IFC_CATEGORY = "ifc_category"
 
     # Construction phases
     CONSTRUCTION_PHASE_ID = "construction_phase_id"

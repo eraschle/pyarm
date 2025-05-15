@@ -37,7 +37,6 @@ class FoundationValidator(ElementValidator):
         schema.param_types.update(
             {
                 ProcessEnum.FOUNDATION_TYPE: DataType.STRING,
-                ProcessEnum.FOUNDATION_TO_MAST_UUID: DataType.STRING,
             }
         )
 
@@ -196,9 +195,6 @@ class MastValidator(ElementValidator):
             {
                 ProcessEnum.MAST_TYPE: DataType.STRING,
                 ProcessEnum.MAST_PROFILE_TYPE: DataType.STRING,
-                ProcessEnum.MAST_TO_FOUNDATION_UUID: DataType.STRING,
-                ProcessEnum.MAST_TO_CANTILEVER_UUID: DataType.STRING,
-                ProcessEnum.MAST_TO_JOCH_UUID: DataType.STRING,
                 ProcessEnum.Z_ROTATION: DataType.FLOAT,
             }
         )
@@ -272,8 +268,6 @@ class MastValidator(ElementValidator):
                     height = float(value) if value is not None else None
                 elif process == ProcessEnum.MAST_TYPE.value:
                     mast_type = value
-                elif process == ProcessEnum.MAST_TO_FOUNDATION_UUID.value:
-                    foundation_ref = value
 
         # Prüfung auf fehlende Foundation-Referenz
         if not foundation_ref:

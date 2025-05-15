@@ -1,6 +1,5 @@
 import abc
 import logging
-from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Any
 
 from pyarm.components.base import Component, ComponentType
@@ -80,14 +79,17 @@ class Coordinate:
         return f"Coordinate(x={self.x}, y={self.y}, z={self.z})"
 
 
-@dataclass
 class Location(Component):
-    name: str = field(init=False)
-    component_type: ComponentType = field(init=False, repr=False)
+    def __init__(self, element: "InfrastructureElement"):
+        """
+        Initializes a location component.
 
-    def __post_init__(self):
-        self.name = "location"
-        self.component_type = ComponentType.LOCATION
+        Args
+        ----
+            element: The element to which this component belongs.
+        """
+        super().__init__(name="location", component_type=ComponentType.LOCATION)
+        self.element = element
 
     @property
     @abc.abstractmethod
@@ -139,21 +141,38 @@ class Location(Component):
         return str(self.point)
 
 
-@dataclass
 class PointLocation(Location, Component):
-    location: Coordinate
+    def __init__(self, location: Coordinate):
+        """
+        Initializes a point location component.
+
+        Args
+        ----
+            location: The coordinates of the point.
+        """
+        super().__init__(element=location.element)
+        self.location = location
 
     @property
     def point(self) -> Coordinate:
         return self.location
 
 
-@dataclass
 class LineLocation(Location, Component):
     """Komponente für linienförmige Elemente mit Start- und Endpunkt."""
 
-    start: Coordinate
-    end: Coordinate
+    def __init__(self, start: Coordinate, end: Coordinate):
+        """
+        Initializes a line location component.
+
+        Args
+        ----
+            start: The start coordinates of the line.
+            end: The end coordinates of the line.
+        """
+        super().__init__(element=start.element)
+        self.start = start
+        self.end = end
 
     @property
     def point(self) -> Coordinate:

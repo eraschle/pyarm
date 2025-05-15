@@ -16,7 +16,6 @@ class ElementReference(Component):
         referenced_uuid: UUID,
         reference_type: Type["InfrastructureElement"],
         bidirectional: bool = False,
-        component_type: ComponentType = ComponentType.REFERENCE,
     ):
         """
         Initialisiert eine ElementReference-Komponente.
@@ -28,7 +27,7 @@ class ElementReference(Component):
             bidirectional: Ob die Referenz bidirektional ist
             component_type: Typ der Komponente (sollte REFERENCE sein)
         """
-        super().__init__(name=name, component_type=component_type)
+        super().__init__(name=name, component_type=ComponentType.REFERENCE)
         self.referenced_uuid = referenced_uuid
         self.reference_type = reference_type
         self.bidirectional = bidirectional
