@@ -1,0 +1,9084 @@
+[
+  {
+    "name": "Schlammsammler - 0.95x0.70",
+    "uuid": "f58da3c6-bc71-4f3a-879f-903d3af1dc5e",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.434,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 729,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Schlammsammler",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 586.68,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 950.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 700.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": "2 dalles",
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 750,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-31T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-06-02T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj0021A0AC",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "FRIN",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Frinvillier-Taubenloch",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172178909,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "f58b2562-1787-45f1-86c1-cc34dcd553d4",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585416.596,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225184.557,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528307,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "f58b2562-1787-45f1-86c1-cc34dcd553d4",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 586.68,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 586.686555372293,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 587.1,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Schlammsammler",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.95x0.70",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.95,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.475,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 586.68,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.43",
+    "uuid": "6850d123-891e-49de-8e53-361772daf60d",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.469,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 718,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Einlaufschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": "Rost",
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 586.455,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 430,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": "entlüftet",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": "Guss",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-06-02T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj0027C3E4",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "FRIN",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Frinvillier-Taubenloch",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172138955,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "b38bd05c-92bb-4a27-aed4-5e807cad2b81",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585403.283,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225218.494,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528290,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "b38bd05c-92bb-4a27-aed4-5e807cad2b81",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 586.455,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 586.490768040102,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 586.2,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -112.745,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.43",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 586.455,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.45",
+    "uuid": "462576cf-206a-4060-b7ec-94eee6a7a67f",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.526,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 716,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Einlaufschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": "Rost",
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 586.815,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 450,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": "entlüftet",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": "Guss",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj002BA934",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "FRIN",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Frinvillier-Taubenloch",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172059760,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "bc6b45f6-3c8f-424c-ae51-99c49ca9b0b3",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585401.841,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225276.422,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528289,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "bc6b45f6-3c8f-424c-ae51-99c49ca9b0b3",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 586.815,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 586.807025260569,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 586.4,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -112.385,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.45",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 586.815,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.41",
+    "uuid": "aacea7ce-8d1d-4613-8572-bfb00f62a315",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.544,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 713,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 587.81,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 410.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 410.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 600,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-06-02T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj0022BFFC",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "FRIN",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Frinvillier-Taubenloch",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171967277,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "8856cfb3-b4cc-4006-a98d-86096350ff1b",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585412.031,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225293.118,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528287,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "8856cfb3-b4cc-4006-a98d-86096350ff1b",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 587.81,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 587.848714053033,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 587.6,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.41",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 587.81,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.45",
+    "uuid": "dd9aaf20-c274-4b86-bcb6-859e2e8c51be",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.566,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 760,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Einlaufschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": "Rost",
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 587.044,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 450,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": "entlüftet",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": "Guss",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-05-31T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj0024F974",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "FRIN",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Frinvillier-Taubenloch",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171980297,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "28c916d6-281f-473e-b456-df96284c35b9",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585407.624,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225316.212,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528288,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "28c916d6-281f-473e-b456-df96284c35b9",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 587.044,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 587.04749559781,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 587.0,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -112.156,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.45",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 587.044,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.58",
+    "uuid": "fa6d0c6f-d2de-4d52-8f8d-59252e0a15c4",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.587,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 100,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 580,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 3,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-31T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-06-02T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj001E82A4",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171966868,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "4fce5c7d-f958-474b-83aa-6251c0bb16ac",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585423.456,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225334.308,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528291,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "4fce5c7d-f958-474b-83aa-6251c0bb16ac",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 591.62759912938,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 591.4,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.58",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 591.62759912938,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "PuWo",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.41",
+    "uuid": "a1219d26-52ba-4bfa-bc34-8621a028c908",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.587,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 710,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 588.2,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 410.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 410.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 600,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 3,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-06-02T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj001C2CF4",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171916273,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "3a5f2e6c-6402-402e-a9af-6e7decabd5d1",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585421.537,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225334.87,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528286,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "3a5f2e6c-6402-402e-a9af-6e7decabd5d1",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 588.2,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 588.297870437667,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 588.2,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.41",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 588.2,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.41",
+    "uuid": "6628d2ed-fbef-4ab3-aa52-2af597c359f0",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.633,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 709,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 588.7,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 410.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 410.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 600,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 3,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-06-02T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj001E08CC",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171863712,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "e42c3373-123f-4d43-8a23-524c11e2e7a9",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585436.386,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225377.214,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528282,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "e42c3373-123f-4d43-8a23-524c11e2e7a9",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 588.7,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 588.727656738227,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 590.8,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.41",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 588.7,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.50x0.33",
+    "uuid": "e8ec8a41-0733-4489-88f9-24f61ed6f60d",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.898,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 766,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 591.09,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 330.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 330.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 500,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj00230604",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172017518,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "6682c212-95d6-4a8e-8f7c-b2b9f8181f65",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585543.031,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225619.791,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528283,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "6682c212-95d6-4a8e-8f7c-b2b9f8181f65",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 591.09,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 591.079032596196,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 591.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.50x0.33",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.5,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.25,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 591.09,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.50x0.33",
+    "uuid": "8a92de5f-34ef-4571-98af-0779af759b2c",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 40.998,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 771,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 592.042,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 330.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 330.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 500,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj001CE50C",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172068885,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "1f11d7d5-95c6-4269-aade-47b653355f4f",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585583.664,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225711.99,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528284,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "1f11d7d5-95c6-4269-aade-47b653355f4f",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 592.042,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 592.211698487931,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 591.7,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.50x0.33",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.5,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.25,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 592.042,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.50x0.33",
+    "uuid": "e7b104c9-328c-4448-a08a-c5f942c601b9",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.084,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 784,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 592.77,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 330.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 330.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 2009,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 500,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "eckig",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-05-31T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj0028982C",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171863721,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "6be52e2a-0f47-4714-b488-ccd08b910c17",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585617.996,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1225789.796,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528285,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "6be52e2a-0f47-4714-b488-ccd08b910c17",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 592.77,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 592.873258636078,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 592.9,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.50x0.33",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.5,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.25,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 592.77,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.80x0.80",
+    "uuid": "dc5f6784-1ddb-4940-905f-8443be75f6ba",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.607,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 7,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1964,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 800,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": "12.115.02",
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "1999-09-13T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u115694",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2003-09-25T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u115694",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj00247734",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171886688,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "a488507b-6a8f-40e3-97ff-482f30f360c5",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585769.67,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226279.234,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 1011812,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "a488507b-6a8f-40e3-97ff-482f30f360c5",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 593.924555999664,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 592.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.80x0.80",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.8,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.4,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 593.924555999664,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "PuWo",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.80x0.80",
+    "uuid": "145a500b-bedc-4a77-aca2-bb6e9b08a562",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.615,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 6,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1964,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 800,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 3,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": "12.115.02",
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "1999-09-13T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u115694",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2003-09-25T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u115694",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj0023C0FC",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172194360,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "7fd7c979-82dd-4d29-8ab6-c9cc0e3955e9",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585781.519,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226289.748,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 1011808,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "7fd7c979-82dd-4d29-8ab6-c9cc0e3955e9",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 596.037343830967,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 595.8,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.80x0.80",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.8,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.4,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 596.037343830967,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "PuWo",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.60",
+    "uuid": "bea6a5b2-c76e-480a-8701-8b5378973d3f",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.622,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 5,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1964,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 600,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": "12.115.02",
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "1999-09-13T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u115694",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2003-09-25T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u115694",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj0027F574",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172194367,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "579ab800-5a4d-4f3f-94ae-1f17938a7720",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585791.924,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226299.079,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 1011810,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "579ab800-5a4d-4f3f-94ae-1f17938a7720",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 594.764106289366,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 592.9,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": 0.0,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 0",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.60",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 594.764106289366,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "PuWo",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.50x0.50",
+    "uuid": "58433030-cc26-4cb3-89fb-d92ffca12132",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.792,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 977,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Einlaufschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": "Rost",
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 595.739,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 500.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 500,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": "entlüftet",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": "Guss",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 1,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj002BA92C",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172059754,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "9a878239-94ba-47cb-88d1-72355ac91530",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585699.344,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226446.066,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528271,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "9a878239-94ba-47cb-88d1-72355ac91530",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 595.739,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 595.763245652484,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 595.8,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -103.461,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.50x0.50",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.5,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.25,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 595.739,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.45x0.40",
+    "uuid": "e3a3714a-131b-473d-8d39-d0d3b58ae180",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.8,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 979,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 595.803,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 400.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1950,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 450,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2010-05-28T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u133646",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj002305FC",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172017512,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "7ebffba2-3b03-4aea-b663-be2d30cfa6c4",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585693.881,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226451.676,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4528270,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "7ebffba2-3b03-4aea-b663-be2d30cfa6c4",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 595.803,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 595.879494426747,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 595.7,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -103.397,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.45x0.40",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.45,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.225,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 595.803,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Schlammsammler - 0.65x0.60",
+    "uuid": "c516d887-5a3f-44b5-958e-9e9e0bb75647",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.895,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 666,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Schlammsammler",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 596.228,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1998,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 650,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 3,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2008-07-08T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u113265",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2008-09-05T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u113265",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj001F8F54",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172191498,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "fac149be-19fe-4458-b5bd-ca2220e731b4",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585616.218,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226510.459,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4086906,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "fac149be-19fe-4458-b5bd-ca2220e731b4",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 596.228,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 596.245637580307,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 595.5,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -102.972,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Schlammsammler",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.65x0.60",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.65,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.325,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 596.228,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.70x0.60",
+    "uuid": "29c9e683-49e3-4e10-adb4-cc3c3cfe3940",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.917,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 224,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 596.22,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 700.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1998,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 600,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2008-07-08T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u113265",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2008-07-08T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u113265",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj001BD5FC",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 171829085,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "535e3f80-322a-4ca1-a2ae-d73e21694f66",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585595.973,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226520.493,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4086905,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "535e3f80-322a-4ca1-a2ae-d73e21694f66",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 596.22,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 596.209407651492,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 596.0,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -102.98,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.70x0.60",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.7,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.35,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 596.22,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  },
+  {
+    "name": "Abwasser - Schacht - 0.60x0.60",
+    "uuid": "555b1081-c9c2-4cdf-899f-01efe42fd483",
+    "element_type": "sewer_shaft",
+    "parameters": [
+      {
+        "name": "Linie",
+        "value": 225,
+        "datatype": "int"
+      },
+      {
+        "name": "Km",
+        "value": 41.937,
+        "datatype": "float",
+        "unit": "km"
+      },
+      {
+        "name": "Bezeichnung",
+        "value": 223,
+        "datatype": "str"
+      },
+      {
+        "name": "Funktion",
+        "value": "Kontroll- / Einsteigschacht",
+        "datatype": "str"
+      },
+      {
+        "name": "Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Oberflächenzulauf",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Nutzungsart (Ist)",
+        "value": "Niederschlagsabwasser",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Kote",
+        "value": 596.083,
+        "datatype": "float"
+      },
+      {
+        "name": "Sohlenkote",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Dimension 1 (mm)",
+        "value": 600.0,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Dimension 2 (mm)",
+        "value": null,
+        "datatype": "float",
+        "unit": "mm",
+        "process": "manhole_diameter"
+      },
+      {
+        "name": "Einbaujahr",
+        "value": 1998,
+        "datatype": "int"
+      },
+      {
+        "name": "Bemerkung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Standortname",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Abwasser Status",
+        "value": "in Betrieb",
+        "datatype": "str"
+      },
+      {
+        "name": "Zugänglichkeit",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Besonderheit",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterrinne-Mat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Bankett-Art",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Trockenwetterfall-Durch(mm)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Einstiegshilfe-Art",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Durchmesser (mm)",
+        "value": 600,
+        "datatype": "float",
+        "unit": "mm"
+      },
+      {
+        "name": "Deckel Form",
+        "value": "rund",
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Entlüftung",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Fabrikat",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Material",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Deckel Schlammeimer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Deckel Verschluss",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Absperrorgan FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz Endziel",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "zu Drittnetz FID",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anzahl Haltung",
+        "value": 2,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Fangteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Nutzinhalt Klärteil (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Stauraum (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Volumen Pumpensumpf (m3)",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Archiv Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Archiv Nummer",
+        "value": null,
+        "datatype": "str"
+      },
+      {
+        "name": "Eigentümer",
+        "value": "Migration ausstehend",
+        "datatype": "str"
+      },
+      {
+        "name": "Anteil Eigentum",
+        "value": 100,
+        "datatype": "int"
+      },
+      {
+        "name": "Eigentümer Gruppe",
+        "value": "unbekannt",
+        "datatype": "str"
+      },
+      {
+        "name": "Miteigentümer",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Anteil Miteigentum",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Gruppe",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "Miteigentümer Bemerkung",
+        "value": null,
+        "datatype": "int"
+      },
+      {
+        "name": "KST",
+        "value": 225100,
+        "datatype": "int"
+      },
+      {
+        "name": "KST-Beschreibung",
+        "value": "(Biel/Bienne) - Sonceboz-Sombeval",
+        "datatype": "str"
+      },
+      {
+        "name": "Sprache",
+        "value": "Französisch",
+        "datatype": "str"
+      },
+      {
+        "name": "Dok_Region",
+        "value": "West",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-FS",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "IH-SA",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FB",
+        "value": "West > Biel",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-FS",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "UEW-IB",
+        "value": "West > -",
+        "datatype": "str"
+      },
+      {
+        "name": "Abk StrVerw",
+        "value": "SBB CFF FFS",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfDat",
+        "value": "2008-07-08T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfUser",
+        "value": "u113265",
+        "datatype": "str"
+      },
+      {
+        "name": "MutDat",
+        "value": "2008-07-08T00:00:00",
+        "datatype": "str"
+      },
+      {
+        "name": "MutUser",
+        "value": "u113265",
+        "datatype": "str"
+      },
+      {
+        "name": "ErfMandant",
+        "value": "SBB",
+        "datatype": "str"
+      },
+      {
+        "name": "Niveau",
+        "value": "Terrain",
+        "datatype": "str"
+      },
+      {
+        "name": "Status",
+        "value": "Bestehend",
+        "datatype": "str"
+      },
+      {
+        "name": "OID(SIA405)",
+        "value": "ch15cekj001CC04C",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS",
+        "value": "REU",
+        "datatype": "str"
+      },
+      {
+        "name": "BPS Name",
+        "value": "Reuchenette-Péry",
+        "datatype": "str"
+      },
+      {
+        "name": "FNO",
+        "value": 394,
+        "datatype": "int"
+      },
+      {
+        "name": "FID",
+        "value": 172035057,
+        "datatype": "int"
+      },
+      {
+        "name": "UUID",
+        "value": "1ff6cd7a-8437-4c54-9d23-0d9f69ad4f1c",
+        "datatype": "str",
+        "process": "uuid"
+      },
+      {
+        "name": "E",
+        "value": 2585577.664,
+        "datatype": "float",
+        "unit": "m",
+        "process": "x_coordinate"
+      },
+      {
+        "name": "N",
+        "value": 1226530.058,
+        "datatype": "float",
+        "unit": "m",
+        "process": "y_coordinate"
+      },
+      {
+        "name": "IPID",
+        "value": 4086904,
+        "datatype": "int"
+      },
+      {
+        "name": "DFA-ID",
+        "value": "1ff6cd7a-8437-4c54-9d23-0d9f69ad4f1c",
+        "datatype": "str"
+      },
+      {
+        "name": "H-DFA",
+        "value": 596.083,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuWo",
+        "value": 596.072838006299,
+        "datatype": "float"
+      },
+      {
+        "name": "H-Api",
+        "value": 595.9,
+        "datatype": "float"
+      },
+      {
+        "name": "H-PuHi",
+        "value": -103.117,
+        "datatype": "float"
+      },
+      {
+        "name": "PuHi-Elements",
+        "value": "H-PuHi: 1",
+        "datatype": "str"
+      },
+      {
+        "name": "A-BP",
+        "value": 0,
+        "datatype": "float"
+      },
+      {
+        "name": "Family",
+        "value": "Abwasser - Schacht",
+        "datatype": "str",
+        "process": "name"
+      },
+      {
+        "name": "TypeName",
+        "value": "0.60x0.60",
+        "datatype": "str"
+      },
+      {
+        "name": "Diameter",
+        "value": 0.6,
+        "datatype": "float",
+        "unit": "m",
+        "process": "diameter"
+      },
+      {
+        "name": "Radius",
+        "value": 0.3,
+        "datatype": "float"
+      },
+      {
+        "name": "H-RSRG",
+        "value": 596.083,
+        "datatype": "float",
+        "unit": "m",
+        "process": "z_coordinate"
+      },
+      {
+        "name": "RSRG_Source",
+        "value": "DfA",
+        "datatype": "str"
+      },
+      {
+        "name": "ElementType",
+        "value": "sewer_shaft",
+        "datatype": "str",
+        "process": "element_type"
+      }
+    ]
+  }
+]
