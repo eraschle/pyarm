@@ -5,12 +5,13 @@ These functions reduce code duplication and improve maintainability.
 
 import logging
 from typing import Any
+import uuid
 
 from pyarm.models import units
 from pyarm.models.parameter import DataType, Parameter, UnitEnum
 from pyarm.models.process_enums import ElementType, ProcessEnum
 
-logger = logging.getLogger(__name__)
+log = logging.getLogger(__name__)
 
 
 def create_parameter_from(param_data: dict[str, Any]) -> "Parameter":
@@ -33,6 +34,7 @@ def create_parameter_from(param_data: dict[str, Any]) -> "Parameter":
     datatype = extract_value(param_data, "datatype", expected_type=DataType)
     unit = extract_value(param_data, "unit", default=UnitEnum.NONE, expected_type=UnitEnum)
     process = extract_value(param_data, "process", default=None, expected_type=ProcessEnum)
+    components = extract_value(param_data, "components", default=None, expected_type=list)
 
     return Parameter(
         name=name,
@@ -40,6 +42,7 @@ def create_parameter_from(param_data: dict[str, Any]) -> "Parameter":
         process=process,
         datatype=datatype,
         unit=unit,
+        components=components,
     )
 
 
@@ -57,48 +60,14 @@ def resolve_element_type(type_str: str) -> ElementType:
     ElementType
         The corresponding ElementType enum or ElementType.NONE if not found
     """
-    # Normalize and map common variants
     normalized = type_str.lower().strip()
-
-    mappings = {
-        "mast": ElementType.MAST,
-        "pole": ElementType.MAST,
-        "fundament": ElementType.FOUNDATION,
-        "foundation": ElementType.FOUNDATION,
-        "joch": ElementType.JOCH,
-        "yoke": ElementType.JOCH,
-        "drainage": ElementType.SEWER_SHAFT,
-        "drainagepipe": ElementType.SEWER_SHAFT,
-        "pipe": ElementType.SEWER_SHAFT,
-        "leitung": ElementType.SEWER_SHAFT,
-        "drain": ElementType.SEWER_SHAFT,
-        "shaft": ElementType.SEWER_SHAFT,
-        "schacht": ElementType.SEWER_SHAFT,
-        "drainageschacht": ElementType.SEWER_SHAFT,
-        "drainageshaft": ElementType.SEWER_SHAFT,
-        "gleis": ElementType.TRACK,
-        "track": ElementType.TRACK,
-        "rail": ElementType.TRACK,
-        "ausleger": ElementType.CANTILEVER,
-        "cantilever": ElementType.CANTILEVER,
-    }
-
-    # Direct comparison with enum values
     try:
         return ElementType(normalized)
-    except ValueError:
-        # Use mapping
-        if normalized in mappings:
-            return mappings[normalized]
-
-        # Partial comparison
-        for key, element_type in mappings.items():
-            if key in normalized or normalized in key:
-                return element_type
-
-    # Fallback if no match
-    logger.warning(f"Could not resolve ElementType for '{type_str}', using {ElementType.UNDEFINED}")
-    return ElementType.UNDEFINED
+    except ValueError as exc:
+        log.warning(
+            f"Could not resolve ElementType for '{type_str}', using {ElementType.UNDEFINED}", exc
+        )
+        return ElementType.UNDEFINED
 
 
 def create_coordinate(
@@ -188,7 +157,7 @@ def extract_value(
 
             value = expected_type(value)
         except (ValueError, TypeError) as e:
-            logger.warning(f"Could not convert value '{value}' to type '{expected_type}': {e}")
+            log.warning(f"Could not convert value '{value}' to type '{expected_type}': {e}")
             return default
 
     # Unit conversion, if specified
@@ -197,7 +166,7 @@ def extract_value(
         try:
             value = units.convert_unit(value, from_unit, to_unit)
         except ValueError as e:
-            logger.warning(f"Unit conversion failed: {e}")
+            log.warning(f"Unit conversion failed: {e}")
 
     return value
 
@@ -222,19 +191,21 @@ def create_element_data_template(
     dict[str, Any]
         Dictionary with base element data
     """
-    return {
-        "name": name,
-        "element_type": element_type.value,
-        "parameters": []
-        if parameters is None
-        else [
+    param_templates = []
+    for param in parameters or []:
+        param_templates.append(
             {
                 "name": param.name,
                 "value": param.value,
                 "datatype": param.datatype,
                 "unit": param.unit.value,
                 "process": param.process.value if param.process else None,
+                "components": param.components if param.components else None,
             }
-            for param in parameters
-        ],
+        )
+    return {
+        "name": name,
+        "uuid": str(uuid.uuid4()),
+        "element_type": element_type.value,
+        "parameters": param_templates,
     }

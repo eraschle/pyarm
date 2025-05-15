@@ -4,6 +4,7 @@ These factory methods are optimized to work with the new component-based design
 and ensure that elements are correctly initialized with all necessary components.
 """
 
+import logging
 from typing import Any, Dict, List, Optional, Type, TypeVar
 from uuid import UUID, uuid4
 
@@ -18,8 +19,7 @@ from pyarm.models.parameter import Parameter
 from pyarm.models.process_enums import ElementType, ProcessEnum
 from pyarm.utils import helpers as hlp
 
-# Type variable for generic elements
-T = TypeVar("T", bound=InfrastructureElement)
+log = logging.getLogger(__name__)
 
 
 def determine_element_class(data: Dict[str, Any]) -> Type[Any]:
@@ -109,6 +109,10 @@ def create_element(data: dict[str, Any]) -> Any:
     elif isinstance(element_type_value, ElementType):
         element_type = element_type_value
     else:
+        log.warning(
+            f"Element type '{element_type_value}' not recognized. Expected str or ElementTyp, "
+            f"but got {type(element_type_value)}, using {ElementType.UNDEFINED}",
+        )
         element_type = ElementType.UNDEFINED
 
     # Process parameters
