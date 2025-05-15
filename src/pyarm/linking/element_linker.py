@@ -161,6 +161,21 @@ class ElementLinker:
             if cache_key_with_point not in self.element_cache[element_type]:
                 self.element_cache[element_type][cache_key_with_point] = []
             self.element_cache[element_type][cache_key_with_point].append(element)
+            
+        # Speichere Element im Koordinaten-Cache
+        try:
+            location = element.location
+            # Runde Koordinaten für effizienten Zugriff
+            point_tuple = location.point.as_tuple()
+            # Index mit gerundeten Koordinaten für den Cache
+            grid_size = 1.0  # Meter - kann angepasst werden
+            grid_key = tuple(round(coord / grid_size) for coord in point_tuple)
+            
+            if grid_key not in self.coordinate_cache:
+                self.coordinate_cache[grid_key] = []
+            self.coordinate_cache[grid_key].append(element)
+        except Exception as e:
+            log.debug(f"Kann Koordinaten für {element.name} nicht registrieren: {e}")
 
     def process_element_links(self, element: InfrastructureElement) -> None:
         """
@@ -181,25 +196,26 @@ class ElementLinker:
             if link_def.source_type.__name__ != element_type:
                 continue
 
-            # Suche nach dem Parameter im Element
+            target_elements = []
+            
+            # 1. Versuche erst die Standard-Verknüpfung über Parameter
             source_param_value = None
             for param in element.parameters:
                 if param.name == link_def.source_param_name:
                     source_param_value = str(param.value)
                     break
 
-            if not source_param_value:
-                continue
-
-            # Suche nach dem Ziel-Element im Cache
-            target_type = link_def.target_type.__name__
-            target_elements = []
-
-            # Erst versuchen, über den Parameter-Namen und -Wert zu suchen
-            target_key = f"{link_def.target_param_name}:{source_param_value}"
-            if target_type in self.element_cache and target_key in self.element_cache[target_type]:
-                target_elements = self.element_cache[target_type][target_key]
-
+            if source_param_value:
+                # Suche nach dem Ziel-Element im Cache
+                target_type = link_def.target_type.__name__
+                target_key = f"{link_def.target_param_name}:{source_param_value}"
+                if target_type in self.element_cache and target_key in self.element_cache[target_type]:
+                    target_elements = self.element_cache[target_type][target_key]
+            
+            # 2. Falls keine Verknüpfung über Parameter gefunden und koordinatenbasierte Verknüpfung aktiviert ist
+            if not target_elements and link_def.try_link_with_coordinate:
+                target_elements = self._find_elements_by_coordinate(element, link_def)
+                
             # Erstelle Referenzen zu allen gefundenen Ziel-Elementen
             for target_element in target_elements:
                 self._create_reference(element, target_element, link_def)
@@ -253,6 +269,71 @@ class ElementLinker:
                 f"{type(target).__name__}({target.name}): {e}"
             )
 
+    def _find_elements_by_coordinate(self, element: InfrastructureElement, link_def: LinkDefinition) -> list[InfrastructureElement]:
+        """
+        Findet Elemente basierend auf Koordinaten und Offset.
+        
+        Parameters
+        ----------
+        element: InfrastructureElement
+            Das Quell-Element für die Suche
+        link_def: LinkDefinition
+            Die Link-Definition mit den Koordinaten-Parametern
+            
+        Returns
+        -------
+        list[InfrastructureElement]
+            Liste von gefundenen Elementen innerhalb des Offset-Bereichs
+        """
+        result = []
+        
+        try:
+            # Extrahiere Koordinaten des Quell-Elements
+            location = element.location
+            point = location.point
+            
+            # Definiere maximalen Suchbereich basierend auf Offset
+            offset = link_def.offset_coordinate or 5.0  # Standard-Offset von 5 Metern
+            grid_size = 1.0  # Muss mit dem Wert in register_element übereinstimmen
+            
+            # Berechne Anzahl der zu prüfenden Gitterzellen
+            search_cells = int(offset / grid_size) + 1
+            
+            # Gehe alle potenziellen Gitterzellen im Umkreis durch
+            base_point = tuple(round(coord / grid_size) for coord in point.as_tuple())
+            
+            # Durchlaufe benachbarte Gitterzellen
+            potential_targets = []
+            for x_offset in range(-search_cells, search_cells + 1):
+                for y_offset in range(-search_cells, search_cells + 1):
+                    # Optimierung: Z-Achse oft weniger relevant für Infrastruktur
+                    grid_key = (base_point[0] + x_offset, base_point[1] + y_offset, base_point[2])
+                    if grid_key in self.coordinate_cache:
+                        potential_targets.extend(self.coordinate_cache[grid_key])
+            
+            # Filtere nach Elementtyp
+            target_type_name = link_def.target_type.__name__
+            filtered_targets = [e for e in potential_targets if type(e).__name__ == target_type_name]
+            
+            # Berechne tatsächliche Distanzen und wähle Elemente innerhalb des Offsets
+            for target in filtered_targets:
+                try:
+                    target_location = target.location
+                    distance = point.distance_to(target_location.point)
+                    
+                    if distance <= offset:
+                        result.append(target)
+                except Exception as e:
+                    log.debug(f"Fehler bei Distanzberechnung für {target.name}: {e}")
+            
+            if result:
+                log.debug(f"Koordinatenverknüpfung: {len(result)} Elemente gefunden für {element.name}")
+            
+        except Exception as e:
+            log.debug(f"Fehler bei koordinatenbasierter Suche für {element.name}: {e}")
+            
+        return result
+            
     def finalize_links(self) -> int:
         """
         Schließt den Verknüpfungsprozess ab und gibt die Anzahl erstellter Links zurück.
@@ -271,5 +352,6 @@ class ElementLinker:
         """Leert alle Caches, um Speicher freizugeben."""
         self.element_cache.clear()
         self.uuid_cache.clear()
+        self.coordinate_cache.clear()
         self.processed_elements.clear()
         self.links_created = 0
