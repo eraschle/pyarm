@@ -62,17 +62,6 @@ def determine_element_class(data: Dict[str, Any]) -> Type[Any]:
     # Check if it's a curve
     has_clothoid = any(p.get("process") == ProcessEnum.CLOTHOID_PARAMETER.value for p in parameters)
 
-    # Check for start/end coordinates for linear elements
-    has_end_coordinates = any(
-        p.get("process")
-        in [
-            ProcessEnum.X_COORDINATE_END.value,
-            ProcessEnum.Y_COORDINATE_END.value,
-            ProcessEnum.Z_COORDINATE_END.value,
-        ]
-        for p in parameters
-    )
-
     # Determine class based on element type and properties
     if element_type == ElementType.FOUNDATION:
         return Foundation

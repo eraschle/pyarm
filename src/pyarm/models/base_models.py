@@ -6,7 +6,7 @@ that are used in all processes.
 
 import logging
 from dataclasses import dataclass, field
-from typing import Any, Optional, Type, cast
+from typing import Any, cast
 from uuid import UUID, uuid4
 
 from dfa_plugin import ParameterFactory
@@ -56,12 +56,7 @@ class InfrastructureElement[TDimension: Dimension](IComponentModel):
     )
 
     def __post_init__(self):
-        """
-        After initialization: Analyze parameters and categorize in known_params.
-        Also create standard components.
-        """
         self._update_known_params()
-        # Add standard parameters if they are missing
         if ProcessEnum.UUID not in self.known_params:
             self.parameters.append(
                 ParameterFactory.create_parameter(
@@ -144,31 +139,10 @@ class InfrastructureElement[TDimension: Dimension](IComponentModel):
             raise PyArmParameterError(self, process_enum)
         return param
 
-    def get_reference_params(self, process_enum: ProcessEnum) -> list[Parameter]:
-        """
-        Returns zero, one or more parameters with the given process enum.
-
-        Parameters
-        ----------
-        process_enum: ProcessEnum
-            The ProcessEnum of the parameter to get
-
-        Returns
-        -------
-        list[Parameter]
-            List of Parameters with the given process enum
-        """
-        references = []
-        for param in self.parameters:
-            if param.process != process_enum:
-                continue
-            references.append(param)
-        return references
-
     def add_component(self, component: Component) -> None:
         self.components[component.name] = component
 
-    def get_component(self, component_name: str) -> Optional[Component]:
+    def get_component(self, component_name: str) -> Component | None:
         return self.components.get(component_name)
 
     def get_components_by_type(self, component_type: ComponentType) -> list[Component]:
@@ -241,7 +215,7 @@ class InfrastructureElement[TDimension: Dimension](IComponentModel):
 
     def add_reference(
         self,
-        reference_type: Type["InfrastructureElement"],
+        reference_type: type["InfrastructureElement"],
         referenced_uuid: UUID,
         bidirectional: bool = False,
     ) -> None:
@@ -265,7 +239,7 @@ class InfrastructureElement[TDimension: Dimension](IComponentModel):
         )
         self.add_component(reference)
 
-    def get_references(self, reference_type: Optional[str] = None) -> list[ElementReference]:
+    def get_references(self, reference_type: str | None = None) -> list[ElementReference]:
         """
         Returns all references or only references of a specific type.
 

@@ -9,11 +9,11 @@ from pyarm.models.base_models import InfrastructureElement
 from pyarm.models.element_models import (
     Cantilever,
     CurvedTrack,
-    SewerPipe,
-    SewerShaft,
     Foundation,
     Joch,
     Mast,
+    SewerPipe,
+    SewerShaft,
     Sleeper,
     Track,
 )

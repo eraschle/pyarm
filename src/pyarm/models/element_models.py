@@ -7,7 +7,7 @@ element-specific functionality.
 import logging
 from dataclasses import dataclass
 
-from pyarm.components.dimension import RectangularDimension
+from pyarm.components.dimension import Dimension, RectangularDimension, RoundDimension
 from pyarm.models.base_models import InfrastructureElement
 from pyarm.models.process_enums import ElementType
 
@@ -79,70 +79,70 @@ def add_references_to_other_elements(element: InfrastructureElement):
 
 
 @dataclass
-class Foundation(InfrastructureElement[RectangularDimension]):
+class Foundation[TDimension: Dimension](InfrastructureElement[TDimension]):
     """Foundation element."""
 
     element_type: ElementType = ElementType.FOUNDATION
 
 
 @dataclass
-class Mast(InfrastructureElement):
+class Mast[TDimension: Dimension](InfrastructureElement[TDimension]):
     """Mast element with optional reference to foundation."""
 
     element_type: ElementType = ElementType.MAST
 
 
 @dataclass
-class Cantilever(InfrastructureElement):
+class Cantilever[TDimension: Dimension](InfrastructureElement[TDimension]):
     """Cantilever element with reference to mast."""
 
     element_type: ElementType = ElementType.CANTILEVER
 
 
 @dataclass
-class Joch(InfrastructureElement):
+class Joch(InfrastructureElement[RectangularDimension]):
     """Yoke element with references to two masts."""
 
     element_type: ElementType = ElementType.JOCH
 
 
 @dataclass
-class Track(InfrastructureElement):
+class Track[TDimension: Dimension](InfrastructureElement[TDimension]):
     """Track element."""
 
     element_type: ElementType = ElementType.TRACK
 
 
 @dataclass
-class CurvedTrack(Track):
+class CurvedTrack[TDimension: Dimension](Track[TDimension]):
     """Curved track element with clothoid parameters."""
 
     element_type: ElementType = ElementType.TRACK
 
 
 @dataclass
-class Sleeper(InfrastructureElement):
+class Sleeper(InfrastructureElement[RectangularDimension]):
     """Sleeper element with reference to track."""
 
     element_type: ElementType = ElementType.SLEEPER
 
 
 @dataclass
-class SewerPipe(InfrastructureElement):
+class SewerPipe(InfrastructureElement[RoundDimension]):
     """Drainage pipe element."""
 
-    element_type: ElementType = ElementType.SEWER_SHAFT
+    element_type: ElementType = ElementType.SEWER_PIPE
 
 
 @dataclass
-class SewerShaft(InfrastructureElement):
+class SewerShaft(InfrastructureElement[RoundDimension]):
     """Drainage shaft element."""
 
     element_type: ElementType = ElementType.SEWER_SHAFT
 
 
 @dataclass
-class CableShaft(InfrastructureElement):
+class CableShaft[TDimension: Dimension](InfrastructureElement[TDimension]):
     """Cable shaft element."""
 
     element_type: ElementType = ElementType.CABLE_SHAFT
