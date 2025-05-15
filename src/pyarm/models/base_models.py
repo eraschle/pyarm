@@ -5,17 +5,11 @@ that are used in all processes.
 """
 
 import logging
-from dataclasses import (
-    dataclass,
-    field,
-)
-from typing import (
-    Any,
-    Optional,
-    Type,
-    cast,
-)
+from dataclasses import dataclass, field
+from typing import Any, Optional, Type, cast
 from uuid import UUID, uuid4
+
+from dfa_plugin import ParameterFactory
 
 from pyarm.components import (
     Component,
@@ -29,15 +23,8 @@ from pyarm.components import (
 from pyarm.components.location import PointLocation
 from pyarm.interfaces.component import IComponentModel
 from pyarm.models.errors import PyArmComponentError, PyArmParameterError
-from pyarm.models.parameter import (
-    DataType,
-    Parameter,
-    UnitEnum,
-)
-from pyarm.models.process_enums import (
-    ElementType,
-    ProcessEnum,
-)
+from pyarm.models.parameter import Parameter
+from pyarm.models.process_enums import ElementType, ProcessEnum
 
 log = logging.getLogger(__name__)
 
@@ -52,6 +39,7 @@ class InfrastructureElement[TDimension: Dimension](IComponentModel):
     # Basic attributes
     name: str
     element_type: ElementType
+    domain: str = field(default="")
     uuid: UUID = field(default_factory=uuid4)
 
     # Parameter storage
@@ -76,36 +64,33 @@ class InfrastructureElement[TDimension: Dimension](IComponentModel):
         # Add standard parameters if they are missing
         if ProcessEnum.UUID not in self.known_params:
             self.parameters.append(
-                Parameter(
-                    name="UUID",
+                ParameterFactory.create_parameter(
+                    process_enum=ProcessEnum.UUID,
                     value=str(self.uuid),
-                    process=ProcessEnum.UUID,
-                    datatype=DataType.STRING,
-                    unit=UnitEnum.NONE,
                 )
             )
-
         if ProcessEnum.NAME not in self.known_params:
             self.parameters.append(
-                Parameter(
-                    name="Name",
+                ParameterFactory.create_parameter(
+                    process_enum=ProcessEnum.NAME,
                     value=self.name,
-                    process=ProcessEnum.NAME,
-                    datatype=DataType.STRING,
-                    unit=UnitEnum.NONE,
+                )
+            )
+        if ProcessEnum.ELEMENT_TYPE not in self.known_params:
+            self.parameters.append(
+                ParameterFactory.create_parameter(
+                    process_enum=ProcessEnum.ELEMENT_TYPE,
+                    value=self.element_type,
+                )
+            )
+        if ProcessEnum.DOMAIN not in self.known_params:
+            self.parameters.append(
+                ParameterFactory.create_parameter(
+                    process_enum=ProcessEnum.DOMAIN,
+                    value=self.domain,
                 )
             )
 
-        if ProcessEnum.ELEMENT_TYPE not in self.known_params:
-            self.parameters.append(
-                Parameter(
-                    name="ElementType",
-                    value=self.element_type,
-                    process=ProcessEnum.ELEMENT_TYPE,
-                    datatype=DataType.STRING,
-                    unit=UnitEnum.NONE,
-                )
-            )
         self._update_known_params()
         self._initialize_components()
 

@@ -4,7 +4,7 @@ Manages relationships and links between infrastructure elements and other entiti
 
 import logging
 
-from pyarm.components.factory import ComponentFactory
+from pyarm.components import ComponentFactory
 from pyarm.models.base_models import InfrastructureElement
 
 log = logging.getLogger(__name__)

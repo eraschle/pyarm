@@ -82,6 +82,26 @@ class ParameterFactory:
 
     # Standarddefinitionen für häufig verwendete Parameter
     _standard_params: Dict[ProcessEnum, ParameterDefinition] = {
+        ProcessEnum.NAME: ParameterDefinition(
+            process=ProcessEnum.NAME,
+            name="Name",
+            datatype=DataType.STRING,
+        ),
+        ProcessEnum.ELEMENT_TYPE: ParameterDefinition(
+            process=ProcessEnum.ELEMENT_TYPE,
+            name="Element-Typ",
+            datatype=DataType.STRING,
+        ),
+        ProcessEnum.UUID: ParameterDefinition(
+            process=ProcessEnum.UUID,
+            name="UUID",
+            datatype=DataType.STRING,
+        ),
+        ProcessEnum.DOMAIN: ParameterDefinition(
+            process=ProcessEnum.DOMAIN,
+            name="Fachbereich",
+            datatype=DataType.STRING,
+        ),
         ProcessEnum.X_COORDINATE: ParameterDefinition(
             process=ProcessEnum.X_COORDINATE,
             name="East",
@@ -117,24 +137,6 @@ class ParameterFactory:
             name="Altitude End",
             datatype=DataType.FLOAT,
             unit=UnitEnum.METER,
-        ),
-        ProcessEnum.UUID: ParameterDefinition(
-            process=ProcessEnum.UUID,
-            name="UUID",
-            datatype=DataType.STRING,
-            unit=UnitEnum.NONE,
-        ),
-        ProcessEnum.ELEMENT_TYPE: ParameterDefinition(
-            process=ProcessEnum.ELEMENT_TYPE,
-            name="Element-Typ",
-            datatype=DataType.STRING,
-            unit=UnitEnum.NONE,
-        ),
-        ProcessEnum.DOMAIN: ParameterDefinition(
-            process=ProcessEnum.DOMAIN,
-            name="Fachbereich",
-            datatype=DataType.STRING,
-            unit=UnitEnum.NONE,
         ),
         ProcessEnum.LENGTH: ParameterDefinition(
             process=ProcessEnum.LENGTH,

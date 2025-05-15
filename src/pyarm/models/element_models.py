@@ -6,13 +6,10 @@ element-specific functionality.
 
 import logging
 from dataclasses import dataclass
-from typing import Type
 
 from pyarm.components.dimension import RectangularDimension
 from pyarm.models.base_models import InfrastructureElement
-from pyarm.models.errors import PyArmReferenceError
-from pyarm.models.parameter import Parameter
-from pyarm.models.process_enums import ElementType, ProcessEnum
+from pyarm.models.process_enums import ElementType
 
 log = logging.getLogger(__name__)
 
@@ -87,20 +84,12 @@ class Foundation(InfrastructureElement[RectangularDimension]):
 
     element_type: ElementType = ElementType.FOUNDATION
 
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
-
 
 @dataclass
 class Mast(InfrastructureElement):
     """Mast element with optional reference to foundation."""
 
     element_type: ElementType = ElementType.MAST
-
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
 
 
 @dataclass
@@ -109,20 +98,12 @@ class Cantilever(InfrastructureElement):
 
     element_type: ElementType = ElementType.CANTILEVER
 
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
-
 
 @dataclass
 class Joch(InfrastructureElement):
     """Yoke element with references to two masts."""
 
     element_type: ElementType = ElementType.JOCH
-
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
 
 
 @dataclass
@@ -131,20 +112,12 @@ class Track(InfrastructureElement):
 
     element_type: ElementType = ElementType.TRACK
 
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
-
 
 @dataclass
 class CurvedTrack(Track):
     """Curved track element with clothoid parameters."""
 
     element_type: ElementType = ElementType.TRACK
-
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
 
 
 @dataclass
@@ -153,20 +126,12 @@ class Sleeper(InfrastructureElement):
 
     element_type: ElementType = ElementType.SLEEPER
 
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
-
 
 @dataclass
 class SewerPipe(InfrastructureElement):
     """Drainage pipe element."""
 
     element_type: ElementType = ElementType.SEWER_SHAFT
-
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
 
 
 @dataclass
@@ -175,17 +140,9 @@ class SewerShaft(InfrastructureElement):
 
     element_type: ElementType = ElementType.SEWER_SHAFT
 
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
-
 
 @dataclass
 class CableShaft(InfrastructureElement):
     """Cable shaft element."""
 
     element_type: ElementType = ElementType.CABLE_SHAFT
-
-    def __post_init__(self):
-        super().__post_init__()
-        add_references_to_other_elements(self)
