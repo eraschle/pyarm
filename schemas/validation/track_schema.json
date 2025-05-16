@@ -1,0 +1,83 @@
+{
+  "element_type": "TRACK",
+  "required_params": [
+    "UUID",
+    "NAME",
+    "ELEMENT_TYPE",
+    "X_COORDINATE",
+    "Y_COORDINATE",
+    "X_COORDINATE_END",
+    "Y_COORDINATE_END"
+  ],
+  "param_types": {
+    "UUID": "STRING",
+    "NAME": "STRING",
+    "ELEMENT_TYPE": "STRING",
+    "X_COORDINATE": "FLOAT",
+    "Y_COORDINATE": "FLOAT",
+    "Z_COORDINATE": "FLOAT",
+    "X_COORDINATE_END": "FLOAT",
+    "Y_COORDINATE_END": "FLOAT",
+    "Z_COORDINATE_END": "FLOAT"
+  },
+  "param_units": {
+    "X_COORDINATE": "METER",
+    "Y_COORDINATE": "METER",
+    "Z_COORDINATE": "METER",
+    "X_COORDINATE_END": "METER",
+    "Y_COORDINATE_END": "METER",
+    "Z_COORDINATE_END": "METER"
+  },
+  "constraints": {
+    "X_COORDINATE": [
+      {
+        "constraint_type": "MIN_VALUE",
+        "value": 0.0,
+        "message": "X-Koordinate muss größer als 0 sein"
+      }
+    ],
+    "Y_COORDINATE": [
+      {
+        "constraint_type": "MIN_VALUE",
+        "value": 0.0,
+        "message": "Y-Koordinate muss größer als 0 sein"
+      }
+    ],
+    "Z_COORDINATE": [
+      {
+        "constraint_type": "CUSTOM",
+        "message": "Z-Koordinate ist optional, muss aber größer als 0 sein",
+        "custom_validator": "lambda x: x is None or x > 0"
+      }
+    ],
+    "X_COORDINATE_END": [
+      {
+        "constraint_type": "MIN_VALUE",
+        "value": 0.0,
+        "message": "X-Koordinate (Ende) muss größer als 0 sein"
+      }
+    ],
+    "Y_COORDINATE_END": [
+      {
+        "constraint_type": "MIN_VALUE",
+        "value": 0.0,
+        "message": "Y-Koordinate (Ende) muss größer als 0 sein"
+      }
+    ],
+    "Z_COORDINATE_END": [
+      {
+        "constraint_type": "CUSTOM",
+        "message": "Z-Koordinate (Ende) ist optional, muss aber größer als 0 sein",
+        "custom_validator": "lambda x: x is None or x > 0"
+      }
+    ]
+  },
+  "specific_validations": [
+    {
+      "name": "start_end_different",
+      "description": "Prüft, ob Start- und Endpunkt unterschiedlich sind",
+      "validation_code": "lambda element: element.location.point.as_tuple() != element.location.end_point.as_tuple()",
+      "error_message": "Start- und Endpunkt sind identisch"
+    }
+  ]
+}

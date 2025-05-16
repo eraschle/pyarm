@@ -7,7 +7,7 @@ as well as a class for storing validation results.
 
 from dataclasses import dataclass, field
 from enum import Enum, auto
-from typing import Any, Dict, List, Optional
+from typing import Any, List, Optional
 
 
 class ErrorSeverity(Enum):
@@ -16,18 +16,27 @@ class ErrorSeverity(Enum):
     CRITICAL = auto()  # Critical error that prevents conversion
     ERROR = auto()  # Severe error that may lead to data loss
     WARNING = auto()  # Warning, conversion can continue
+    INFO = auto()  # Informational message
 
 
-@dataclass
 class ValidationError:
     """Represents a validation error with context information."""
 
-    message: str
-    context: Dict[str, Any]  # Context-specific information (e.g., parameter name, value)
-    severity: ErrorSeverity = ErrorSeverity.ERROR
-    element_type: Optional[str] = None
-    element_id: Optional[str] = None
-    parameter_name: Optional[str] = None
+    def __init__(
+        self,
+        message: str,
+        severity: ErrorSeverity = ErrorSeverity.ERROR,
+        parameter_name: Optional[str] = None,
+        element_type: Optional[str] = None,
+        element_id: Optional[str] = None,
+        context: Optional[dict[str, Any]] = None,
+    ):
+        self.message = message
+        self.severity = severity
+        self.parameter_name = parameter_name
+        self.element_type = element_type
+        self.element_id = element_id
+        self.context = context or {}
 
     def __str__(self) -> str:
         """Returns a formatted error message."""
@@ -43,11 +52,25 @@ class ValidationError:
         return f"{self.severity.name}: {self.message} {element_info} {{{context_str}}}"
 
 
-@dataclass
 class ValidationWarning(ValidationError):
     """Represents a validation warning."""
 
-    severity: ErrorSeverity = ErrorSeverity.WARNING
+    def __init__(
+        self,
+        message: str,
+        parameter_name: Optional[str] = None,
+        element_type: Optional[str] = None,
+        element_id: Optional[str] = None,
+        context: Optional[dict[str, Any]] = None,
+    ):
+        super().__init__(
+            message=message,
+            severity=ErrorSeverity.WARNING,
+            parameter_name=parameter_name,
+            element_type=element_type,
+            element_id=element_id,
+            context=context,
+        )
 
 
 @dataclass
@@ -74,6 +97,25 @@ class ValidationResult:
         self.is_valid = self.is_valid and other.is_valid
         self.errors.extend(other.errors)
         self.warnings.extend(other.warnings)
+        
+    def has_errors(self, min_severity: ErrorSeverity = ErrorSeverity.ERROR) -> bool:
+        """
+        Prüft, ob Fehler mit mindestens dem angegebenen Schweregrad vorhanden sind.
+
+        Parameters
+        ----------
+        min_severity : ErrorSeverity, optional
+            Minimaler Schweregrad, standardmäßig ErrorSeverity.ERROR
+
+        Returns
+        -------
+        bool
+            True, wenn Fehler vorhanden sind, sonst False
+        """
+        for error in self.errors:
+            if error.severity.value <= min_severity.value:  # Niedrigere Werte = höhere Schwere
+                return True
+        return False
 
     def __str__(self) -> str:
         """Returns a summary of the validation result."""

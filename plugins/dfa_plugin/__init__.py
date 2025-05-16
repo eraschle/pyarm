@@ -12,6 +12,7 @@ from pyarm.factories.parameter import ParameterFactory
 from pyarm.interfaces.plugin import ConversionResult, PluginInterface
 from pyarm.linking.element_linker import ElementLinker, LinkDefinition
 from pyarm.models.base_models import InfrastructureElement
+from pyarm.validation.interfaces import IValidator
 from pyarm.models.element_models import (
     CableShaft,
     Cantilever,
@@ -323,3 +324,16 @@ class SBBPlugin(PluginInterface):
                 log.debug(f"Keine Link-Methode für {element_type} gefunden")
                 continue
             link_method(linker_manager)
+            
+    def get_validators(self) -> List[IValidator]:
+        """
+        Returns the validators used by this plugin.
+        
+        Returns
+        -------
+        List[IValidator]
+            A list of validators for this plugin
+        """
+        # Hier könnten spezifische Validatoren für DFA-Daten zurückgegeben werden
+        # For now, return an empty list as we don't have specific validators yet
+        return []

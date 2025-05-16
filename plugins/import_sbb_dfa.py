@@ -12,6 +12,8 @@ import sys
 import traceback
 from pathlib import Path
 
+from pyarm.validation.pipeline import ValidationPipeline
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -121,6 +123,10 @@ def main():
     # Lade Daten direkt aus dem Verzeichnis mit dem Plugin
     log.info(f"Loading data from directory: {input_dir}")
     plugin.load_data_from_directory(input_dir)
+    
+    # Create validation pipeline
+    validation_pipeline = ValidationPipeline()
+    validation_pipeline.register_process(plugin)
 
     # Verarbeite jeden Elementtyp
     successful_conversions = 0
@@ -135,6 +141,16 @@ def main():
             result = plugin.convert_element(element_type)
 
             if result and result.elements:
+                # Validate the converted elements
+                for element in result.elements:
+                    validation_result = validation_pipeline.validate_for_process(
+                        plugin.get_process_name(),
+                        str(element_type),
+                        element.to_dict()
+                    )
+                    if not validation_result.is_valid():
+                        log.warning(f"Validation issues for {element_type}: {validation_result}")
+                
                 # Elementtyp als String für Dateinamen verwenden
                 elements = [ele.to_dict() for ele in result.elements if ele]
                 converted_elements.append(elements)

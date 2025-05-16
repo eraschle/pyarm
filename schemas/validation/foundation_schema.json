@@ -1,0 +1,23 @@
+{
+  "element_type": "FOUNDATION",
+  "required_params": [
+    "UUID",
+    "NAME",
+    "ELEMENT_TYPE",
+    "X_COORDINATE",
+    "Y_COORDINATE",
+    "WIDTH",
+    "HEIGHT",
+    "DEPTH",
+    "FOUNDATION_TYPE"
+  ],
+  "constraints": {},
+  "specific_validations": [
+    {
+      "name": "foundation_type_check",
+      "description": "Prüft, ob der Fundamenttyp gültig ist",
+      "validation_code": "lambda element: element.get_param('FOUNDATION_TYPE').value in ['BLOCK', 'PILE', 'STRIP']",
+      "error_message": "Ungültiger Fundamenttyp. Erlaubte Werte: BLOCK, PILE, STRIP"
+    }
+  ]
+}

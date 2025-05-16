@@ -25,6 +25,8 @@ class ConstraintType(Enum):
     REGEX = auto()  # Parameter must match a regex pattern
     ENUM = auto()  # Parameter must match an enumeration value
     CUSTOM = auto()  # Custom validation function
+    MIN_LENGTH = auto()  # Parameter must have a minimum length
+    MAX_LENGTH = auto()  # Parameter must not exceed a maximum length
 
 
 @dataclass
@@ -51,7 +53,7 @@ class Constraint:
             True, wenn der Wert den Constraint erfüllt
         """
         if self.constraint_type == ConstraintType.REQUIRED:
-            return param_value is not None
+            return param_value is not None and param_value != ""
 
         if param_value is None:
             # If the value is None and we're not checking REQUIRED, the constraint is satisfied
@@ -97,6 +99,18 @@ class Constraint:
             if self.custom_validator is not None:
                 return self.custom_validator(param_value)
             return False
+            
+        elif self.constraint_type == ConstraintType.MIN_LENGTH:
+            try:
+                return len(str(param_value)) >= self.value
+            except (TypeError, ValueError):
+                return False
+                
+        elif self.constraint_type == ConstraintType.MAX_LENGTH:
+            try:
+                return len(str(param_value)) <= self.value
+            except (TypeError, ValueError):
+                return False
 
         return False  # Unknown constraint type
 
@@ -171,8 +185,36 @@ class Constraint:
                 f"Parameter '{param_name}' erfüllt nicht die benutzerdefinierten "
                 f"Validierungsregeln. Wert: {value}"
             )
+            
+        elif self.constraint_type == ConstraintType.MIN_LENGTH:
+            return (
+                f"Parameter '{param_name}' ist zu kurz. "
+                f"Länge: {len(str(value))}, Mindestlänge: {self.value}"
+            )
+            
+        elif self.constraint_type == ConstraintType.MAX_LENGTH:
+            return (
+                f"Parameter '{param_name}' ist zu lang. "
+                f"Länge: {len(str(value))}, Maximallänge: {self.value}"
+            )
 
         return f"Unbekannter Validierungsfehler für Parameter '{param_name}'"
+        
+    def to_dict(self) -> Dict[str, Any]:
+        """
+        Konvertiert die Regel in ein Dictionary.
+
+        Returns
+        -------
+        Dict[str, Any]
+            Dictionary-Repräsentation der Regel
+        """
+        result = {"type": self.constraint_type.name}
+        if self.value is not None and not callable(self.value):
+            result["value"] = self.value
+        if self.message:
+            result["message"] = self.message
+        return result
 
 
 @dataclass

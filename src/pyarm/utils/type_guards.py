@@ -4,7 +4,7 @@ TypeGuard functions for type checking and refinement.
 
 from typing import Any, TypeGuard, TypeVar
 
-from pyarm.interfaces.protocols import HasClothoid
+from pyarm.interfaces.element import HasClothoid
 from pyarm.models.base_models import InfrastructureElement
 from pyarm.models.element_models import (
     Cantilever,

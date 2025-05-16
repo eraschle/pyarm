@@ -8,9 +8,11 @@ validators.
 
 import abc
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Optional
 
-from pyarm.models.parameter import DataType, UnitEnum
+from pyarm.interfaces.validator import IValidator
+from pyarm.models.base_models import InfrastructureElement
+from pyarm.models.parameter import Parameter
 from pyarm.models.process_enums import ElementType, ProcessEnum
 from pyarm.validation.errors import (
     ErrorSeverity,
@@ -18,31 +20,99 @@ from pyarm.validation.errors import (
     ValidationResult,
     ValidationWarning,
 )
-from pyarm.validation.interfaces import IValidator
-from pyarm.validation.schema import Constraint, ConstraintType, SchemaDefinition
+from pyarm.validation.parameter_constraints import get_parameter_constraints
+from pyarm.validation.schema import ConstraintType, SchemaDefinition
+
 
 log = logging.getLogger(__name__)
 
 
-class GenericValidator(abc.ABC, IValidator):
+class ParameterValidator(IValidator[Parameter]):
+    """Validator für Parameter basierend auf den definierten Validierungsregeln."""
+
+    def can_validate(self, element: Parameter) -> bool:
+        return super().can_validate(element)
+
+    def validate(self, element: Parameter) -> ValidationResult:
+        """
+        Validiert einen Parameter basierend auf den definierten Regeln.
+
+        Parameters
+        ----------
+        param : Parameter
+            Der zu validierende Parameter
+        process_name : Optional[str], optional
+            Name des Prozesses, falls prozessspezifische Regeln angewendet werden sollen
+
+        Returns
+        -------
+        ValidationResult
+            Das Ergebnis der Validierung
+        """
+        result = ValidationResult()
+
+        if element.process is None:
+            # Keine Validierung für Parameter ohne ProcessEnum
+            return result
+
+        # Validierungsregeln abrufen
+        constraint_def = get_parameter_constraints(element.process)
+
+        # Datentyp prüfen
+        if element.datatype != constraint_def.data_type:
+            result.add_error(
+                ValidationError(
+                    message=f"Parameter {element.name} hat falschen Datentyp: "
+                    f"{element.datatype.value}, erwartet: {constraint_def.data_type.value}",
+                    severity=ErrorSeverity.ERROR,
+                    parameter_name=element.name,
+                )
+            )
+
+        # Einheit prüfen, falls definiert
+        if constraint_def.unit and element.unit != constraint_def.unit:
+            result.add_error(
+                ValidationError(
+                    message=f"Parameter {element.name} hat falsche Einheit: "
+                    f"{element.unit.value}, erwartet: {constraint_def.unit.value}",
+                    severity=ErrorSeverity.WARNING,
+                    parameter_name=element.name,
+                )
+            )
+
+        # Constraints prüfen
+        for constraint in constraint_def.constraints:
+            if not constraint.validate(element.value):
+                result.add_error(
+                    ValidationError(
+                        message=constraint.get_error_message(element.name, element.value),
+                        severity=ErrorSeverity.ERROR,
+                        parameter_name=element.name,
+                    )
+                )
+
+        return result
+
+
+class GenericValidator[TElement: InfrastructureElement](abc.ABC, IValidator[TElement]):
     """
     Base class for validators that provides general validation functionality.
     """
 
-    def __init__(self, element_types: List[ElementType]):
+    def __init__(self, element_types: list[ElementType]):
         """
         Initializes the validator.
 
         Parameters
         ----------
-        element_types : List[ElementType]
+        element_types : list[ElementType]
             The supported element types
         """
         self._element_types = element_types
-        self._schemas: Dict[ElementType, SchemaDefinition] = {}
+        self._schemas: dict[ElementType, SchemaDefinition] = {}
 
     @property
-    def supported_element_types(self) -> List[ElementType]:
+    def supported_element_types(self) -> list[ElementType]:
         """Returns the supported element types."""
         return self._element_types
 
@@ -57,58 +127,19 @@ class GenericValidator(abc.ABC, IValidator):
         """
         self._schemas[schema.element_type] = schema
 
-    def can_validate(self, element_type: str) -> bool:
-        """
-        Checks if this validator can validate the specified element type.
-
-        Parameters
-        ----------
-        element_type : str
-            The element type to check
-
-        Returns
-        -------
-        bool
-            True if this validator can validate the element type
-        """
+    def can_validate(self, element: TElement) -> bool:
         try:
-            element_enum = ElementType(element_type)
+            element_enum = element.element_type
             return element_enum in self._element_types
         except ValueError:
             return False
 
-    def validate(self, data: Dict[str, Any], element_type: str) -> ValidationResult:
-        """
-        Validates data for the specified element type.
-
-        Parameters
-        ----------
-        data : Dict[str, Any]
-            The data to validate
-        element_type : str
-            The element type
-
-        Returns
-        -------
-        ValidationResult
-            The validation result
-        """
+    def validate(self, element: TElement) -> ValidationResult:
         result = ValidationResult()
 
-        try:
-            element_enum = ElementType(element_type)
-        except ValueError:
-            result.add_error(
-                ValidationError(
-                    message=f"Invalid element type: {element_type}",
-                    context={"element_type": element_type},
-                    severity=ErrorSeverity.CRITICAL,
-                )
-            )
-            return result
-
+        element_type = element.element_type
         # Prüfen, ob ein Schema für diesen Elementtyp registriert ist
-        schema = self._schemas.get(element_enum)
+        schema = self._schemas.get(element_type)
         if not schema:
             result.add_warning(
                 ValidationWarning(
@@ -119,11 +150,11 @@ class GenericValidator(abc.ABC, IValidator):
             return result
 
         # Basis-Struktur prüfen
-        if not isinstance(data, dict):
+        if not isinstance(element, InfrastructureElement):
             result.add_error(
                 ValidationError(
                     message="Data must be a dictionary",
-                    context={"data_type": type(data).__name__},
+                    context={"data_type": type(element).__name__},
                     severity=ErrorSeverity.CRITICAL,
                     element_type=element_type,
                 )
@@ -131,40 +162,27 @@ class GenericValidator(abc.ABC, IValidator):
             return result
 
         # Element-ID extrahieren für Fehlermeldungen
-        element_id = data.get("id", data.get("uuid", data.get("ID", None)))
-
-        # Parameter validieren
-        params_data = data.get("parameters", [])
-        if not isinstance(params_data, list):
-            # Wenn die Daten flach sind (nicht in einer parameters-Liste),
-            # verwenden wir die Daten direkt
-            params_data = [{"name": k, "value": v} for k, v in data.items()]
-
-        # Parameter in ein Dictionary umwandeln für einfacheren Zugriff
-        params_dict: Dict[str, Dict[str, Any]] = {}
-        for param in params_data:
-            if not isinstance(param, dict):
-                continue
-            param_name = param.get("name")
-            if not param_name:
-                continue
-            params_dict[param_name] = param
-
+        element_info = f"{element.name} [{element.uuid}]"
         # Alle erforderlichen Parameter und ihre Constraints prüfen
-        for param_enum, constraints in schema.constraints.items():
-            param_name = param_enum.value
-
+        for process_enum, constraints in schema.constraints.items():
+            param_name = process_enum.value
             # Parameter-Wert suchen
-            param_value = None
-            param_data = params_dict.get(param_name)
-
-            if param_data:
-                param_value = param_data.get("value")
-
+            if not element.has_param(process_enum):
+                result.add_error(
+                    ValidationError(
+                        message=f"Parameter with ProcessEnum {param_name} not found",
+                        context={"process_enum": param_name},
+                        severity=ErrorSeverity.ERROR,
+                        element_type=element_type,
+                        element_id=element_info,
+                        parameter_name=param_name,
+                    )
+                )
+            parameter = element.get_param(process_enum)
             # Alle Constraints für diesen Parameter prüfen
             for constraint in constraints:
-                if not constraint.validate(param_value):
-                    error_message = constraint.get_error_message(param_name, param_value)
+                if not constraint.validate(parameter.value):
+                    error_message = constraint.get_error_message(param_name, parameter.value)
 
                     # Bestimmen des Schweregrads basierend auf dem Constraint-Typ
                     severity = ErrorSeverity.ERROR
@@ -174,56 +192,18 @@ class GenericValidator(abc.ABC, IValidator):
                     result.add_error(
                         ValidationError(
                             message=error_message,
-                            context={"param_name": param_name, "value": param_value},
+                            context={"param_name": param_name, "value": parameter.value},
                             severity=severity,
                             element_type=element_type,
-                            element_id=element_id,
+                            element_id=element_info,
                             parameter_name=param_name,
                         )
                     )
 
         # Zusätzliche spezifische Validierung durchführen
-        self._validate_specific(data, element_enum, result, element_id)
+        self._validate_specific(element, result)
 
         return result
-
-    @abc.abstractmethod
-    def _validate_specific(
-        self,
-        data: Dict[str, Any],
-        element_type: ElementType,
-        result: ValidationResult,
-        element_id: Optional[str] = None,
-    ) -> None:
-        """
-        Performs specific validation for the given element type.
-        This method can be overridden by derived classes.
-
-        Parameters
-        ----------
-        data : Dict[str, Any]
-            The data to validate
-        element_type : ElementType
-            The element type
-        result : ValidationResult
-            The validation result to which errors and warnings can be added
-        element_id : Optional[str]
-            The ID of the element, if available
-        """
-        pass
-
-
-class ElementValidator(GenericValidator):
-    """
-    Validation class for InfrastructureElement objects.
-    """
-
-    def __init__(self, element_type: ElementType):
-        super().__init__([element_type])
-
-        # Standard-Schema für diesen Elementtyp erstellen und registrieren
-        schema = self._create_default_schema(element_type)
-        self.register_schema(schema)
 
     def _create_default_schema(self, element_type: ElementType) -> SchemaDefinition:
         """
@@ -248,254 +228,4 @@ class ElementValidator(GenericValidator):
             ProcessEnum.ELEMENT_TYPE,
         }
 
-        # Standort-Parameter (für geometrische Validierung)
-        schema.required_params.update(
-            {
-                ProcessEnum.X_COORDINATE,
-                ProcessEnum.Y_COORDINATE,
-            }
-        )
-
-        # Typdefinitionen
-        schema.param_types.update(
-            {
-                ProcessEnum.UUID: DataType.STRING,
-                ProcessEnum.NAME: DataType.STRING,
-                ProcessEnum.ELEMENT_TYPE: DataType.STRING,
-                ProcessEnum.X_COORDINATE: DataType.FLOAT,
-                ProcessEnum.Y_COORDINATE: DataType.FLOAT,
-                ProcessEnum.Z_COORDINATE: DataType.FLOAT,
-            }
-        )
-
-        # Einheitendefinitionen
-        schema.param_units.update(
-            {
-                ProcessEnum.X_COORDINATE: UnitEnum.METER,
-                ProcessEnum.Y_COORDINATE: UnitEnum.METER,
-                ProcessEnum.Z_COORDINATE: UnitEnum.METER,
-            }
-        )
-        # Minimumwerte für Dimensionen
-        schema.add_constraint(
-            ProcessEnum.X_COORDINATE,
-            Constraint(
-                constraint_type=ConstraintType.MIN_VALUE,
-                value=0.0,
-                message="Width must be greater than 0",
-            ),
-        )
-        schema.add_constraint(
-            ProcessEnum.Y_COORDINATE,
-            Constraint(
-                constraint_type=ConstraintType.MIN_VALUE,
-                value=0.0,
-                message="Height must be greater than 0",
-            ),
-        )
-        schema.add_constraint(
-            ProcessEnum.Z_COORDINATE,
-            Constraint(
-                constraint_type=ConstraintType.CUSTOM,
-                message="Z-Coordinate is optional but must be greater than 0",
-                custom_validator=lambda x: x is None or x > 0,
-            ),
-        )
-
-        # Elementtyp-spezifische Parameter hinzufügen
-        self._add_element_specific_constraints(element_type, schema)
-
         return schema
-
-    def _add_element_specific_constraints(
-        self, element_type: ElementType, schema: SchemaDefinition
-    ) -> None:
-        """
-        Adds element type-specific constraints to the schema.
-        This method can be overridden by derived classes.
-
-        Parameters
-        ----------
-        element_type : ElementType
-            The element type
-        schema : SchemaDefinition
-            The schema to which constraints should be added
-        """
-        # Gemeinsame Dimensionsparameter
-        if element_type in [ElementType.FOUNDATION, ElementType.MAST]:
-            schema.required_params.update(
-                {
-                    ProcessEnum.WIDTH,
-                    ProcessEnum.HEIGHT,
-                    ProcessEnum.DEPTH,
-                }
-            )
-            schema.param_types.update(
-                {
-                    ProcessEnum.WIDTH: DataType.FLOAT,
-                    ProcessEnum.HEIGHT: DataType.FLOAT,
-                    ProcessEnum.DEPTH: DataType.FLOAT,
-                }
-            )
-            schema.param_units.update(
-                {
-                    ProcessEnum.WIDTH: UnitEnum.METER,
-                    ProcessEnum.HEIGHT: UnitEnum.METER,
-                    ProcessEnum.DEPTH: UnitEnum.METER,
-                }
-            )
-
-            # Minimumwerte für Dimensionen
-            schema.add_constraint(
-                ProcessEnum.WIDTH,
-                Constraint(
-                    constraint_type=ConstraintType.MIN_VALUE,
-                    value=0.0,
-                    message="Width must be greater than 0",
-                ),
-            )
-            schema.add_constraint(
-                ProcessEnum.HEIGHT,
-                Constraint(
-                    constraint_type=ConstraintType.MIN_VALUE,
-                    value=0.0,
-                    message="Height must be greater than 0",
-                ),
-            )
-            schema.add_constraint(
-                ProcessEnum.DEPTH,
-                Constraint(
-                    constraint_type=ConstraintType.MIN_VALUE,
-                    value=0.0,
-                    message="Depth must be greater than 0",
-                ),
-            )
-
-        # Spezifische Parameter für Linienelemente
-        if element_type in [ElementType.TRACK, ElementType.SEWER_PIPE]:
-            schema.required_params.update(
-                {
-                    ProcessEnum.X_COORDINATE_END,
-                    ProcessEnum.Y_COORDINATE_END,
-                    ProcessEnum.Z_COORDINATE_END,
-                }
-            )
-            schema.param_types.update(
-                {
-                    ProcessEnum.X_COORDINATE_END: DataType.FLOAT,
-                    ProcessEnum.Y_COORDINATE_END: DataType.FLOAT,
-                    ProcessEnum.Z_COORDINATE_END: DataType.FLOAT,
-                }
-            )
-            schema.param_units.update(
-                {
-                    ProcessEnum.X_COORDINATE_END: UnitEnum.METER,
-                    ProcessEnum.Y_COORDINATE_END: UnitEnum.METER,
-                    ProcessEnum.Z_COORDINATE_END: UnitEnum.METER,
-                }
-            )
-            # Minimumwerte für Dimensionen
-            schema.add_constraint(
-                ProcessEnum.X_COORDINATE_END,
-                Constraint(
-                    constraint_type=ConstraintType.MIN_VALUE,
-                    value=0.0,
-                    message="Width must be greater than 0",
-                ),
-            )
-            schema.add_constraint(
-                ProcessEnum.X_COORDINATE_END,
-                Constraint(
-                    constraint_type=ConstraintType.MIN_VALUE,
-                    value=0.0,
-                    message="Height must be greater than 0",
-                ),
-            )
-            schema.add_constraint(
-                ProcessEnum.X_COORDINATE_END,
-                Constraint(
-                    constraint_type=ConstraintType.CUSTOM,
-                    message="Z-Coordinate is optional but must be greater than 0",
-                    custom_validator=lambda x: x is None or x > 0,
-                ),
-            )
-
-        # Spezifische Parameter für Fundamenttypen
-        if element_type == ElementType.FOUNDATION:
-            schema.required_params.add(ProcessEnum.FOUNDATION_TYPE)
-            schema.param_types[ProcessEnum.FOUNDATION_TYPE] = DataType.STRING
-
-        # Spezifische Parameter für Masttypen
-        if element_type == ElementType.MAST:
-            schema.required_params.add(ProcessEnum.MAST_TYPE)
-            schema.param_types[ProcessEnum.MAST_TYPE] = DataType.STRING
-
-    def _validate_specific(
-        self,
-        data: Dict[str, Any],
-        element_type: ElementType,
-        result: ValidationResult,
-        element_id: Optional[str] = None,
-    ) -> None:
-        """
-        Performs specific validation for the given element type.
-
-        Parameters
-        ----------
-        data : Dict[str, Any]
-            The data to validate
-        element_type : ElementType
-            The element type
-        result : ValidationResult
-            The validation result to which errors and warnings can be added
-        element_id : Optional[str]
-            The ID of the element, if available
-        """
-        # Beispiel für eine spezifische Validierung:
-        # Prüfen, ob Linienelemente Start- und Endpunkt unterscheiden
-        if element_type in [ElementType.TRACK, ElementType.SEWER_PIPE]:
-            # Parameter extrahieren
-            params = data.get("parameters", [])
-
-            # Koordinaten suchen
-            x, y, z = None, None, None
-            x_end, y_end, z_end = None, None, None
-
-            for param in params:
-                if isinstance(param, dict):
-                    process = param.get("process")
-                    value = param.get("value")
-
-                    if process == ProcessEnum.X_COORDINATE.value:
-                        x = value
-                    elif process == ProcessEnum.Y_COORDINATE.value:
-                        y = value
-                    elif process == ProcessEnum.Z_COORDINATE.value:
-                        z = value
-                    elif process == ProcessEnum.X_COORDINATE_END.value:
-                        x_end = value
-                    elif process == ProcessEnum.Y_COORDINATE_END.value:
-                        y_end = value
-                    elif process == ProcessEnum.Z_COORDINATE_END.value:
-                        z_end = value
-
-            # Wenn Start- und Endpunkt identisch sind, ist das verdächtig
-            if (
-                x is not None
-                and y is not None
-                and z is not None
-                and x_end is not None
-                and y_end is not None
-                and z_end is not None
-            ):
-                if x == x_end and y == y_end and z == z_end:
-                    result.add_warning(
-                        ValidationWarning(
-                            message="Start and end points are identical",
-                            context={"start": (x, y, z), "end": (x_end, y_end, z_end)},
-                            element_type=element_type.value,
-                            element_id=element_id,
-                        )
-                    )
-
-        # Hier können weitere elementtyp-spezifische Validierungen hinzugefügt werden

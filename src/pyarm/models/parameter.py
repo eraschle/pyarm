@@ -160,7 +160,7 @@ class Parameter(IComponentModel):
             raise ValueError(f"Cannot convert {self.datatype} to int")
         return int(self.value)
 
-    def can_as_int(self) -> bool:
+    def is_int(self) -> bool:
         """
         Check if the parameter can be converted to an integer.
 
@@ -188,7 +188,7 @@ class Parameter(IComponentModel):
             raise ValueError(f"Cannot convert {self.datatype} to float")
         return float(self.value)
 
-    def can_as_float(self) -> bool:
+    def is_float(self) -> bool:
         """
         Check if the parameter can be converted to a float.
 
@@ -216,7 +216,7 @@ class Parameter(IComponentModel):
             raise ValueError(f"Cannot convert {self.datatype} to bool")
         return bool(self.value)
 
-    def can_as_bool(self) -> bool:
+    def is_bool(self) -> bool:
         """
         Check if the parameter can be converted to a boolean.
 
@@ -257,7 +257,7 @@ class Parameter(IComponentModel):
             raise ValueError(f"Cannot convert {self.datatype} to UUID")
         return UUID(str(self.value))
 
-    def can_as_uuid(self) -> bool:
+    def is_uuid(self) -> bool:
         """
         Check if the parameter can be converted to a UUID.
 

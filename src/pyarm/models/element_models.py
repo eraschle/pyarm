@@ -62,7 +62,7 @@ def add_references_to(reference_params: list[Parameter], element: Infrastructure
         if reference_type is None:
             log.warning(f"Could not find reference type for process enum: {param.process}")
             continue
-        if not param.can_as_uuid():
+        if not param.is_uuid():
             log.warning(f"Parameter {param} can not be converted to UUID.")
             continue
         element.add_reference(reference_type=reference_type, referenced_uuid=param.as_uuid())
