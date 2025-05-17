@@ -661,17 +661,17 @@ class MeinConverter:
 
 #### Option 1: In `pyarm.plugins` einfügen
 
-Kopieren Sie Ihr Plugin-Modul in das `pyarm/plugins`-Verzeichnis.
+Kopieren Sie Ihr Plugin-Modul in das `src/pyarm/plugins`-Verzeichnis.
 
-#### Option 2: Benutzerdefiniertes Verzeichnis verwenden
+#### Option 2: Kundenspezifisches Verzeichnis verwenden
 
-1. Erstellen Sie ein Verzeichnis für Ihr Plugin
+1. Erstellen Sie ein Verzeichnis für Ihr Plugin in `clients/clientName/plugins/`
 2. Fügen Sie das Verzeichnis zur Plugin-Konfiguration hinzu:
 
 ```json
 {
   "plugin_paths": [
-    "pfad/zu/meinen/plugins"
+    "clients/clientName/plugins"
   ]
 }
 ```

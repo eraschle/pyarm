@@ -62,7 +62,7 @@ def _discover_plugins_in_package() -> dict[str, type[PluginInterface]]:
     dict[str, type[PluginInterface]]
         Dictionary with plugin names and plugin classes
     """
-    from .. import plugins
+    from .... import plugins
 
     discovered_plugins = {}
     plugin_path = plugins.__path__

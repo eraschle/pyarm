@@ -51,19 +51,19 @@ Die Konfigurationsdatei hat folgende Struktur:
   "plugin_paths": [
     {
       "name": "Core Plugins",
-      "path": "./plugins/core_plugins",
+      "path": "./src/pyarm/plugins",
       "enabled": true
     },
     {
-      "name": "Development Plugins",
-      "path": "./plugins",
+      "name": "Client Plugins",
+      "path": "./clients",
       "enabled": true
     }
   ],
   "external_plugin_paths": [
     {
-      "name": "Client A Plugins",
-      "path": "C:/Users/ClientA/Documents/PyArm/Plugins",
+      "name": "External Client Plugins",
+      "path": "/home/user/external_plugins/clients",
       "enabled": true
     },
     {
@@ -162,12 +162,12 @@ Dies ermöglicht eine flexible Konfiguration für verschiedene Einsatzszenarien.
   "plugin_paths": [
     {
       "name": "Core Plugins",
-      "path": "./plugins/core_plugins",
+      "path": "./src/pyarm/plugins",
       "enabled": true
     },
     {
-      "name": "Development Plugins",
-      "path": "./plugins",
+      "name": "Client Plugins",
+      "path": "./clients",
       "enabled": true
     }
   ],

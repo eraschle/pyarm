@@ -2,30 +2,35 @@
   "plugin_paths": [
     {
       "name": "Core Plugins",
-      "path": "./plugins/core_plugins",
+      "path": "./src/pyarm/plugins",
       "enabled": true
     },
     {
-      "name": "Development Plugins",
-      "path": "./plugins",
+      "name": "Client Plugins - Client A",
+      "path": "./clients/clientA/plugins",
       "enabled": true
     },
     {
-      "name": "Client Plugins",
-      "path": "./client_plugins",
+      "name": "Client Plugins - Client C",
+      "path": "./clients/clientC/plugins",
+      "enabled": true
+    },
+    {
+      "name": "Client Plugins - SBB",
+      "path": "./clients/sbb/plugins",
       "enabled": true
     }
   ],
   "external_plugin_paths": [
     {
-      "name": "Client A Plugins",
-      "path": "C:/Users/ClientA/Documents/PyArm/Plugins",
-      "enabled": true
+      "name": "External Plugins",
+      "path": "/home/user/external_plugins",
+      "enabled": false
     },
     {
       "name": "Network Plugins",
       "path": "//server/shared/plugins",
-      "enabled": true
+      "enabled": false
     }
   ],
   "disabled_plugins": [

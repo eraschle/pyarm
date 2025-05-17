@@ -179,7 +179,7 @@ sql_reader = ClientCSqlReader()
 converter = ClientCConverter()
 
 # SQL-Datei einlesen
-file_path = "/path/to/clients/clientC/projects/infrastructure.sql"
+file_path = "/home/elyo/workspace/elyo/pym/pyarm/clients/clientC/projects/infrastructure.sql"
 if sql_reader.can_handle(file_path):
     all_data = sql_reader.read_data(file_path)
     

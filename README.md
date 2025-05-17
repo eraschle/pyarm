@@ -324,31 +324,35 @@ Die Anwendung ist darauf ausgelegt, Daten aus verschiedenen Kundenformaten über
 
 ```bash
 # Client A Daten importieren 
-python import_client_a.py --input_dir examples/clients --project project1 --output_dir tests/output/client-a
+python clients/clientA/import_client_a.py --input_dir clients/clientA --project project1 --output_dir tests/output/client-a
 
 # Client B Daten importieren
-python import_client_b.py --input_dir examples/clients --output_dir tests/output/client-b
+python clients/clientB/code/import_client_b.py --input_dir clients/clientB --output_dir tests/output/client-b
 
 # Client C Daten importieren
-python import_client_c.py --input_dir examples/clients --output_dir tests/output/client-c
+python clients/clientC/import_client_c.py --input_dir clients/clientC --output_dir tests/output/client-c
 
 # SBB DFA Daten importieren
-python import_sbb_dfa.py --input_file examples/sbb/dfa_export.xlsx --output_dir tests/output/sbb
+python clients/sbb/import_dfa.py --input_file clients/sbb/project/dfa_export.xlsx --output_dir tests/output/sbb
 ```
 
 ## Plugins erstellen
 
 Um ein neues Plugin zu erstellen:
 
-1. Erstellen Sie ein neues Verzeichnis in `plugins/` oder ein separates Paket
+1. Erstellen Sie ein neues Verzeichnis in `src/pyarm/plugins/` oder in einem kundenspezifischen Verzeichnis wie `clients/clientName/plugins/`
 2. Implementieren Sie die `PluginInterface`-Klasse in der `__init__.py`-Datei
 3. Registrieren Sie das Plugin in der Konfiguration oder verlassen Sie sich auf die automatische Erkennung
 
 Beispiel-Plugin-Struktur:
 ```
-plugins/
+src/pyarm/plugins/
 └── my_plugin/
     └── __init__.py  # Enthält die Plugin-Klasse
+
+# Oder kundenspezifisch:
+clients/clientName/plugins/
+└── __init__.py  # Enthält die Plugin-Klasse
 ```
 
 ## Vorteile der Architektur

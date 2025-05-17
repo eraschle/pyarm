@@ -9,25 +9,6 @@
     "X_COORDINATE_END",
     "Y_COORDINATE_END"
   ],
-  "param_types": {
-    "UUID": "STRING",
-    "NAME": "STRING",
-    "ELEMENT_TYPE": "STRING",
-    "X_COORDINATE": "FLOAT",
-    "Y_COORDINATE": "FLOAT",
-    "Z_COORDINATE": "FLOAT",
-    "X_COORDINATE_END": "FLOAT",
-    "Y_COORDINATE_END": "FLOAT",
-    "Z_COORDINATE_END": "FLOAT"
-  },
-  "param_units": {
-    "X_COORDINATE": "METER",
-    "Y_COORDINATE": "METER",
-    "Z_COORDINATE": "METER",
-    "X_COORDINATE_END": "METER",
-    "Y_COORDINATE_END": "METER",
-    "Z_COORDINATE_END": "METER"
-  },
   "constraints": {
     "X_COORDINATE": [
       {

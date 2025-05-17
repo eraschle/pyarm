@@ -9,19 +9,21 @@ Das PyArm-System ist in mehrere Module gegliedert:
 ```
 src/
 └── pyarm/               # Hauptpaket
-    ├── core/            # Kernfunktionalität
-    │   ├── models/      # Basis-Modelle
-    │   └── enums/       # Enumerationen
+    ├── models/          # Basis-Modelle und Enumerationen
+    ├── components/      # Komponenten-System
     ├── interfaces/      # Schnittstellen für Plugins
     ├── utils/           # Hilfsfunktionen
+    ├── validation/      # Validierungs-System
+    ├── factories/       # Element-Fabriken
+    ├── repository/      # Datenspeicherung
+    ├── linking/         # Element-Verknüpfungen
     └── plugins/         # Plugin-Management
 ```
 
-Daneben gibt es Verzeichnisse für externe Plugins:
+Daneben gibt es Verzeichnisse für kundenspezifische Plugins:
 
 ```
-plugins/                 # Eingebaute Plugins
-client_plugins/          # Kundenspezifische Plugins
+clients/                 # Kundenspezifische Plugins und Implementierungen
 ```
 
 ## Plugin-Entwicklung
@@ -61,7 +63,7 @@ Ein Plugin kann auf mehrere Arten integriert werden:
 #### a) Als eingebautes Plugin
 
 ```
-plugins/
+src/pyarm/plugins/
 └── my_plugin/
     └── __init__.py  # Enthält die Plugin-Klasse
 ```
@@ -69,9 +71,8 @@ plugins/
 #### b) Als Kundenspezifisches Plugin
 
 ```
-client_plugins/
-└── client_a/
-    └── __init__.py  # Enthält die Plugin-Klasse
+clients/clientA/plugins/
+└── __init__.py  # Enthält die Plugin-Klasse
 ```
 
 #### c) Als eigenständiges Paket
@@ -101,8 +102,8 @@ setup(
 
 PyArm entdeckt Plugins auf drei Arten:
 
-1. **Eingebaute Plugins**: Plugins im `plugins/`-Verzeichnis
-2. **Kundenspezifische Plugins**: Plugins im `client_plugins/`-Verzeichnis und anderen Verzeichnissen, die in `PYARM_PLUGIN_PATHS` definiert sind
+1. **Eingebaute Plugins**: Plugins im `src/pyarm/plugins/`-Verzeichnis
+2. **Kundenspezifische Plugins**: Plugins in den `clients/*/plugins/`-Verzeichnissen und anderen Verzeichnissen, die in der Konfiguration definiert sind
 3. **Installierte Plugins**: Plugins, die über `entry_points` registriert sind
 
 ## Verwendung
@@ -140,10 +141,10 @@ result = app.convert_element(data, "my_element_type")
 
 ### 3. Plugin-Entwicklung
 
-Das Skript `examples/create_client_plugin.py` kann verwendet werden, um ein neues Plugin zu erstellen:
+Das Skript `create_client_plugin.py` kann verwendet werden, um ein neues Plugin zu erstellen:
 
 ```bash
-python examples/create_client_plugin.py "Client A"
+python create_client_plugin.py "Client A"
 ```
 
 ## Entwicklungsumgebung
@@ -179,11 +180,11 @@ from ...interfaces.plugin import PluginInterface
    - Fokus auf Schnittstellen und gemeinsamer Funktionalität
 
 2. **Plugin-Entwicklung**:
-   - Arbeiten in `plugins/` oder `client_plugins/`
+   - Arbeiten in `src/pyarm/plugins/` oder kundenspezifischen Verzeichnissen wie `clients/*/plugins/`
    - Implementierung spezifischer Konvertierungen
 
 3. **Tests**:
-   - Paralleles Testen von Core und Plugins mit `examples/test_plugin.py`
+   - Paralleles Testen von Core und Plugins mit Unit-Tests in `tests/`
 
 ## Vorteile des Aufbaus
 
@@ -195,7 +196,8 @@ from ...interfaces.plugin import PluginInterface
 
 ## Beispiele
 
-Weitere Beispiele finden sich im `examples/`-Verzeichnis:
+Beispiele für Plugins und deren Verwendung finden sich in folgenden Verzeichnissen:
 
-- `test_plugin.py`: Zeigt, wie Plugins geladen und verwendet werden
-- `create_client_plugin.py`: Erstellt ein neues Client-Plugin
+- `clients/*/plugins/`: Enthält kundenspezifische Plugin-Implementierungen
+- `tests/`: Enthält Tests für die verschiedenen Plugins und Kernkomponenten
+- `create_client_plugin.py`: Skript zum Erstellen eines neuen Client-Plugins

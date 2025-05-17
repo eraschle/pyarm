@@ -1,0 +1,15 @@
+{
+  "client_name": "DefaultClient",
+  "paths": {
+    "dfa_reports_folder": "clients/sbb/project",
+    "mapping_file": "config/mappings/Data_Dictionaries_Mapping.xlsx",
+    "blueprint_file": "clients/sbb/project/Bauprojekt_BP_Export.dxf",
+    "dtm_file": "clients/sbb/project/DGM.xml",
+    "pointcloud_file": "clients/sbb/project/Punktehimmel.xlsx",
+    "projectborder_file": "clients/sbb/project/DataRecords.geojson",
+    "output_folder": "tests/output/sbb"
+  },
+  "dfa_to_rfa_mapping": {
+    "sheet_name": "Object mapping"
+  }
+}

@@ -82,7 +82,7 @@ Das Plugin wandelt clientspezifische Parameter in das kanonische Modell um:
 ### SQL-Format
 
 ```python
-from plugins.client_c import ClientCPlugin
+from pyarm.clients.clientC.plugins import ClientCPlugin
 
 # Plugin initialisieren
 plugin = ClientCPlugin()
@@ -101,7 +101,7 @@ result = plugin.convert_element(data, "foundation")
 ### FDK-Format
 
 ```python
-from plugins.client_c import ClientCPlugin
+from pyarm.clients.clientC.plugins import ClientCPlugin
 
 # Plugin initialisieren
 plugin = ClientCPlugin()
@@ -109,7 +109,7 @@ plugin.initialize({})
 
 # FDK-Datei konvertieren
 data = {
-    "fdk_file": "/path/to/anlagen_daten.json"
+    "fdk_file": "/home/elyo/workspace/elyo/pym/pyarm/clients/clientC/FDK/anlagen_daten.json"
 }
 
 result = plugin.convert_element(data, "fdk")
