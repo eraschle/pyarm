@@ -47,7 +47,6 @@ select = ["E", "F", "B", "I"]
 [tool.isort]
 profile = "black"
 line_length = 100
-multi_line_output = 3
 
 # Pytest Konfiguration
 [tool.pytest.ini_options]

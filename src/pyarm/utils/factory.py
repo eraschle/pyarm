@@ -5,15 +5,10 @@ and ensure that elements are correctly initialized with all necessary components
 """
 
 import logging
-from typing import Any, Dict, List, Optional, Type, TypeVar
+from typing import Any, Dict, List, Optional, Type
 from uuid import UUID, uuid4
 
-from pyarm.components import (
-    Dimension,
-    ElementReference,
-    LineLocation,
-    PointLocation,
-)
+from pyarm.components import Dimension, ElementReference, LineLocation, PointLocation
 from pyarm.models.base_models import InfrastructureElement
 from pyarm.models.parameter import Parameter
 from pyarm.models.process_enums import ElementType, ProcessEnum
@@ -39,10 +34,10 @@ def determine_element_class(data: Dict[str, Any]) -> Type[Any]:
     # Runtime import to avoid circular imports
     from pyarm.models.element_models import (
         CurvedTrack,
-        SewerPipe,
-        SewerShaft,
         Foundation,
         Mast,
+        SewerPipe,
+        SewerShaft,
         Track,
     )
 
@@ -210,13 +205,7 @@ def create_component_based_element(
         Created element with the specified components
     """
     # Runtime import to avoid circular imports
-    from pyarm.models.element_models import (
-        SewerPipe,
-        SewerShaft,
-        Foundation,
-        Mast,
-        Track,
-    )
+    from pyarm.models.element_models import Foundation, Mast, SewerPipe, SewerShaft, Track
 
     # Choose element class based on type
     element_class = None

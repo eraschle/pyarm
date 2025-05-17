@@ -8,7 +8,6 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
-from pyarm.interfaces.process import IProcessProtocol
 from pyarm.interfaces.validator import IValidator
 from pyarm.linking.element_linker import ElementLinker
 from pyarm.models.base_models import InfrastructureElement
@@ -27,7 +26,7 @@ class ConversionResult:
     validation: Dict[str, Any] = field(default_factory=dict)
 
 
-class PluginInterface(ABC, IProcessProtocol):
+class PluginInterface(ABC):
     """
     Base interface for all plugins.
     Each plugin must implement this interface.
@@ -117,18 +116,7 @@ class PluginInterface(ABC, IProcessProtocol):
         """
         pass
 
-    def get_process_name(self) -> str:
-        """
-        Returns the name of the process.
-        By default, returns the plugin name.
-
-        Returns
-        -------
-        str
-            Name of the process
-        """
-        return self.name
-
+    @abstractmethod
     def get_validators(self) -> List[IValidator]:
         """
         Returns the validators used by this plugin.
@@ -140,4 +128,4 @@ class PluginInterface(ABC, IProcessProtocol):
         List[IValidator]
             A list of validators for this plugin
         """
-        return []
+        pass

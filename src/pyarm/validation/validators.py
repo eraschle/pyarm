@@ -8,7 +8,6 @@ validators.
 
 import abc
 import logging
-from typing import Optional
 
 from pyarm.interfaces.validator import IValidator
 from pyarm.models.base_models import InfrastructureElement
@@ -23,7 +22,6 @@ from pyarm.validation.errors import (
 from pyarm.validation.parameter_constraints import get_parameter_constraints
 from pyarm.validation.schema import ConstraintType, SchemaDefinition
 
-
 log = logging.getLogger(__name__)
 
 
@@ -31,7 +29,7 @@ class ParameterValidator(IValidator[Parameter]):
     """Validator für Parameter basierend auf den definierten Validierungsregeln."""
 
     def can_validate(self, element: Parameter) -> bool:
-        return super().can_validate(element)
+        return element.process in ProcessEnum
 
     def validate(self, element: Parameter) -> ValidationResult:
         """
@@ -204,6 +202,10 @@ class GenericValidator[TElement: InfrastructureElement](abc.ABC, IValidator[TEle
         self._validate_specific(element, result)
 
         return result
+
+    @abc.abstractmethod
+    def _validate_specific(self, element: InfrastructureElement, result: ValidationResult) -> None:
+        pass
 
     def _create_default_schema(self, element_type: ElementType) -> SchemaDefinition:
         """

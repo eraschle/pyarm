@@ -1,7 +1,5 @@
 from typing import Any, Iterable
 
-from numpy import nan
-
 from pyarm.factories.parameter import ParameterDefinition
 from pyarm.models.parameter import DataType, UnitEnum
 from pyarm.utils import types
@@ -61,7 +59,7 @@ def _get_datatype(column: str, values: Iterable[Any]) -> DataType:
     """
     Combines the dataframes into one dataframe.
     """
-    values = [val for val in values if val is not None and str(val) != str(nan)]
+    values = [val for val in values if val is not None and str(val) != "nan"]
     if _are_int(values) and not _is_float_column(column):
         return DataType.INTEGER
     if _are_float(values):

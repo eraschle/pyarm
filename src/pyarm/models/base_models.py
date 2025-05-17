@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 from typing import Any, cast
 from uuid import UUID, uuid4
 
-from dfa_plugin import ParameterFactory
+from pyarm.factories.parameter import ParameterFactory
 
 from pyarm.components import (
     Component,
